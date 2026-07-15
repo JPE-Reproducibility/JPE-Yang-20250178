@@ -1,0 +1,574 @@
+## Potentially Hardcoded Numeric Constants
+
+
+We found the following set of hard coded numbers. This may be completely legitimate (parameter input, thresholds for computations, etc), and is hence only for information.
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_win.ipynb**
+
+- Line 528, : "  0   6864593  The invention is directed to a device for the ... -4.278506   \n",
+- Line 529, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.727026   \n",
+- Line 530, : "  2  11297235  An optical apparatus configured to correct an ... -3.430620   \n",
+- Line 531, : "  3   9493045  A method is provided for reinforcement of a mu... -4.044676   \n",
+- Line 532, : "  4  10609247  An information processing system transmits and... -4.349476   \n",
+- Line 535, : "  0  3.157955         0  RetailHealthTechPersonalizedMedicineTestingBio...  \n",
+- Line 536, : "  1  2.675728         0  RetailHealthTechPersonalizedMedicineTestingBio...  \n",
+- Line 537, : "  2  2.378442         0  RetailHealthTechPersonalizedMedicineTestingBio...  \n",
+- Line 538, : "  3  3.017955         0  RetailHealthTechPersonalizedMedicineTestingBio...  \n",
+- Line 539, : "  4  3.190381         0  RetailHealthTechPersonalizedMedicineTestingBio...  ),\n",
+- Line 542, : "  0   6864593  The invention is directed to a device for the ... -3.115351   \n",
+- Line 543, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.557289   \n",
+- Line 544, : "  2  11297235  An optical apparatus configured to correct an ... -2.607446   \n",
+- Line 545, : "  3   9493045  A method is provided for reinforcement of a mu... -3.556773   \n",
+- Line 546, : "  4  10609247  An information processing system transmits and... -3.019957   \n",
+- Line 549, : "  0  2.410922         0  RetailHealthTechPersonalizedMedicineTestingGen...  \n",
+- Line 550, : "  1  2.526414         0  RetailHealthTechPersonalizedMedicineTestingGen...  \n",
+- Line 551, : "  2  1.252831         0  RetailHealthTechPersonalizedMedicineTestingGen...  \n",
+- Line 552, : "  3  2.452315         0  RetailHealthTechPersonalizedMedicineTestingGen...  \n",
+- Line 553, : "  4  2.362428         0  RetailHealthTechPersonalizedMedicineTestingGen...  ),\n",
+- Line 556, : "  0   6864593  The invention is directed to a device for the ... -2.980449   \n",
+- Line 557, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.979428   \n",
+- Line 558, : "  2  11297235  An optical apparatus configured to correct an ... -3.817977   \n",
+- Line 559, : "  3   9493045  A method is provided for reinforcement of a mu... -3.791008   \n",
+- Line 560, : "  4  10609247  An information processing system transmits and... -3.909480   \n",
+- Line 563, : "  0  2.223362         0  RetailHealthTechPersonalizedMedicineTestingPer...  \n",
+- Line 564, : "  1  2.851906         0  RetailHealthTechPersonalizedMedicineTestingPer...  \n",
+- Line 565, : "  2  2.820709         0  RetailHealthTechPersonalizedMedicineTestingPer...  \n",
+- Line 566, : "  3  2.856869         0  RetailHealthTechPersonalizedMedicineTestingPer...  \n",
+- Line 567, : "  4  2.845229         0  RetailHealthTechPersonalizedMedicineTestingPer...  ),\n",
+- Line 570, : "  0   6864593  The invention is directed to a device for the ... -2.736496   \n",
+- Line 571, : "  1   8506297  A dental modal for making a dental prosthesis ... -2.862399   \n",
+- Line 572, : "  2  11297235  An optical apparatus configured to correct an ... -3.171608   \n",
+- Line 573, : "  3   9493045  A method is provided for reinforcement of a mu... -2.888609   \n",
+- Line 574, : "  4  10609247  An information processing system transmits and... -3.287467   \n",
+- Line 577, : "  0  1.592114         0  RetailHealthTechRetailHealthTechRetailHealthTech  \n",
+- Line 578, : "  1  2.065567         0  RetailHealthTechRetailHealthTechRetailHealthTech  \n",
+- Line 579, : "  2  2.060690         0  RetailHealthTechRetailHealthTechRetailHealthTech  \n",
+- Line 580, : "  3  1.857442         0  RetailHealthTechRetailHealthTechRetailHealthTech  \n",
+- Line 581, : "  4  2.169634         0  RetailHealthTechRetailHealthTechRetailHealthTech  ),\n",
+- Line 584, : "  0   6864593  The invention is directed to a device for the ... -3.352773   \n",
+- Line 585, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.112387   \n",
+- Line 586, : "  2  11297235  An optical apparatus configured to correct an ... -3.316379   \n",
+- Line 587, : "  3   9493045  A method is provided for reinforcement of a mu... -3.173543   \n",
+- Line 588, : "  4  10609247  An information processing system transmits and... -3.466588   \n",
+- Line 591, : "  0  2.283372         0  RetailHealthTechVirtualHealthConciergespecialt...  \n",
+- Line 592, : "  1  2.097294         0  RetailHealthTechVirtualHealthConciergespecialt...  \n",
+- Line 593, : "  2  2.265657         0  RetailHealthTechVirtualHealthConciergespecialt...  \n",
+- Line 594, : "  3  1.974533         0  RetailHealthTechVirtualHealthConciergespecialt...  \n",
+- Line 595, : "  4  2.270680         0  RetailHealthTechVirtualHealthConciergespecialt...  ),\n",
+- Line 598, : "  0   6864593  The invention is directed to a device for the ... -3.287053   \n",
+- Line 599, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.205597   \n",
+- Line 600, : "  2  11297235  An optical apparatus configured to correct an ... -3.217530   \n",
+- Line 601, : "  3   9493045  A method is provided for reinforcement of a mu... -3.243718   \n",
+- Line 602, : "  4  10609247  An information processing system transmits and... -3.164432   \n",
+- Line 605, : "  0  1.884046         0  RetailHealthTechVirtualHealthDigitalTherapeutics  \n",
+- Line 606, : "  1  1.856793         0  RetailHealthTechVirtualHealthDigitalTherapeutics  \n",
+- Line 607, : "  2  1.957990         0  RetailHealthTechVirtualHealthDigitalTherapeutics  \n",
+- Line 608, : "  3  1.756895         0  RetailHealthTechVirtualHealthDigitalTherapeutics  \n",
+- Line 609, : "  4  1.969131         0  RetailHealthTechVirtualHealthDigitalTherapeutics  ),\n",
+- Line 612, : "  0   6864593  The invention is directed to a device for the ... -1.904915   \n",
+- Line 613, : "  1   8506297  A dental modal for making a dental prosthesis ...  1.817040   \n",
+- Line 614, : "  2  11297235  An optical apparatus configured to correct an ... -2.401744   \n",
+- Line 615, : "  3   9493045  A method is provided for reinforcement of a mu... -2.283961   \n",
+- Line 616, : "  4  10609247  An information processing system transmits and... -3.098413   \n",
+- Line 619, : "  0  1.195641         0  RetailHealthTechVirtualHealthtelemedicine  \n",
+- Line 620, : "  1 -0.499583         1  RetailHealthTechVirtualHealthtelemedicine  \n",
+- Line 621, : "  2  1.501939         0  RetailHealthTechVirtualHealthtelemedicine  \n",
+- Line 622, : "  3  1.401742         0  RetailHealthTechVirtualHealthtelemedicine  \n",
+- Line 623, : "  4  1.734098         0  RetailHealthTechVirtualHealthtelemedicine  ),\n",
+- Line 626, : "  0   6864593  The invention is directed to a device for the ...  1.501320   \n",
+- Line 627, : "  1   8506297  A dental modal for making a dental prosthesis ...  1.513629   \n",
+- Line 628, : "  2  11297235  An optical apparatus configured to correct an ...  1.556782   \n",
+- Line 629, : "  3   9493045  A method is provided for reinforcement of a mu...  1.517917   \n",
+- Line 630, : "  4  10609247  An information processing system transmits and...  1.506968   \n",
+- Line 633, : "  0 -0.041556         1  SupplyChainTechLastmiledeliveryAutonomousdelivery  \n",
+- Line 634, : "  1 -0.069949         1  SupplyChainTechLastmiledeliveryAutonomousdelivery  \n",
+- Line 635, : "  2 -0.068358         1  SupplyChainTechLastmiledeliveryAutonomousdelivery  \n",
+- Line 636, : "  3 -0.090152         1  SupplyChainTechLastmiledeliveryAutonomousdelivery  \n",
+- Line 637, : "  4  0.006278         1  SupplyChainTechLastmiledeliveryAutonomousdelivery  ),\n",
+- Line 640, : "  0   6864593  The invention is directed to a device for the ... -2.103033   \n",
+- Line 641, : "  1   8506297  A dental modal for making a dental prosthesis ... -1.927699   \n",
+- Line 642, : "  2  11297235  An optical apparatus configured to correct an ... -1.932209   \n",
+- Line 643, : "  3   9493045  A method is provided for reinforcement of a mu... -2.420681   \n",
+- Line 644, : "  4  10609247  An information processing system transmits and... -2.010573   \n",
+- Line 647, : "  0  0.741224         0  SupplyChainTechSupplyChainTechSupplyChainTech  \n",
+- Line 648, : "  1  0.601233         0  SupplyChainTechSupplyChainTechSupplyChainTech  \n",
+- Line 649, : "  2  0.534513         0  SupplyChainTechSupplyChainTechSupplyChainTech  \n",
+- Line 650, : "  3  1.061485         0  SupplyChainTechSupplyChainTechSupplyChainTech  \n",
+- Line 651, : "  4  0.745412         0  SupplyChainTechSupplyChainTechSupplyChainTech  ),\n",
+- Line 654, : "  0   6864593  The invention is directed to a device for the ... -3.404872   \n",
+- Line 655, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.194733   \n",
+- Line 656, : "  2  11297235  An optical apparatus configured to correct an ... -3.144252   \n",
+- Line 657, : "  3   9493045  A method is provided for reinforcement of a mu... -3.252039   \n",
+- Line 658, : "  4  10609247  An information processing system transmits and... -3.155038   \n",
+- Line 661, : "  0  2.121725         0  SupplyChainTechWarehousingtechSustainablepacka...  \n",
+- Line 662, : "  1  1.787666         0  SupplyChainTechWarehousingtechSustainablepacka...  \n",
+- Line 663, : "  2  2.247397         0  SupplyChainTechWarehousingtechSustainablepacka...  \n",
+- Line 664, : "  3  2.026137         0  SupplyChainTechWarehousingtechSustainablepacka...  \n",
+- Line 665, : "  4  2.178461         0  SupplyChainTechWarehousingtechSustainablepacka...  )]"
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A7.do**
+
+- Line 34, : gen just_below_china_50 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>1608.274
+- Line 35, : gen just_below_china_75 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>2626.119
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/08a_generate_regression_a13_variants.py**
+
+- Line 31, : do = do.replace('replace suitability_score_wdi = 2.921 - suitability_score_wdi',
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A14.do**
+
+- Line 50, : replace suitability_score_gpt = 4.141 - suitability_score_gpt
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_3.do**
+
+- Line 150, : replace shock_year_p = 2008 if index<0.007
+- Line 151, : replace shock_year_p = 2009 if index>=0.007 & index<0.031  & index!=.
+- Line 152, : replace shock_year_p = 2011 if index>=0.031 & index<0.038  & index!=.
+- Line 153, : replace shock_year_p = 2012 if index>=0.038 & index<0.0775  & index!=.
+- Line 154, : replace shock_year_p = 2013 if index>=0.0775 & index<0.7442  & index!=.
+- Line 155, : replace shock_year_p = 2014 if index>=0.7442 & index<0.9147  & index!=.
+- Line 156, : replace shock_year_p = 2015 if index>=0.9147 & index<0.9457  & index!=.
+- Line 157, : replace shock_year_p = 2016 if index>=0.9457 & index!=.
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/04_generate_regression_corrected_120623.do**
+
+- Line 148, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
+- Line 171, : replace suitability_score_wdi_us = 3.180 - suitability_score_wdi_us
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/02_generate_suitability.py**
+
+- Line 206, : g["gdp_pp_preperiod_above_china"]  = above(mpre,  4269.235)
+- Line 207, : g["gdp_pp_postperiod_above_china"] = above(mpost, 8815.618)
+- Line 209, : g["gdp_pp_in_2013_above_china"]    = above(m2013, 7056.423)
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_patent_full.ipynb**
+
+- Line 526, : "{'loss': 0.1899, 'grad_norm': 1.492010235786438, 'learning_rate': 4.0654205607476636e-05, 'epoch': 0.93}\n"
+- Line 547, : "{'eval_loss': 0.11047104001045227, 'eval_accuracy': 0.9578454332552693, 'eval_recall': 0.6216216216216216, 'eval_precision': 0.8518518518518519, 'eval_f1': 0.71875, 'eval_runtime': 7.4033, 'eval_samples_per_second': 57.677, 'eval_steps_per_second': 7.294, 'epoch': 1.0}\n",
+- Line 548, : "{'loss': 0.1025, 'grad_norm': 2.0870680809020996, 'learning_rate': 3.130841121495327e-05, 'epoch': 1.87}\n"
+- Line 569, : "{'eval_loss': 0.14586423337459564, 'eval_accuracy': 0.9461358313817331, 'eval_recall': 0.918918918918919, 'eval_precision': 0.6296296296296297, 'eval_f1': 0.7472527472527473, 'eval_runtime': 7.3957, 'eval_samples_per_second': 57.736, 'eval_steps_per_second': 7.302, 'epoch': 2.0}\n",
+- Line 570, : "{'loss': 0.0797, 'grad_norm': 0.9668899178504944, 'learning_rate': 2.196261682242991e-05, 'epoch': 2.8}\n"
+- Line 591, : "{'eval_loss': 0.10076338797807693, 'eval_accuracy': 0.9789227166276346, 'eval_recall': 0.8648648648648649, 'eval_precision': 0.8888888888888888, 'eval_f1': 0.8767123287671232, 'eval_runtime': 7.3046, 'eval_samples_per_second': 58.456, 'eval_steps_per_second': 7.393, 'epoch': 3.0}\n",
+- Line 592, : "{'loss': 0.0225, 'grad_norm': 0.08508585393428802, 'learning_rate': 1.2616822429906542e-05, 'epoch': 3.74}\n"
+- Line 613, : "{'eval_loss': 0.13752175867557526, 'eval_accuracy': 0.9695550351288056, 'eval_recall': 0.8648648648648649, 'eval_precision': 0.8, 'eval_f1': 0.8311688311688312, 'eval_runtime': 8.1554, 'eval_samples_per_second': 52.358, 'eval_steps_per_second': 6.621, 'epoch': 4.0}\n",
+- Line 614, : "{'loss': 0.0167, 'grad_norm': 4.244073390960693, 'learning_rate': 3.2710280373831774e-06, 'epoch': 4.67}\n"
+- Line 635, : "{'eval_loss': 0.13357076048851013, 'eval_accuracy': 0.9742388758782201, 'eval_recall': 0.8648648648648649, 'eval_precision': 0.8421052631578947, 'eval_f1': 0.8533333333333334, 'eval_runtime': 7.5582, 'eval_samples_per_second': 56.495, 'eval_steps_per_second': 7.145, 'epoch': 5.0}\n",
+- Line 636, : "{'train_runtime': 967.1938, 'train_samples_per_second': 17.633, 'train_steps_per_second': 0.553, 'train_loss': 0.07741989978005953, 'epoch': 5.0}\n"
+- Line 966, : "{'loss': 0.2474, 'grad_norm': 5.6399030685424805, 'learning_rate': 4.3150684931506855e-05, 'epoch': 0.68}\n"
+- Line 987, : "{'eval_loss': 0.1495823711156845, 'eval_accuracy': 0.9453924914675768, 'eval_recall': 0.78, 'eval_precision': 0.65, 'eval_f1': 0.7090909090909091, 'eval_runtime': 12.9706, 'eval_samples_per_second': 45.179, 'eval_steps_per_second': 5.705, 'epoch': 1.0}\n",
+- Line 988, : "{'loss': 0.1151, 'grad_norm': 7.145289897918701, 'learning_rate': 3.63013698630137e-05, 'epoch': 1.37}\n"
+- Line 1009, : "{'eval_loss': 0.12563006579875946, 'eval_accuracy': 0.9658703071672355, 'eval_recall': 0.64, 'eval_precision': 0.9411764705882353, 'eval_f1': 0.7619047619047619, 'eval_runtime': 10.3057, 'eval_samples_per_second': 56.861, 'eval_steps_per_second': 7.18, 'epoch': 2.0}\n",
+- Line 1010, : "{'loss': 0.0916, 'grad_norm': 0.6154278516769409, 'learning_rate': 2.945205479452055e-05, 'epoch': 2.05}\n",
+- Line 1011, : "{'loss': 0.0492, 'grad_norm': 6.6567702293396, 'learning_rate': 2.2602739726027396e-05, 'epoch': 2.73}\n"
+- Line 1032, : "{'eval_loss': 0.1417464166879654, 'eval_accuracy': 0.9692832764505119, 'eval_recall': 0.66, 'eval_precision': 0.9705882352941176, 'eval_f1': 0.7857142857142857, 'eval_runtime': 10.276, 'eval_samples_per_second': 57.026, 'eval_steps_per_second': 7.201, 'epoch': 3.0}\n",
+- Line 1033, : "{'loss': 0.033, 'grad_norm': 0.08936852961778641, 'learning_rate': 1.5753424657534248e-05, 'epoch': 3.41}\n"
+- Line 1054, : "{'eval_loss': 0.13683727383613586, 'eval_accuracy': 0.9709897610921502, 'eval_recall': 0.74, 'eval_precision': 0.9024390243902439, 'eval_f1': 0.8131868131868132, 'eval_runtime': 10.1011, 'eval_samples_per_second': 58.014, 'eval_steps_per_second': 7.326, 'epoch': 4.0}\n",
+- Line 1055, : "{'loss': 0.028, 'grad_norm': 1.168588638305664, 'learning_rate': 8.904109589041095e-06, 'epoch': 4.1}\n",
+- Line 1056, : "{'loss': 0.0133, 'grad_norm': 0.09811197966337204, 'learning_rate': 2.054794520547945e-06, 'epoch': 4.78}\n"
+- Line 1077, : "{'eval_loss': 0.14122389256954193, 'eval_accuracy': 0.9709897610921502, 'eval_recall': 0.74, 'eval_precision': 0.9024390243902439, 'eval_f1': 0.8131868131868132, 'eval_runtime': 11.8832, 'eval_samples_per_second': 49.313, 'eval_steps_per_second': 6.227, 'epoch': 4.98}\n",
+- Line 1078, : "{'train_runtime': 1333.2341, 'train_samples_per_second': 17.581, 'train_steps_per_second': 0.548, 'train_loss': 0.07931565909761272, 'epoch': 4.98}\n"
+- Line 1408, : "{'loss': 0.233, 'grad_norm': 3.844094753265381, 'learning_rate': 4.2857142857142856e-05, 'epoch': 0.71}\n"
+- Line 1429, : "{'eval_loss': 0.23705652356147766, 'eval_accuracy': 0.9251336898395722, 'eval_recall': 0.64, 'eval_precision': 0.5714285714285714, 'eval_f1': 0.6037735849056604, 'eval_runtime': 10.2432, 'eval_samples_per_second': 54.768, 'eval_steps_per_second': 6.931, 'epoch': 1.0}\n",
+- Line 1430, : "{'loss': 0.1491, 'grad_norm': 1.3715155124664307, 'learning_rate': 3.571428571428572e-05, 'epoch': 1.42}\n"
+- Line 1451, : "{'eval_loss': 0.1725253313779831, 'eval_accuracy': 0.946524064171123, 'eval_recall': 0.58, 'eval_precision': 0.7631578947368421, 'eval_f1': 0.6590909090909091, 'eval_runtime': 11.4251, 'eval_samples_per_second': 49.103, 'eval_steps_per_second': 6.214, 'epoch': 2.0}\n",
+- Line 1452, : "{'loss': 0.1166, 'grad_norm': 1.247503638267517, 'learning_rate': 2.857142857142857e-05, 'epoch': 2.14}\n",
+- Line 1453, : "{'loss': 0.0742, 'grad_norm': 4.137392044067383, 'learning_rate': 2.1428571428571428e-05, 'epoch': 2.85}\n"
+- Line 1474, : "{'eval_loss': 0.1974572092294693, 'eval_accuracy': 0.9358288770053476, 'eval_recall': 0.74, 'eval_precision': 0.6166666666666667, 'eval_f1': 0.6727272727272727, 'eval_runtime': 11.4107, 'eval_samples_per_second': 49.165, 'eval_steps_per_second': 6.222, 'epoch': 3.0}\n",
+- Line 1475, : "{'loss': 0.0519, 'grad_norm': 0.42339572310447693, 'learning_rate': 1.4285714285714285e-05, 'epoch': 3.56}\n"
+- Line 1496, : "{'eval_loss': 0.242242693901062, 'eval_accuracy': 0.9447415329768271, 'eval_recall': 0.62, 'eval_precision': 0.7209302325581395, 'eval_f1': 0.6666666666666666, 'eval_runtime': 11.3709, 'eval_samples_per_second': 49.336, 'eval_steps_per_second': 6.244, 'epoch': 4.0}\n",
+- Line 1497, : "{'loss': 0.0367, 'grad_norm': 0.04921843856573105, 'learning_rate': 7.142857142857143e-06, 'epoch': 4.27}\n",
+- Line 1498, : "{'loss': 0.0298, 'grad_norm': 0.3941933214664459, 'learning_rate': 0.0, 'epoch': 4.98}\n"
+- Line 1519, : "{'eval_loss': 0.2780356705188751, 'eval_accuracy': 0.9429590017825312, 'eval_recall': 0.64, 'eval_precision': 0.6956521739130435, 'eval_f1': 0.6666666666666666, 'eval_runtime': 11.4349, 'eval_samples_per_second': 49.06, 'eval_steps_per_second': 6.209, 'epoch': 4.98}\n",
+- Line 1520, : "{'train_runtime': 1429.3011, 'train_samples_per_second': 15.693, 'train_steps_per_second': 0.49, 'train_loss': 0.09877021959849766, 'epoch': 4.98}\n"
+- Line 1873, : "{'eval_loss': 0.2076687514781952, 'eval_accuracy': 0.9243421052631579, 'eval_recall': 0.6, 'eval_precision': 0.9090909090909091, 'eval_f1': 0.7228915662650602, 'eval_runtime': 6.0463, 'eval_samples_per_second': 50.279, 'eval_steps_per_second': 6.285, 'epoch': 1.0}\n",
+- Line 1874, : "{'loss': 0.2819, 'grad_norm': 3.1998636722564697, 'learning_rate': 3.6842105263157895e-05, 'epoch': 1.32}\n"
+- Line 1895, : "{'eval_loss': 0.21637168526649475, 'eval_accuracy': 0.9210526315789473, 'eval_recall': 0.88, 'eval_precision': 0.7096774193548387, 'eval_f1': 0.7857142857142857, 'eval_runtime': 6.056, 'eval_samples_per_second': 50.198, 'eval_steps_per_second': 6.275, 'epoch': 2.0}\n",
+- Line 1896, : "{'loss': 0.1097, 'grad_norm': 5.433933734893799, 'learning_rate': 2.368421052631579e-05, 'epoch': 2.63}\n"
+- Line 1917, : "{'eval_loss': 0.19120511412620544, 'eval_accuracy': 0.944078947368421, 'eval_recall': 0.9, 'eval_precision': 0.7894736842105263, 'eval_f1': 0.8411214953271028, 'eval_runtime': 6.1092, 'eval_samples_per_second': 49.761, 'eval_steps_per_second': 6.22, 'epoch': 3.0}\n",
+- Line 1918, : "{'loss': 0.0433, 'grad_norm': 19.302175521850586, 'learning_rate': 1.0526315789473684e-05, 'epoch': 3.95}\n"
+- Line 1939, : "{'eval_loss': 0.24792349338531494, 'eval_accuracy': 0.9473684210526315, 'eval_recall': 0.86, 'eval_precision': 0.8269230769230769, 'eval_f1': 0.8431372549019608, 'eval_runtime': 6.0279, 'eval_samples_per_second': 50.433, 'eval_steps_per_second': 6.304, 'epoch': 4.0}\n"
+- Line 1960, : "{'eval_loss': 0.2621803283691406, 'eval_accuracy': 0.9506578947368421, 'eval_recall': 0.88, 'eval_precision': 0.8301886792452831, 'eval_f1': 0.8543689320388349, 'eval_runtime': 6.0626, 'eval_samples_per_second': 50.143, 'eval_steps_per_second': 6.268, 'epoch': 5.0}\n",
+- Line 1961, : "{'train_runtime': 774.3832, 'train_samples_per_second': 15.703, 'train_steps_per_second': 0.491, 'train_loss': 0.11619091143733577, 'epoch': 5.0}\n"
+- Line 2279, : "{'loss': 0.2463, 'grad_norm': 5.268255710601807, 'learning_rate': 4.305555555555556e-05, 'epoch': 0.69}\n"
+- Line 2300, : "{'eval_loss': 0.18401780724525452, 'eval_accuracy': 0.9290657439446367, 'eval_recall': 0.5, 'eval_precision': 0.6097560975609756, 'eval_f1': 0.5494505494505495, 'eval_runtime': 10.795, 'eval_samples_per_second': 53.544, 'eval_steps_per_second': 6.762, 'epoch': 1.0}\n",
+- Line 2301, : "{'loss': 0.1776, 'grad_norm': 3.8058502674102783, 'learning_rate': 3.611111111111111e-05, 'epoch': 1.38}\n"
+- Line 2322, : "{'eval_loss': 0.17405320703983307, 'eval_accuracy': 0.9359861591695502, 'eval_recall': 0.4, 'eval_precision': 0.7407407407407407, 'eval_f1': 0.5194805194805194, 'eval_runtime': 11.7444, 'eval_samples_per_second': 49.215, 'eval_steps_per_second': 6.216, 'epoch': 2.0}\n",
+- Line 2323, : "{'loss': 0.1542, 'grad_norm': 2.2070043087005615, 'learning_rate': 2.916666666666667e-05, 'epoch': 2.08}\n",
+- Line 2324, : "{'loss': 0.1116, 'grad_norm': 0.9079564809799194, 'learning_rate': 2.2222222222222223e-05, 'epoch': 2.77}\n"
+- Line 2345, : "{'eval_loss': 0.1855921447277069, 'eval_accuracy': 0.9359861591695502, 'eval_recall': 0.68, 'eval_precision': 0.6181818181818182, 'eval_f1': 0.6476190476190476, 'eval_runtime': 11.7715, 'eval_samples_per_second': 49.102, 'eval_steps_per_second': 6.201, 'epoch': 3.0}\n",
+- Line 2346, : "{'loss': 0.0748, 'grad_norm': 2.1794445514678955, 'learning_rate': 1.527777777777778e-05, 'epoch': 3.46}\n"
+- Line 2367, : "{'eval_loss': 0.23724058270454407, 'eval_accuracy': 0.9411764705882353, 'eval_recall': 0.64, 'eval_precision': 0.6666666666666666, 'eval_f1': 0.6530612244897959, 'eval_runtime': 11.6943, 'eval_samples_per_second': 49.426, 'eval_steps_per_second': 6.242, 'epoch': 4.0}\n",
+- Line 2368, : "{'loss': 0.0605, 'grad_norm': 2.1375105381011963, 'learning_rate': 8.333333333333334e-06, 'epoch': 4.15}\n",
+- Line 2369, : "{'loss': 0.0325, 'grad_norm': 3.820039987564087, 'learning_rate': 1.388888888888889e-06, 'epoch': 4.84}\n"
+- Line 2390, : "{'eval_loss': 0.2879003584384918, 'eval_accuracy': 0.9307958477508651, 'eval_recall': 0.68, 'eval_precision': 0.5862068965517241, 'eval_f1': 0.6296296296296297, 'eval_runtime': 11.7811, 'eval_samples_per_second': 49.062, 'eval_steps_per_second': 6.196, 'epoch': 4.98}\n",
+- Line 2391, : "{'train_runtime': 1468.3306, 'train_samples_per_second': 15.742, 'train_steps_per_second': 0.49, 'train_loss': 0.12051920278204811, 'epoch': 4.98}\n"
+- Line 2709, : "{'loss': 0.2636, 'grad_norm': 2.106602668762207, 'learning_rate': 4.305555555555556e-05, 'epoch': 0.69}\n"
+- Line 2730, : "{'eval_loss': 0.20712697505950928, 'eval_accuracy': 0.9186851211072664, 'eval_recall': 0.54, 'eval_precision': 0.5294117647058824, 'eval_f1': 0.5346534653465347, 'eval_runtime': 10.253, 'eval_samples_per_second': 56.374, 'eval_steps_per_second': 7.12, 'epoch': 1.0}\n",
+- Line 2731, : "{'loss': 0.2171, 'grad_norm': 3.269709348678589, 'learning_rate': 3.611111111111111e-05, 'epoch': 1.38}\n"
+- Line 2752, : "{'eval_loss': 0.1962880790233612, 'eval_accuracy': 0.9342560553633218, 'eval_recall': 0.54, 'eval_precision': 0.6428571428571429, 'eval_f1': 0.5869565217391305, 'eval_runtime': 11.4796, 'eval_samples_per_second': 50.35, 'eval_steps_per_second': 6.359, 'epoch': 2.0}\n",
+- Line 2753, : "{'loss': 0.1672, 'grad_norm': 11.290431022644043, 'learning_rate': 2.916666666666667e-05, 'epoch': 2.08}\n",
+- Line 2754, : "{'loss': 0.1325, 'grad_norm': 6.976115703582764, 'learning_rate': 2.2222222222222223e-05, 'epoch': 2.77}\n"
+- Line 2775, : "{'eval_loss': 0.21091215312480927, 'eval_accuracy': 0.9394463667820069, 'eval_recall': 0.46, 'eval_precision': 0.7419354838709677, 'eval_f1': 0.5679012345679012, 'eval_runtime': 11.4623, 'eval_samples_per_second': 50.426, 'eval_steps_per_second': 6.369, 'epoch': 3.0}\n",
+- Line 2776, : "{'loss': 0.1018, 'grad_norm': 1.973191499710083, 'learning_rate': 1.527777777777778e-05, 'epoch': 3.46}\n"
+- Line 2797, : "{'eval_loss': 0.27519795298576355, 'eval_accuracy': 0.9238754325259516, 'eval_recall': 0.32, 'eval_precision': 0.6153846153846154, 'eval_f1': 0.42105263157894735, 'eval_runtime': 11.4735, 'eval_samples_per_second': 50.377, 'eval_steps_per_second': 6.363, 'epoch': 4.0}\n",
+- Line 2798, : "{'loss': 0.0737, 'grad_norm': 6.614733695983887, 'learning_rate': 8.333333333333334e-06, 'epoch': 4.15}\n",
+- Line 2799, : "{'loss': 0.0474, 'grad_norm': 0.39301419258117676, 'learning_rate': 1.388888888888889e-06, 'epoch': 4.84}\n"
+- Line 2820, : "{'eval_loss': 0.3220028579235077, 'eval_accuracy': 0.9204152249134948, 'eval_recall': 0.32, 'eval_precision': 0.5714285714285714, 'eval_f1': 0.41025641025641024, 'eval_runtime': 11.5101, 'eval_samples_per_second': 50.217, 'eval_steps_per_second': 6.342, 'epoch': 4.98}\n",
+- Line 2821, : "{'train_runtime': 1438.2287, 'train_samples_per_second': 16.065, 'train_steps_per_second': 0.501, 'train_loss': 0.14087374541494582, 'epoch': 4.98}\n"
+- Line 3151, : "{'loss': 0.219, 'grad_norm': 2.9767448902130127, 'learning_rate': 4.259259259259259e-05, 'epoch': 0.74}\n"
+- Line 3172, : "{'eval_loss': 0.13586097955703735, 'eval_accuracy': 0.955637707948244, 'eval_recall': 0.8, 'eval_precision': 0.7407407407407407, 'eval_f1': 0.7692307692307693, 'eval_runtime': 12.348, 'eval_samples_per_second': 43.813, 'eval_steps_per_second': 5.507, 'epoch': 1.0}\n",
+- Line 3173, : "{'loss': 0.1282, 'grad_norm': 1.2460352182388306, 'learning_rate': 3.518518518518519e-05, 'epoch': 1.48}\n"
+- Line 3194, : "{'eval_loss': 0.11589512228965759, 'eval_accuracy': 0.9630314232902033, 'eval_recall': 0.72, 'eval_precision': 0.8571428571428571, 'eval_f1': 0.782608695652174, 'eval_runtime': 11.0022, 'eval_samples_per_second': 49.172, 'eval_steps_per_second': 6.181, 'epoch': 2.0}\n",
+- Line 3195, : "{'loss': 0.1048, 'grad_norm': 0.2978908121585846, 'learning_rate': 2.777777777777778e-05, 'epoch': 2.21}\n",
+- Line 3196, : "{'loss': 0.0659, 'grad_norm': 0.11307158321142197, 'learning_rate': 2.037037037037037e-05, 'epoch': 2.95}\n"
+- Line 3217, : "{'eval_loss': 0.1489170640707016, 'eval_accuracy': 0.9593345656192237, 'eval_recall': 0.8, 'eval_precision': 0.7692307692307693, 'eval_f1': 0.7843137254901961, 'eval_runtime': 11.0896, 'eval_samples_per_second': 48.785, 'eval_steps_per_second': 6.132, 'epoch': 3.0}\n",
+- Line 3218, : "{'loss': 0.044, 'grad_norm': 0.0324401929974556, 'learning_rate': 1.2962962962962962e-05, 'epoch': 3.69}\n"
+- Line 3239, : "{'eval_loss': 0.14283205568790436, 'eval_accuracy': 0.9630314232902033, 'eval_recall': 0.84, 'eval_precision': 0.7777777777777778, 'eval_f1': 0.8076923076923077, 'eval_runtime': 11.1328, 'eval_samples_per_second': 48.595, 'eval_steps_per_second': 6.108, 'epoch': 4.0}\n",
+- Line 3240, : "{'loss': 0.0192, 'grad_norm': 20.783994674682617, 'learning_rate': 5.555555555555556e-06, 'epoch': 4.43}\n"
+- Line 3261, : "{'eval_loss': 0.15929821133613586, 'eval_accuracy': 0.9611829944547134, 'eval_recall': 0.74, 'eval_precision': 0.8222222222222222, 'eval_f1': 0.7789473684210526, 'eval_runtime': 11.0643, 'eval_samples_per_second': 48.896, 'eval_steps_per_second': 6.146, 'epoch': 4.98}\n",
+- Line 3262, : "{'train_runtime': 1379.1198, 'train_samples_per_second': 15.688, 'train_steps_per_second': 0.489, 'train_loss': 0.08708715730243259, 'epoch': 4.98}\n"
+- Line 3580, : "{'loss': 0.2355, 'grad_norm': 2.2361273765563965, 'learning_rate': 4.305555555555556e-05, 'epoch': 0.69}\n"
+- Line 3601, : "{'eval_loss': 0.1601155400276184, 'eval_accuracy': 0.9341421143847487, 'eval_recall': 0.46, 'eval_precision': 0.6764705882352942, 'eval_f1': 0.5476190476190477, 'eval_runtime': 11.6104, 'eval_samples_per_second': 49.697, 'eval_steps_per_second': 6.287, 'epoch': 1.0}\n",
+- Line 3602, : "{'loss': 0.1627, 'grad_norm': 1.7029722929000854, 'learning_rate': 3.611111111111111e-05, 'epoch': 1.38}\n"
+- Line 3623, : "{'eval_loss': 0.16533805429935455, 'eval_accuracy': 0.925476603119584, 'eval_recall': 0.26, 'eval_precision': 0.6842105263157895, 'eval_f1': 0.37681159420289856, 'eval_runtime': 11.798, 'eval_samples_per_second': 48.906, 'eval_steps_per_second': 6.187, 'epoch': 2.0}\n",
+- Line 3624, : "{'loss': 0.1853, 'grad_norm': 1.9894078969955444, 'learning_rate': 2.916666666666667e-05, 'epoch': 2.08}\n",
+- Line 3625, : "{'loss': 0.1139, 'grad_norm': 2.9709086418151855, 'learning_rate': 2.2222222222222223e-05, 'epoch': 2.77}\n"
+- Line 3646, : "{'eval_loss': 0.21785154938697815, 'eval_accuracy': 0.9168110918544194, 'eval_recall': 0.76, 'eval_precision': 0.5135135135135135, 'eval_f1': 0.6129032258064516, 'eval_runtime': 11.8035, 'eval_samples_per_second': 48.884, 'eval_steps_per_second': 6.185, 'epoch': 3.0}\n",
+- Line 3647, : "{'loss': 0.0881, 'grad_norm': 6.800113201141357, 'learning_rate': 1.527777777777778e-05, 'epoch': 3.46}\n"
+- Line 3668, : "{'eval_loss': 0.2703368663787842, 'eval_accuracy': 0.9272097053726169, 'eval_recall': 0.7, 'eval_precision': 0.5645161290322581, 'eval_f1': 0.625, 'eval_runtime': 11.8158, 'eval_samples_per_second': 48.833, 'eval_steps_per_second': 6.178, 'epoch': 4.0}\n",
+- Line 3669, : "{'loss': 0.0571, 'grad_norm': 4.520323753356934, 'learning_rate': 8.333333333333334e-06, 'epoch': 4.15}\n",
+- Line 3670, : "{'loss': 0.051, 'grad_norm': 0.21888451278209686, 'learning_rate': 1.388888888888889e-06, 'epoch': 4.84}\n"
+- Line 3691, : "{'eval_loss': 0.25314438343048096, 'eval_accuracy': 0.9341421143847487, 'eval_recall': 0.62, 'eval_precision': 0.62, 'eval_f1': 0.62, 'eval_runtime': 11.7005, 'eval_samples_per_second': 49.314, 'eval_steps_per_second': 6.239, 'epoch': 4.98}\n",
+- Line 3692, : "{'train_runtime': 1472.1856, 'train_samples_per_second': 15.667, 'train_steps_per_second': 0.489, 'train_loss': 0.12547536881433594, 'epoch': 4.98}\n"
+- Line 4010, : "{'loss': 0.2867, 'grad_norm': 2.705667495727539, 'learning_rate': 4.3103448275862066e-05, 'epoch': 0.69}\n"
+- Line 4031, : "{'eval_loss': 0.19749273359775543, 'eval_accuracy': 0.9156626506024096, 'eval_recall': 0.04, 'eval_precision': 0.6666666666666666, 'eval_f1': 0.07547169811320754, 'eval_runtime': 11.4391, 'eval_samples_per_second': 50.791, 'eval_steps_per_second': 6.382, 'epoch': 1.0}\n",
+- Line 4032, : "{'loss': 0.2277, 'grad_norm': 3.2389485836029053, 'learning_rate': 3.620689655172414e-05, 'epoch': 1.37}\n"
+- Line 4053, : "{'eval_loss': 0.1956985592842102, 'eval_accuracy': 0.9104991394148021, 'eval_recall': 0.26, 'eval_precision': 0.4642857142857143, 'eval_f1': 0.3333333333333333, 'eval_runtime': 11.7359, 'eval_samples_per_second': 49.506, 'eval_steps_per_second': 6.22, 'epoch': 2.0}\n",
+- Line 4054, : "{'loss': 0.1954, 'grad_norm': 1.8398685455322266, 'learning_rate': 2.9310344827586206e-05, 'epoch': 2.06}\n",
+- Line 4055, : "{'loss': 0.1417, 'grad_norm': 1.9783002138137817, 'learning_rate': 2.2413793103448276e-05, 'epoch': 2.75}\n"
+- Line 4076, : "{'eval_loss': 0.21365687251091003, 'eval_accuracy': 0.9173838209982789, 'eval_recall': 0.5, 'eval_precision': 0.5208333333333334, 'eval_f1': 0.5102040816326531, 'eval_runtime': 11.6909, 'eval_samples_per_second': 49.697, 'eval_steps_per_second': 6.244, 'epoch': 3.0}\n",
+- Line 4077, : "{'loss': 0.1225, 'grad_norm': 4.743616580963135, 'learning_rate': 1.5517241379310346e-05, 'epoch': 3.44}\n"
+- Line 4098, : "{'eval_loss': 0.3218781054019928, 'eval_accuracy': 0.919104991394148, 'eval_recall': 0.36, 'eval_precision': 0.5454545454545454, 'eval_f1': 0.43373493975903615, 'eval_runtime': 11.6186, 'eval_samples_per_second': 50.006, 'eval_steps_per_second': 6.283, 'epoch': 4.0}\n",
+- Line 4099, : "{'loss': 0.0932, 'grad_norm': 0.2649509906768799, 'learning_rate': 8.620689655172414e-06, 'epoch': 4.12}\n",
+- Line 4100, : "{'loss': 0.0746, 'grad_norm': 2.6047518253326416, 'learning_rate': 1.724137931034483e-06, 'epoch': 4.81}\n"
+- Line 4121, : "{'eval_loss': 0.3614034950733185, 'eval_accuracy': 0.9053356282271945, 'eval_recall': 0.42, 'eval_precision': 0.44680851063829785, 'eval_f1': 0.4329896907216495, 'eval_runtime': 11.689, 'eval_samples_per_second': 49.705, 'eval_steps_per_second': 6.245, 'epoch': 4.98}\n",
+- Line 4122, : "{'train_runtime': 1456.7927, 'train_samples_per_second': 15.953, 'train_steps_per_second': 0.498, 'train_loss': 0.15969524794611437, 'epoch': 4.98}\n"
+- Line 4452, : "{'loss': 0.2302, 'grad_norm': 5.153049945831299, 'learning_rate': 4.3150684931506855e-05, 'epoch': 0.68}\n"
+- Line 4473, : "{'eval_loss': 0.11407982558012009, 'eval_accuracy': 0.9623287671232876, 'eval_recall': 0.72, 'eval_precision': 0.8181818181818182, 'eval_f1': 0.7659574468085106, 'eval_runtime': 12.0238, 'eval_samples_per_second': 48.571, 'eval_steps_per_second': 6.071, 'epoch': 1.0}\n",
+- Line 4474, : "{'loss': 0.149, 'grad_norm': 3.38925838470459, 'learning_rate': 3.63013698630137e-05, 'epoch': 1.37}\n"
+- Line 4495, : "{'eval_loss': 0.10789094120264053, 'eval_accuracy': 0.9623287671232876, 'eval_recall': 0.72, 'eval_precision': 0.8181818181818182, 'eval_f1': 0.7659574468085106, 'eval_runtime': 12.0172, 'eval_samples_per_second': 48.597, 'eval_steps_per_second': 6.075, 'epoch': 2.0}\n",
+- Line 4496, : "{'loss': 0.1059, 'grad_norm': 2.5297691822052, 'learning_rate': 2.945205479452055e-05, 'epoch': 2.05}\n",
+- Line 4497, : "{'loss': 0.0556, 'grad_norm': 3.154057025909424, 'learning_rate': 2.2602739726027396e-05, 'epoch': 2.74}\n"
+- Line 4518, : "{'eval_loss': 0.12299412488937378, 'eval_accuracy': 0.964041095890411, 'eval_recall': 0.82, 'eval_precision': 0.7735849056603774, 'eval_f1': 0.7961165048543689, 'eval_runtime': 12.0148, 'eval_samples_per_second': 48.607, 'eval_steps_per_second': 6.076, 'epoch': 3.0}\n",
+- Line 4519, : "{'loss': 0.05, 'grad_norm': 0.10258479416370392, 'learning_rate': 1.5753424657534248e-05, 'epoch': 3.42}\n"
+- Line 4540, : "{'eval_loss': 0.146172434091568, 'eval_accuracy': 0.964041095890411, 'eval_recall': 0.8, 'eval_precision': 0.7843137254901961, 'eval_f1': 0.7920792079207921, 'eval_runtime': 12.0067, 'eval_samples_per_second': 48.64, 'eval_steps_per_second': 6.08, 'epoch': 4.0}\n",
+- Line 4541, : "{'loss': 0.0177, 'grad_norm': 0.034574754536151886, 'learning_rate': 8.904109589041095e-06, 'epoch': 4.11}\n",
+- Line 4542, : "{'loss': 0.0167, 'grad_norm': 1.2697056531906128, 'learning_rate': 2.054794520547945e-06, 'epoch': 4.79}\n"
+- Line 4563, : "{'eval_loss': 0.14083078503608704, 'eval_accuracy': 0.9606164383561644, 'eval_recall': 0.74, 'eval_precision': 0.7872340425531915, 'eval_f1': 0.7628865979381443, 'eval_runtime': 11.9738, 'eval_samples_per_second': 48.773, 'eval_steps_per_second': 6.097, 'epoch': 5.0}\n",
+- Line 4564, : "{'train_runtime': 1501.7001, 'train_samples_per_second': 15.552, 'train_steps_per_second': 0.486, 'train_loss': 0.08624327689001005, 'epoch': 5.0}\n"
+- Line 4894, : "{'loss': 0.2922, 'grad_norm': 2.0997865200042725, 'learning_rate': 4.3103448275862066e-05, 'epoch': 0.69}\n"
+- Line 4915, : "{'eval_loss': 0.17465966939926147, 'eval_accuracy': 0.9311531841652324, 'eval_recall': 0.72, 'eval_precision': 0.5806451612903226, 'eval_f1': 0.6428571428571429, 'eval_runtime': 10.4844, 'eval_samples_per_second': 55.416, 'eval_steps_per_second': 6.963, 'epoch': 1.0}\n",
+- Line 4916, : "{'loss': 0.1915, 'grad_norm': 5.679601669311523, 'learning_rate': 3.620689655172414e-05, 'epoch': 1.37}\n"
+- Line 4937, : "{'eval_loss': 0.19856135547161102, 'eval_accuracy': 0.9466437177280551, 'eval_recall': 0.68, 'eval_precision': 0.6938775510204082, 'eval_f1': 0.6868686868686869, 'eval_runtime': 11.7068, 'eval_samples_per_second': 49.629, 'eval_steps_per_second': 6.236, 'epoch': 2.0}\n",
+- Line 4938, : "{'loss': 0.148, 'grad_norm': 0.7801716327667236, 'learning_rate': 2.9310344827586206e-05, 'epoch': 2.06}\n",
+- Line 4939, : "{'loss': 0.1062, 'grad_norm': 2.1243550777435303, 'learning_rate': 2.2413793103448276e-05, 'epoch': 2.75}\n"
+- Line 4960, : "{'eval_loss': 0.157226100564003, 'eval_accuracy': 0.9483648881239243, 'eval_recall': 0.78, 'eval_precision': 0.6724137931034483, 'eval_f1': 0.7222222222222222, 'eval_runtime': 11.7722, 'eval_samples_per_second': 49.353, 'eval_steps_per_second': 6.201, 'epoch': 3.0}\n",
+- Line 4961, : "{'loss': 0.0846, 'grad_norm': 4.039927959442139, 'learning_rate': 1.5517241379310346e-05, 'epoch': 3.44}\n"
+- Line 4982, : "{'eval_loss': 0.22048664093017578, 'eval_accuracy': 0.9500860585197934, 'eval_recall': 0.7, 'eval_precision': 0.7142857142857143, 'eval_f1': 0.7070707070707071, 'eval_runtime': 11.6634, 'eval_samples_per_second': 49.814, 'eval_steps_per_second': 6.259, 'epoch': 4.0}\n",
+- Line 4983, : "{'loss': 0.0536, 'grad_norm': 2.1503164768218994, 'learning_rate': 8.620689655172414e-06, 'epoch': 4.12}\n",
+- Line 4984, : "{'loss': 0.0412, 'grad_norm': 0.1424294263124466, 'learning_rate': 1.724137931034483e-06, 'epoch': 4.81}\n"
+- Line 5005, : "{'eval_loss': 0.24199840426445007, 'eval_accuracy': 0.9466437177280551, 'eval_recall': 0.72, 'eval_precision': 0.6792452830188679, 'eval_f1': 0.6990291262135923, 'eval_runtime': 11.7384, 'eval_samples_per_second': 49.495, 'eval_steps_per_second': 6.219, 'epoch': 4.98}\n",
+- Line 5006, : "{'train_runtime': 1463.5868, 'train_samples_per_second': 15.882, 'train_steps_per_second': 0.495, 'train_loss': 0.1283978378361669, 'epoch': 4.98}\n"
+- Line 5336, : "{'loss': 0.2718, 'grad_norm': 1.7608072757720947, 'learning_rate': 4.300699300699301e-05, 'epoch': 0.7}\n"
+- Line 5357, : "{'eval_loss': 0.20898526906967163, 'eval_accuracy': 0.9301919720767888, 'eval_recall': 0.42, 'eval_precision': 0.65625, 'eval_f1': 0.5121951219512195, 'eval_runtime': 11.9396, 'eval_samples_per_second': 47.991, 'eval_steps_per_second': 6.03, 'epoch': 1.0}\n",
+- Line 5358, : "{'loss': 0.171, 'grad_norm': 1.281712532043457, 'learning_rate': 3.601398601398602e-05, 'epoch': 1.39}\n"
+- Line 5379, : "{'eval_loss': 0.23840081691741943, 'eval_accuracy': 0.9354275741710296, 'eval_recall': 0.4, 'eval_precision': 0.7407407407407407, 'eval_f1': 0.5194805194805194, 'eval_runtime': 11.7145, 'eval_samples_per_second': 48.914, 'eval_steps_per_second': 6.146, 'epoch': 2.0}\n",
+- Line 5380, : "{'loss': 0.1442, 'grad_norm': 3.4511590003967285, 'learning_rate': 2.9020979020979022e-05, 'epoch': 2.09}\n",
+- Line 5381, : "{'loss': 0.0901, 'grad_norm': 0.39595627784729004, 'learning_rate': 2.202797202797203e-05, 'epoch': 2.79}\n"
+- Line 5402, : "{'eval_loss': 0.2070685476064682, 'eval_accuracy': 0.9267015706806283, 'eval_recall': 0.46, 'eval_precision': 0.6052631578947368, 'eval_f1': 0.5227272727272727, 'eval_runtime': 11.7248, 'eval_samples_per_second': 48.871, 'eval_steps_per_second': 6.141, 'epoch': 3.0}\n",
+- Line 5403, : "{'loss': 0.0737, 'grad_norm': 4.364879608154297, 'learning_rate': 1.5034965034965034e-05, 'epoch': 3.48}\n"
+- Line 5424, : "{'eval_loss': 0.28943637013435364, 'eval_accuracy': 0.93717277486911, 'eval_recall': 0.46, 'eval_precision': 0.71875, 'eval_f1': 0.5609756097560976, 'eval_runtime': 11.7108, 'eval_samples_per_second': 48.929, 'eval_steps_per_second': 6.148, 'epoch': 4.0}\n",
+- Line 5425, : "{'loss': 0.0413, 'grad_norm': 0.39070379734039307, 'learning_rate': 8.041958041958042e-06, 'epoch': 4.18}\n",
+- Line 5426, : "{'loss': 0.0189, 'grad_norm': 0.19382889568805695, 'learning_rate': 1.0489510489510491e-06, 'epoch': 4.88}\n"
+- Line 5447, : "{'eval_loss': 0.3542872667312622, 'eval_accuracy': 0.9336823734729494, 'eval_recall': 0.46, 'eval_precision': 0.6764705882352942, 'eval_f1': 0.5476190476190477, 'eval_runtime': 11.7119, 'eval_samples_per_second': 48.925, 'eval_steps_per_second': 6.148, 'epoch': 4.98}\n",
+- Line 5448, : "{'train_runtime': 1456.6255, 'train_samples_per_second': 15.732, 'train_steps_per_second': 0.491, 'train_loss': 0.11437946299572925, 'epoch': 4.98}\n"
+- Line 5766, : "{'loss': 0.2786, 'grad_norm': 3.7948758602142334, 'learning_rate': 4.3150684931506855e-05, 'epoch': 0.68}\n"
+- Line 5795, : "{'eval_loss': 0.22204606235027313, 'eval_accuracy': 0.9140893470790378, 'eval_recall': 0.0, 'eval_precision': 0.0, 'eval_f1': 0.0, 'eval_runtime': 11.4766, 'eval_samples_per_second': 50.712, 'eval_steps_per_second': 6.361, 'epoch': 1.0}\n",
+- Line 5796, : "{'loss': 0.1902, 'grad_norm': 2.481963872909546, 'learning_rate': 3.63013698630137e-05, 'epoch': 1.37}\n"
+- Line 5817, : "{'eval_loss': 0.21791042387485504, 'eval_accuracy': 0.9140893470790378, 'eval_recall': 0.44, 'eval_precision': 0.5, 'eval_f1': 0.46808510638297873, 'eval_runtime': 11.8757, 'eval_samples_per_second': 49.008, 'eval_steps_per_second': 6.147, 'epoch': 2.0}\n",
+- Line 5818, : "{'loss': 0.2034, 'grad_norm': 0.6541438102722168, 'learning_rate': 2.945205479452055e-05, 'epoch': 2.05}\n",
+- Line 5819, : "{'loss': 0.1487, 'grad_norm': 2.313866138458252, 'learning_rate': 2.2602739726027396e-05, 'epoch': 2.74}\n"
+- Line 5840, : "{'eval_loss': 0.26910829544067383, 'eval_accuracy': 0.9037800687285223, 'eval_recall': 0.58, 'eval_precision': 0.453125, 'eval_f1': 0.5087719298245614, 'eval_runtime': 11.8384, 'eval_samples_per_second': 49.162, 'eval_steps_per_second': 6.166, 'epoch': 3.0}\n",
+- Line 5841, : "{'loss': 0.0994, 'grad_norm': 6.5407562255859375, 'learning_rate': 1.5753424657534248e-05, 'epoch': 3.42}\n"
+- Line 5862, : "{'eval_loss': 0.32057639956474304, 'eval_accuracy': 0.9192439862542955, 'eval_recall': 0.42, 'eval_precision': 0.5384615384615384, 'eval_f1': 0.47191011235955055, 'eval_runtime': 11.8971, 'eval_samples_per_second': 48.92, 'eval_steps_per_second': 6.136, 'epoch': 4.0}\n",
+- Line 5863, : "{'loss': 0.0923, 'grad_norm': 0.7441251873970032, 'learning_rate': 8.904109589041095e-06, 'epoch': 4.11}\n",
+- Line 5864, : "{'loss': 0.0564, 'grad_norm': 4.837622165679932, 'learning_rate': 2.054794520547945e-06, 'epoch': 4.79}\n"
+- Line 5885, : "{'eval_loss': 0.34441253542900085, 'eval_accuracy': 0.9106529209621993, 'eval_recall': 0.36, 'eval_precision': 0.47368421052631576, 'eval_f1': 0.4090909090909091, 'eval_runtime': 11.8721, 'eval_samples_per_second': 49.023, 'eval_steps_per_second': 6.149, 'epoch': 5.0}\n",
+- Line 5886, : "{'train_runtime': 1488.1488, 'train_samples_per_second': 15.647, 'train_steps_per_second': 0.491, 'train_loss': 0.1489867626804195, 'epoch': 5.0}\n"
+- Line 6226, : "{'eval_loss': 0.29836705327033997, 'eval_accuracy': 0.8846153846153846, 'eval_recall': 0.0, 'eval_precision': 0.0, 'eval_f1': 0.0, 'eval_runtime': 0.7086, 'eval_samples_per_second': 36.69, 'eval_steps_per_second': 5.645, 'epoch': 0.92}\n"
+- Line 6255, : "{'eval_loss': 0.22924277186393738, 'eval_accuracy': 0.8846153846153846, 'eval_recall': 0.0, 'eval_precision': 0.0, 'eval_f1': 0.0, 'eval_runtime': 0.5881, 'eval_samples_per_second': 44.207, 'eval_steps_per_second': 6.801, 'epoch': 2.0}\n"
+- Line 6284, : "{'eval_loss': 0.12744086980819702, 'eval_accuracy': 0.8846153846153846, 'eval_recall': 0.0, 'eval_precision': 0.0, 'eval_f1': 0.0, 'eval_runtime': 0.5372, 'eval_samples_per_second': 48.396, 'eval_steps_per_second': 7.446, 'epoch': 2.92}\n"
+- Line 6305, : "{'eval_loss': 0.09591960161924362, 'eval_accuracy': 0.9615384615384616, 'eval_recall': 0.6666666666666666, 'eval_precision': 1.0, 'eval_f1': 0.8, 'eval_runtime': 0.5165, 'eval_samples_per_second': 50.338, 'eval_steps_per_second': 7.744, 'epoch': 4.0}\n"
+- Line 6326, : "{'eval_loss': 0.09153918921947479, 'eval_accuracy': 0.9615384615384616, 'eval_recall': 0.6666666666666666, 'eval_precision': 1.0, 'eval_f1': 0.8, 'eval_runtime': 0.5195, 'eval_samples_per_second': 50.045, 'eval_steps_per_second': 7.699, 'epoch': 4.62}\n",
+- Line 6327, : "{'train_runtime': 61.8631, 'train_samples_per_second': 16.488, 'train_steps_per_second': 0.485, 'train_loss': 0.22972243626912434, 'epoch': 4.62}\n"
+- Line 6645, : "{'loss': 0.2638, 'grad_norm': 5.202101230621338, 'learning_rate': 4.295774647887324e-05, 'epoch': 0.7}\n"
+- Line 6666, : "{'eval_loss': 0.1832815557718277, 'eval_accuracy': 0.9298245614035088, 'eval_recall': 0.22, 'eval_precision': 0.9166666666666666, 'eval_f1': 0.3548387096774194, 'eval_runtime': 11.7576, 'eval_samples_per_second': 48.479, 'eval_steps_per_second': 6.124, 'epoch': 1.0}\n",
+- Line 6667, : "{'loss': 0.1935, 'grad_norm': 2.0684585571289062, 'learning_rate': 3.5915492957746486e-05, 'epoch': 1.4}\n"
+- Line 6688, : "{'eval_loss': 0.18449369072914124, 'eval_accuracy': 0.9421052631578948, 'eval_recall': 0.54, 'eval_precision': 0.7297297297297297, 'eval_f1': 0.6206896551724138, 'eval_runtime': 11.3777, 'eval_samples_per_second': 50.098, 'eval_steps_per_second': 6.328, 'epoch': 2.0}\n",
+- Line 6689, : "{'loss': 0.1388, 'grad_norm': 0.4951370358467102, 'learning_rate': 2.887323943661972e-05, 'epoch': 2.11}\n",
+- Line 6690, : "{'loss': 0.0961, 'grad_norm': 8.006397247314453, 'learning_rate': 2.1830985915492956e-05, 'epoch': 2.81}\n"
+- Line 6711, : "{'eval_loss': 0.1864357590675354, 'eval_accuracy': 0.9385964912280702, 'eval_recall': 0.7, 'eval_precision': 0.6363636363636364, 'eval_f1': 0.6666666666666666, 'eval_runtime': 11.4244, 'eval_samples_per_second': 49.893, 'eval_steps_per_second': 6.302, 'epoch': 3.0}\n",
+- Line 6712, : "{'loss': 0.0514, 'grad_norm': 0.3668191134929657, 'learning_rate': 1.4788732394366198e-05, 'epoch': 3.51}\n"
+- Line 6733, : "{'eval_loss': 0.2003941386938095, 'eval_accuracy': 0.9491228070175438, 'eval_recall': 0.68, 'eval_precision': 0.723404255319149, 'eval_f1': 0.7010309278350515, 'eval_runtime': 11.3805, 'eval_samples_per_second': 50.086, 'eval_steps_per_second': 6.327, 'epoch': 4.0}\n",
+- Line 6734, : "{'loss': 0.0354, 'grad_norm': 0.11111509054899216, 'learning_rate': 7.746478873239436e-06, 'epoch': 4.21}\n",
+- Line 6735, : "{'loss': 0.0324, 'grad_norm': 0.3312952518463135, 'learning_rate': 7.042253521126761e-07, 'epoch': 4.91}\n"
+- Line 6756, : "{'eval_loss': 0.23289765417575836, 'eval_accuracy': 0.9473684210526315, 'eval_recall': 0.58, 'eval_precision': 0.7631578947368421, 'eval_f1': 0.6590909090909091, 'eval_runtime': 11.3096, 'eval_samples_per_second': 50.4, 'eval_steps_per_second': 6.366, 'epoch': 4.98}\n",
+- Line 6757, : "{'train_runtime': 1427.9022, 'train_samples_per_second': 15.957, 'train_steps_per_second': 0.497, 'train_loss': 0.11481064788892235, 'epoch': 4.98}\n"
+- Line 7075, : "{'loss': 0.2668, 'grad_norm': 4.72606086730957, 'learning_rate': 4.236641221374046e-05, 'epoch': 0.76}\n"
+- Line 7096, : "{'eval_loss': 0.20479241013526917, 'eval_accuracy': 0.9310344827586207, 'eval_recall': 0.36, 'eval_precision': 0.8181818181818182, 'eval_f1': 0.5, 'eval_runtime': 11.0143, 'eval_samples_per_second': 47.393, 'eval_steps_per_second': 5.992, 'epoch': 1.0}\n",
+- Line 7097, : "{'loss': 0.1801, 'grad_norm': 2.532907485961914, 'learning_rate': 3.473282442748092e-05, 'epoch': 1.53}\n"
+- Line 7118, : "{'eval_loss': 0.2263270765542984, 'eval_accuracy': 0.9176245210727969, 'eval_recall': 0.48, 'eval_precision': 0.5853658536585366, 'eval_f1': 0.5274725274725275, 'eval_runtime': 10.7954, 'eval_samples_per_second': 48.354, 'eval_steps_per_second': 6.114, 'epoch': 2.0}\n",
+- Line 7119, : "{'loss': 0.1214, 'grad_norm': 1.7708569765090942, 'learning_rate': 2.7099236641221375e-05, 'epoch': 2.29}\n"
+- Line 7140, : "{'eval_loss': 0.23655912280082703, 'eval_accuracy': 0.9444444444444444, 'eval_recall': 0.56, 'eval_precision': 0.8, 'eval_f1': 0.6588235294117647, 'eval_runtime': 10.713, 'eval_samples_per_second': 48.726, 'eval_steps_per_second': 6.161, 'epoch': 3.0}\n",
+- Line 7141, : "{'loss': 0.0835, 'grad_norm': 3.296320676803589, 'learning_rate': 1.9465648854961833e-05, 'epoch': 3.05}\n",
+- Line 7142, : "{'loss': 0.063, 'grad_norm': 0.20999453961849213, 'learning_rate': 1.1832061068702292e-05, 'epoch': 3.82}\n"
+- Line 7163, : "{'eval_loss': 0.25737589597702026, 'eval_accuracy': 0.9291187739463601, 'eval_recall': 0.62, 'eval_precision': 0.6326530612244898, 'eval_f1': 0.6262626262626263, 'eval_runtime': 10.9593, 'eval_samples_per_second': 47.631, 'eval_steps_per_second': 6.022, 'epoch': 4.0}\n",
+- Line 7164, : "{'loss': 0.0485, 'grad_norm': 6.547347068786621, 'learning_rate': 4.198473282442748e-06, 'epoch': 4.58}\n"
+- Line 7185, : "{'eval_loss': 0.25441774725914, 'eval_accuracy': 0.9444444444444444, 'eval_recall': 0.58, 'eval_precision': 0.7837837837837838, 'eval_f1': 0.6666666666666666, 'eval_runtime': 10.9988, 'eval_samples_per_second': 47.46, 'eval_steps_per_second': 6.001, 'epoch': 5.0}\n",
+- Line 7186, : "{'train_runtime': 1358.2862, 'train_samples_per_second': 15.383, 'train_steps_per_second': 0.482, 'train_loss': 0.11849189441622669, 'epoch': 5.0}\n"
+- Line 7516, : "{'loss': 0.255, 'grad_norm': 1.482024908065796, 'learning_rate': 4.236641221374046e-05, 'epoch': 0.76}\n"
+- Line 7537, : "{'eval_loss': 0.213716521859169, 'eval_accuracy': 0.9195402298850575, 'eval_recall': 0.32, 'eval_precision': 0.6666666666666666, 'eval_f1': 0.43243243243243246, 'eval_runtime': 10.9929, 'eval_samples_per_second': 47.485, 'eval_steps_per_second': 6.004, 'epoch': 1.0}\n",
+- Line 7538, : "{'loss': 0.1621, 'grad_norm': 3.669128894805908, 'learning_rate': 3.473282442748092e-05, 'epoch': 1.53}\n",
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05i_generate_regression_00_24_integrated.do**
+
+- Line 126, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A21.do**
+
+- Line 35, : if abs(`t') > 1.645 local star "*"
+- Line 36, : if abs(`t') > 1.960 local star "**"
+- Line 37, : if abs(`t') > 2.576 local star "***"
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_mac.ipynb**
+
+- Line 76, : "      <td>[-7.123363e-05, -0.033342585, 0.05527848, -0.0...</td>\n",
+- Line 82, : "      <td>[-0.016678385, -0.034818947, -0.008875517, 0.0...</td>\n",
+- Line 88, : "      <td>[-0.0065959916, -0.050884463, -0.006652736, -0...</td>\n",
+- Line 94, : "      <td>[-0.04566997, -0.043910053, 0.0076927086, -0.0...</td>\n",
+- Line 100, : "      <td>[-0.025326159, -0.036783617, 0.014422003, -0.0...</td>\n",
+- Line 112, : "      <td>[-0.025744675, -0.06513593, -0.009325135, -0.0...</td>\n",
+- Line 118, : "      <td>[-0.002767625, -0.027123047, 0.02105413, 0.005...</td>\n",
+- Line 124, : "      <td>[-0.034871046, -0.021072688, -1.1106268e-05, -...</td>\n",
+- Line 130, : "      <td>[-0.03193334, 0.002922773, 0.04413781, -0.0466...</td>\n",
+- Line 136, : "      <td>[-0.008885957, -0.0047575976, 0.06398351, -0.0...</td>\n",
+- Line 158, : "254864  [-7.123363e-05, -0.033342585, 0.05527848, -0.0...  \n",
+- Line 159, : "328339  [-0.016678385, -0.034818947, -0.008875517, 0.0...  \n",
+- Line 160, : "39636   [-0.0065959916, -0.050884463, -0.006652736, -0...  \n",
+- Line 161, : "254653  [-0.04566997, -0.043910053, 0.0076927086, -0.0...  \n",
+- Line 162, : "206602  [-0.025326159, -0.036783617, 0.014422003, -0.0...  \n",
+- Line 164, : "327977  [-0.025744675, -0.06513593, -0.009325135, -0.0...  \n",
+- Line 165, : "37862   [-0.002767625, -0.027123047, 0.02105413, 0.005...  \n",
+- Line 166, : "210634  [-0.034871046, -0.021072688, -1.1106268e-05, -...  \n",
+- Line 167, : "155898  [-0.03193334, 0.002922773, 0.04413781, -0.0466...  \n",
+- Line 168, : "183635  [-0.008885957, -0.0047575976, 0.06398351, -0.0...  \n",
+- Line 231, : "      <td>[-0.021155236, -0.002549114, -0.0106962565, -0...</td>\n",
+- Line 237, : "      <td>[0.0025053257, 0.013508373, -0.0143952, -0.030...</td>\n",
+- Line 243, : "      <td>[-0.00012465817, 0.0038097452, 0.016205737, -0...</td>\n",
+- Line 249, : "      <td>[0.01175531, 0.034781028, -0.023994312, -0.052...</td>\n",
+- Line 255, : "      <td>[-0.017856784, -0.002753013, -0.009651142, -0....</td>\n",
+- Line 267, : "      <td>[-0.020348571, -0.007767355, -0.023641346, 0.0...</td>\n",
+- Line 273, : "      <td>[-0.011821735, -0.028306404, -0.0102774585, 0....</td>\n",
+- Line 279, : "      <td>[-0.029778404, -0.020195313, 0.020117922, 0.01...</td>\n",
+- Line 285, : "      <td>[-0.048782956, -0.042804226, 0.01670886, 0.026...</td>\n",
+- Line 291, : "      <td>[-0.01718627, -0.013831111, -0.0014301647, -0....</td>\n",
+- Line 313, : "13679   [-0.021155236, -0.002549114, -0.0106962565, -0...  \n",
+- Line 314, : "271785  [0.0025053257, 0.013508373, -0.0143952, -0.030...  \n",
+- Line 315, : "224232  [-0.00012465817, 0.0038097452, 0.016205737, -0...  \n",
+- Line 316, : "238794  [0.01175531, 0.034781028, -0.023994312, -0.052...  \n",
+- Line 317, : "119779  [-0.017856784, -0.002753013, -0.009651142, -0....  \n",
+- Line 319, : "284241  [-0.020348571, -0.007767355, -0.023641346, 0.0...  \n",
+- Line 320, : "39323   [-0.011821735, -0.028306404, -0.0102774585, 0....  \n",
+- Line 321, : "88496   [-0.029778404, -0.020195313, 0.020117922, 0.01...  \n",
+- Line 322, : "59489   [-0.048782956, -0.042804226, 0.01670886, 0.026...  \n",
+- Line 323, : "138858  [-0.01718627, -0.013831111, -0.0014301647, -0....  \n",
+- Line 719, : "      <td>0.749403</td>\n",
+- Line 727, : "      <td>0.727068</td>\n",
+- Line 735, : "      <td>0.680855</td>\n",
+- Line 743, : "      <td>0.860592</td>\n",
+- Line 751, : "      <td>0.770729</td>\n",
+- Line 767, : "      <td>0.530019</td>\n",
+- Line 775, : "      <td>0.587416</td>\n",
+- Line 783, : "      <td>0.738416</td>\n",
+- Line 791, : "      <td>0.500635</td>\n",
+- Line 799, : "      <td>0.689659</td>\n",
+- Line 834, : "0        0.749403  \n",
+- Line 835, : "1        0.727068  \n",
+- Line 836, : "2        0.680855  \n",
+- Line 837, : "3        0.860592  \n",
+- Line 838, : "4        0.770729  \n",
+- Line 840, : "11170    0.530019  \n",
+- Line 841, : "11171    0.587416  \n",
+- Line 842, : "11172    0.738416  \n",
+- Line 843, : "11173    0.500635  \n",
+- Line 844, : "11174    0.689659  \n",
+
+**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.ipynb**
+
+- Line 233, : "0.1267668753862381",
+- Line 234, : "0.1267668753862381",
+- Line 235, : "0.1267668753862381",
+- Line 236, : "0.1267668753862381",
+- Line 237, : "0.1267668753862381",
+- Line 238, : "0.1267668753862381"
+- Line 245, : "-0.02726338617503643",
+- Line 246, : "-0.02726338617503643",
+- Line 247, : "-0.02726338617503643",
+- Line 248, : "-0.02726338617503643",
+- Line 249, : "-0.02726338617503643",
+- Line 250, : "-0.02726338617503643"
+- Line 257, : "0.22082707285881042",
+- Line 258, : "0.22082707285881042",
+- Line 259, : "0.22082707285881042",
+- Line 260, : "0.22082707285881042",
+- Line 261, : "0.22082707285881042",
+- Line 262, : "0.22082707285881042"
+- Line 269, : "0.23311040550470352",
+- Line 270, : "0.25277699530124664",
+- Line 271, : "0.2600976675748825",
+- Line 272, : "0.2719945251941681",
+- Line 273, : "0.27596014440059663",
+- Line 274, : "0.27913263976573943"
+- Line 281, : "0.10837500914931297",
+- Line 282, : "0.10837500914931297",
+- Line 283, : "0.14441814087331295",
+- Line 284, : "0.16604401990771295",
+- Line 285, : "0.17325264625251294",
+- Line 286, : "0.17901954732835293"
+- Line 330, : "      <td>0.126767</td>\n",
+- Line 331, : "      <td>0.126767</td>\n",
+- Line 332, : "      <td>0.126767</td>\n",
+- Line 333, : "      <td>0.126767</td>\n",
+- Line 334, : "      <td>0.126767</td>\n",
+- Line 335, : "      <td>0.126767</td>\n",
+- Line 342, : "      <td>-0.027263</td>\n",
+- Line 343, : "      <td>-0.027263</td>\n",
+- Line 344, : "      <td>-0.027263</td>\n",
+- Line 345, : "      <td>-0.027263</td>\n",
+- Line 346, : "      <td>-0.027263</td>\n",
+- Line 347, : "      <td>-0.027263</td>\n",
+- Line 354, : "      <td>0.220827</td>\n",
+- Line 355, : "      <td>0.220827</td>\n",
+- Line 356, : "      <td>0.220827</td>\n",
+- Line 357, : "      <td>0.220827</td>\n",
+- Line 358, : "      <td>0.220827</td>\n",
+- Line 359, : "      <td>0.220827</td>\n",
+- Line 366, : "      <td>0.233110</td>\n",
+- Line 367, : "      <td>0.252777</td>\n",
+- Line 368, : "      <td>0.260098</td>\n",
+- Line 369, : "      <td>0.271995</td>\n",
+- Line 370, : "      <td>0.275960</td>\n",
+- Line 371, : "      <td>0.279133</td>\n",
+- Line 378, : "      <td>0.108375</td>\n",
+- Line 379, : "      <td>0.108375</td>\n",
+- Line 380, : "      <td>0.144418</td>\n",
+- Line 381, : "      <td>0.166044</td>\n",
+- Line 382, : "      <td>0.173253</td>\n",
+- Line 383, : "      <td>0.179020</td>\n",
+- Line 398, : "0  0.126767  0.126767  0.126767  0.126767  0.126767  0.126767  \n",
+- Line 399, : "1 -0.027263 -0.027263 -0.027263 -0.027263 -0.027263 -0.027263  \n",
+- Line 400, : "2  0.220827  0.220827  0.220827  0.220827  0.220827  0.220827  \n",
+- Line 401, : "3  0.233110  0.252777  0.260098  0.271995  0.275960  0.279133  \n",
+- Line 402, : "4  0.108375  0.108375  0.144418  0.166044  0.173253  0.179020  "
+- Line 849, : "W0105 14:04:59.363000 92782 site-packages/torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.\n"
+- Line 1535, : "0.8714826",
+- Line 1536, : "0.1538471453073548",
+- Line 1537, : "0.15491311252117157",
+- Line 1538, : "0.2062501460313797",
+- Line 1539, : "0.24967046976089474",
+- Line 1540, : "0.27884881496429426",
+- Line 1541, : "0.3317251324653627",
+- Line 1542, : "0.36866235733032227"
+- Line 1549, : "1.1737646",
+- Line 1550, : "0.09627482770526288",
+- Line 1551, : "0.08534207940101624",
+- Line 1552, : "0.1462439000606537",
+- Line 1553, : "0.20800044238567356",
+- Line 1554, : "0.2278779774904251",
+- Line 1555, : "0.2918612396717068",
+- Line 1556, : "0.3360862135887146"
+- Line 1563, : "1.1737646",
+- Line 1564, : "0.16763503656306483",
+- Line 1565, : "0.17154212296009064",
+- Line 1566, : "0.2181599996984005",
+- Line 1567, : "0.2504019692540169",
+- Line 1568, : "0.27527925521135327",
+- Line 1569, : "0.34192774593830083",
+- Line 1570, : "0.37678608298301697"
+- Line 1577, : "1.1737646",
+- Line 1578, : "0.1308388001078533",
+- Line 1579, : "0.1252419650554657",
+- Line 1580, : "0.21077437698841095",
+- Line 1581, : "0.25279330015182494",
+- Line 1582, : "0.286736398935318",
+- Line 1583, : "0.32968770444393153",
+- Line 1584, : "0.4098460376262665"
+- Line 1591, : "0.91627145",
+- Line 1592, : "0.09848700852568493",
+- Line 1593, : "0.08253668248653412",
+- Line 1594, : "0.1488523930311203",
+- Line 1595, : "0.20623829364776616",
+- Line 1596, : "0.24383234977722168",
+- Line 1597, : "0.3538737201690673",
+- Line 1598, : "0.4098460376262665"
+- Line 1644, : "      <td>0.871483</td>\n",
+- Line 1645, : "      <td>0.153847</td>\n",
+- Line 1646, : "      <td>0.154913</td>\n",
+- Line 1647, : "      <td>0.206250</td>\n",
+- Line 1648, : "      <td>0.249670</td>\n",
+- Line 1649, : "      <td>0.278849</td>\n",
+- Line 1650, : "      <td>0.331725</td>\n",
+- Line 1651, : "      <td>0.368662</td>\n",
+- Line 1658, : "      <td>1.173765</td>\n",
+- Line 1659, : "      <td>0.096275</td>\n",
+- Line 1660, : "      <td>0.085342</td>\n",
+- Line 1661, : "      <td>0.146244</td>\n",
+- Line 1662, : "      <td>0.208000</td>\n",
+- Line 1663, : "      <td>0.227878</td>\n",
+- Line 1664, : "      <td>0.291861</td>\n",
+- Line 1665, : "      <td>0.336086</td>\n",
+- Line 1672, : "      <td>1.173765</td>\n",
+- Line 1673, : "      <td>0.167635</td>\n",
+- Line 1674, : "      <td>0.171542</td>\n",
+- Line 1675, : "      <td>0.218160</td>\n",
+- Line 1676, : "      <td>0.250402</td>\n",
+- Line 1677, : "      <td>0.275279</td>\n",
+- Line 1678, : "      <td>0.341928</td>\n",
+- Line 1679, : "      <td>0.376786</td>\n",
+- Line 1686, : "      <td>1.173765</td>\n",
+- Line 1687, : "      <td>0.130839</td>\n",
+- Line 1688, : "      <td>0.125242</td>\n",
+- Line 1689, : "      <td>0.210774</td>\n",
+- Line 1690, : "      <td>0.252793</td>\n",
+- Line 1691, : "      <td>0.286736</td>\n",
+- Line 1692, : "      <td>0.329688</td>\n",
+- Line 1693, : "      <td>0.409846</td>\n",
+- Line 1700, : "      <td>0.916271</td>\n",
+- Line 1701, : "      <td>0.098487</td>\n",
+- Line 1702, : "      <td>0.082537</td>\n",
+- Line 1703, : "      <td>0.148852</td>\n",
+- Line 1704, : "      <td>0.206238</td>\n",
+- Line 1705, : "      <td>0.243832</td>\n",
+- Line 1706, : "      <td>0.353874</td>\n",
+- Line 1707, : "      <td>0.409846</td>\n",
+- Line 1722, : "0                      AI ML               0.871483  0.153847  0.154913   \n",
+- Line 1723, : "1                     AgTech               1.173765  0.096275  0.085342   \n",
+- Line 1724, : "2                     AgTech               1.173765  0.167635  0.171542   \n",
+- Line 1725, : "3                     AgTech               1.173765  0.130839  0.125242   \n",
+- Line 1726, : "4  Carbon and Emissions Tech               0.916271  0.098487  0.082537   \n",
+- Line 1729, : "0  0.206250  0.249670  0.278849  0.331725  0.368662  \n",
+- Line 1730, : "1  0.146244  0.208000  0.227878  0.291861  0.336086  \n",
+- Line 1731, : "2  0.218160  0.250402  0.275279  0.341928  0.376786  \n",
+- Line 1732, : "3  0.210774  0.252793  0.286736  0.329688  0.409846  \n",
+- Line 1733, : "4  0.148852  0.206238  0.243832  0.353874  0.409846  "
+

@@ -1,0 +1,19 @@
+# Python environment for the expensive ML layer (company/patent BERT + SBERT similarity).
+#
+# Exact package versions shift BERT/SBERT numerics, so a rerun will NOT be bit-identical to the
+# frozen outputs shipped with the package. Use a fresh venv/conda environment. `numpy<2` avoids a
+# known sentence-transformers / scikit-learn binary incompatibility ("numpy.dtype size changed").
+pandas
+numpy<2
+pyarrow
+scikit-learn
+torch
+transformers
+datasets
+accelerate
+evaluate
+sentence-transformers
+tqdm
+plotly
+openpyxl
+matplotlib

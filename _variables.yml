@@ -1,6 +1,11 @@
-title: "Stand-in title"
-author: "Dr Prof James 'JayJay' Author"
-paper_id: 12345678
+title: "Appropriate Entrepreneurship? The Rise of China and the Developing World"
+author: "Yang"
 round: 1
-repo: "https://www.github.com/standin"
-dropbox_rel_path: "JPE/Author-12345678/1"
+repo: "https://github.com/JPE-Reproducibility/JPE-Yang-20250178"
+paper_id: 20250178
+journal: "JPE"
+paper_slug: "Yang-20250178"
+dropbox_rel_path: "JPE/Yang-20250178/1"
+package_size_gb: 7.61
+package_max_file_size_gb: 2
+package_max_pkg_size_gb: 10

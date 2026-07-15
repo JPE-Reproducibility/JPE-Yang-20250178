@@ -1,0 +1,1124 @@
+      README for "Appropriate Entrepreneurship? The Rise of 
+      China and the Developing World" (Josh Lerner, Junxi Liu, 
+      Jacob Moscona, and David Y. Yang) 
+      Journal of Political Economy, manuscript 20250178. 
+      This README follows the template endorsed by the Social Science Data Editors 
+      (https://social-science-data-editors.github.io/template_README/), adapted where the 
+      mixed public/confidential nature of the package requires it. 
+      Overview 
+      The code in this replication package reproduces every table and figure in the paper and its 
+      appendix — 57 exhibits — from raw data, in two stages: 
+       • Stage A (code/generate/ , 25 programs organized in nine dependency-ordered 
+         steps) rebuilds every analysis dataset from the raw extracts. The package ships raw 
+         data only:  confidential-data-not-for-publication/Analysis/  is empty at 
+         delivery and is populated entirely by Stage A. 
+       • Stage B (code/tables/ ,  code/figures/ ) reproduces every exhibit from the Stage-A 
+         datasets with one self-contained script per exhibit, writing to  output/tables/  and 
+         output/figures/ . 
+      One command runs everything:  bash code/run_all.sh . The replicator should expect 
+      about 1.5–2 hours for the main analysis (Stage-A steps 01–04 plus Tables 2–8 / Figures 2–4), 
+      and roughly 8–10 hours of additional compute for the full appendix, dominated by the 
+      Table A8 Monte-Carlo simulation (≈5–6 hours on 7 parallel Stata workers) and two long 
+      placebo/robustness builds. A  --skip-heavy  switch skips the two longest builds. 
+      Data fall into two folders, split by redistribution rights: 
+       • data/raw/  — all publicly redistributable raw inputs (World Bank WDI, USPTO 
+         PatentsView bulk files, Natural Earth, SimpleMaps/GeoNames gazetteers, UN 
+         voting ideal points, Polity5, UN Comtrade extract, and every author-compiled 
+         classification file). This folder is part of the public deposit. 
+       • confidential-data-not-for-publication/  — the proprietary inputs (PitchBook 
+         extracts; Capital IQ, State Street, Hurun, and Zero2IPO workbooks; and machine-
+         learning outputs derived from PitchBook/PATSTAT text), provided to the JPE Data 
+         Editor under the journal's confidential-data exemption, for the sole purpose of the 
+         reproducibility checks. This folder is excluded from the public deposit. 
+      The one sanctioned exception to "everything from raw" is a set of nine frozen machine-
+      learning outputs (BERT sector classifications and SBERT text-similarity measures) that are          too computationally intensive to regenerate in the pipeline and are not bit-reproducible 
+         (GPU training). The complete original code that produced them, with a file-by-file 
+         provenance map, ships in  code/BERT_generation/  (see its  README.md  and  PROVENANCE.md ). 
+
+         Data Availability and Provenance Statements 
+            ☒ Confidential data used in this paper and not provided as part of the public 
+               replication package will be preserved for 10 years after publication, in accordance 
+               with journal policies. 
+         The authors are secondary data users; no original data were collected for this paper 
+         through surveys or experiments. All sources, access procedures, and terms are described 
+         source-by-source below. 
+
+         Statement about Rights 
+            ☒ I certify that the author(s) of the manuscript have legitimate access to and 
+               permission to use the data used in this manuscript. 
+            ☒ I certify that the author(s) of the manuscript have documented permission to 
+               redistribute/publish the data contained within this replication package. Appropriate 
+               permissions are documented in the  LICENSE.txt  file. 
+         The certification of redistribution rights applies to the public deposit, i.e., everything 
+         outside  confidential-data-not-for-publication/ . The contents of that folder are 
+         provided to the Data Editor only, under the confidential-data exemption granted for this 
+         manuscript, and carry no redistribution rights; see  LICENSE.txt  for the file-level terms. 
+
+         License for Data 
+         The publicly deposited data are available under their original providers' terms (World Bank 
+         WDI: CC-BY 4.0; PatentsView: CC-BY 4.0; Natural Earth: public domain; SimpleMaps 
+         World Cities Basic: CC-BY 4.0; OpenDataSoft/GeoNames: CC-BY 4.0; UN voting ideal 
+         points: distributed with Bailey, Strezhnev and Voeten's replication materials; Polity5: 
+         Center for Systemic Peace terms of use). Author-compiled files in  data/raw/  are licensed 
+         under CC-BY 4.0. See  LICENSE.txt  for the full statement, including the non-redistribution 
+         terms of the confidential folder. 
+
+         Summary of Availability 
+            ☐ All data are publicly available. 
+            ☒ Some data cannot be made publicly available. 
+            ☐ No data can be made publicly available. 
+         Summary of Data Availability 
+         Data.Na                                            Provi
+         me       Data.Files            Location                 ded   Citation 
+         PitchBoo  pbdeals.dta ,         confidential-data-not-    Data  PitchBook          Data.Na                                            Provi
+         me       Data.Files            Location                 ded   Citation 
+         k        pbcompanies.dta ,      for-                   Edito Data, Inc. 
+         Platform   pbinvestors.dta ,      publication/Raw/pitchbook r     (2024) 
+         extracts   pbdealinvestor.dta ,   / ,  .../other_data_resource only 
+                  pbmarketmap_v2.csv ,   /  
+                  later_years_extensio
+                  n/  (2 files),  LP.dta  
+         ML-      9 files in             confidential-data-not-    Data  derived; see 
+         derived    BERT_prediction_reso for-                   Edito Details 
+         text      urce/  (+ CSV twins)     publication/Raw/BERT_pred r 
+         measures                    iction_resource/           only 
+         (from 
+         PitchBoo
+         k/PATSTA
+         T text) 
+         Capital IQ  3                  confidential-data-not-    Data  S&P Global 
+         IPO      figure1c_IPO_Capital for-                   Edito (2024) 
+         tabulatio  IQ_*.xlsx  workbooks   publication/Raw/other_dat r 
+         ns                          a_resource/               only 
+         State     table1_panelC_Copy   same folder              Data  State Street 
+         Street     of VC Returns 2024Q4                        Edito (2024) 
+         fund      v2.xlsx                                     r 
+         returns                                             only 
+         Hurun    table1_panelD_Chines same folder              Data  Hurun (2020) 
+         China     e VC.xlsx                                   Edito
+         Rich List                                            r 
+         tabulatio                                           only 
+         n 
+         Zero2IPO  figureA4_Data from   same folder              Data  Zero2IPO 
+         China VC  Zero2IPO from HBS                           Edito (2020) 
+         series     China Research                             r  Center.xlsx ,                                only figureA4_Comparisons 
+                  of PB and Other 
+                  Sources.xlsx  
+         PitchBoo  figure1ab_Figures 1a  same folder              Data  PitchBook 
+         k        and 1b.xlsx ,                                Edito Data, Inc. 
+         descriptiv tableA1_VCpc.xlsx ,                           r     (2024) 
+         e        table1_panelA_vc_gro                        only 
+         tabulatio  ups.csv  
+         ns (Fig. 
+         1a/1b; VC          Data.Na                                            Provi
+         me       Data.Files            Location                 ded   Citation 
+         per 
+         capita; 
+         VC 
+         groups) 
+         World     WDI_full.xlsx         data/raw/suitability_reso Yes   World Bank 
+         Bank                        urce/                         (2023) 
+         World 
+         Develop
+         ment 
+         Indicator
+         s 
+         USPTO    7  g_*.tsv  files        data/raw/patent_resource/   Yes   PatentsView 
+         PatentsVi                                                (2023–24) 
+         ew bulk 
+         data 
+         Natural   ne_10m_admin_0_count data/raw/geocoding_resour Yes   Natural 
+         Earth     ries/  (shapefile set),    ce/                           Earth (2023) 
+         boundari  ne_10m_populated_pla
+         es &      ces.*  
+         populate
+         d places 
+         SimpleMa simplemaps.csv ,       data/raw/geocoding_resour Yes   SimpleMaps 
+         ps World  opendatasoft.csv      ce/                           (2023); 
+         Cities;                                                   OpenDataSo
+         GeoNam                                                 ft/GeoName
+         es via                                                    s (2023) 
+         OpenDat
+         aSoft 
+         UN       un_polity_china.dta    data/raw/other_data_resou Yes   Bailey, 
+         General   (+  .csv )             rce/                          Strezhnev & 
+         Assembly                                                 Voeten 
+         ideal                                                    (2017); CSP 
+         points +                                                  (2020) 
+         Polity5 
+         (combine
+         d panel) 
+         UN       Trade_Volume_Export_ data/raw/other_data_resou Yes   United 
+         Comtrad  Import.csv           rce/                          Nations 
+         e extract                                                 (2023) 
+         Governm  table1_panelB_fundin data/raw/other_data_resou Yes   Beraja, Peng,          Data.Na                                            Provi
+         me       Data.Files            Location                 ded   Citation 
+         ent/privat g_sources.csv         rce/                          Yang & 
+         e VC                                                    Yuchtman 
+         funding                                                  (2024) 
+         tabulatio
+         n 
+         Global    CountryDataset.20240 workbook: confidential-data- work authors (this 
+         Innovatio  19.supplemented.xlsx not-for-                 book package) 
+         n        ;                 publication/Raw/other_data_ : 
+         Measures  tableA1_published_va resource/; CSV:            Data  lues.csv  country                      data/raw/other_data_resourc Edito
+         dataset                      e/                      r 
+         (author-                                            only; 
+         compiled                                           CSV: 
+         ,                                                  Yes 
+         suppleme
+         nted) 
+         Curated   Global VC_0525.xlsx    confidential-data-not-for-    Data  NSF NSB 
+         global VC                     publication/Raw/other_data_ Edito (2020); 
+         series (in-                    resource/                r     NVCA 
+         text world                                           only  (2023); 
+         VC total)                                                 others — see 
+                                                                 Details 
+         Author    hand_collected/ (9   data/raw/                Yes   authors (this 
+         classifica files: 4                                        package) 
+         tion files   classification .dta+
+                  CSV pairs + 
+                  table6_A16_Tradable 
+                  or not 2nd.xlsx), 
+                  country_panel.dta (+ 
+                  CSV twin), 
+                  indicators_WDI_MtV_*
+                  .xlsx (4), 
+                  crosswalks  
+         EPO      not shipped; the       —                     No   EPO (2023) 
+         PATSTAT   derived country-pair                           (deri
+         (upstrea  counts ship in                                ved 
+         m input   BERT_prediction_reso                        file: 
+         to one    urce/                                      Data 
+         derived                                             Edito
+         file)                                                r 
+                                                            only)         Details on each Data Source 
+        PitchBook (confidential) 
+        The core data are four extracts from the PitchBook Platform (PitchBook Data, Inc.), 
+        covering global venture-capital deals, companies, investors, and the deal–investor link 
+        table, plus the analyst "market map" taxonomy ( pbmarketmap_v2.csv : companyid × 
+        marketmap|segment|subsegment with company descriptions), a 2022–24 refresh 
+        (later_years_extension/ ), and a fund–limited- partner extract ( LP.dta ). Format: 
+        Stata  .dta  /  .csv ; the variable lists for all PitchBook files are reproduced in full in the Data 
+        Appendix of this README. The extracts were downloaded by the authors through Harvard 
+        Business School's institutional PitchBook subscription (2023 baseline; the 2022–24 refresh 
+        pulled in 2025). PitchBook data are proprietary and may not be redistributed; researchers 
+        can obtain access through an institutional or commercial PitchBook license 
+        (https://pitchbook.com; academic licensing is negotiated with PitchBook's institutional 
+        sales — there is no posted price). The files are provided to the JPE Data Editor under the 
+        journal's confidential-data exemption, to be destroyed after the reproducibility checks; 
+        they are excluded from the public deposit. The authors will assist with reasonable 
+        replication attempts for ten years following publication. 
+        Machine-learning outputs derived from PitchBook and PATSTAT text (confidential) 
+        confidential-data-not-for-publication/Raw/BERT_prediction_resource/  holds the 
+        nine frozen outputs of the paper's three expensive ML layers: (1) BERT market-map sector 
+        classification of every PitchBook company description 
+        (company_level_predictions_v2.dta ); (2) SBERT business-description similarity to 
+        Chinese and U.S. firms ( similarity_compiled.csv ,  similarity_compiled_western.csv , 
+        similarity_at_sector_x_country_x_year.dta ); (3) patent-text sector labels and 
+        similarity ( patent_sector_labels_{grantyear,new_grantyear,new100k}.dta , 
+        patent_countrysector_similarity_2000_2013_100k_new_china.dta , 
+        worldwide_pairs_filtered_no_EPO_countries.dta  — the last derived from EPO PATSTAT 
+        family abstracts). Because they embed PitchBook text (and, for the last file, PATSTAT-
+        licensed inputs), they are confidential. Every file's producing code, model, 
+        hyperparameters, inputs, and compute cost are documented in  code/BERT_generation/  
+        (original author code plus  PROVENANCE.md ); regenerating them is optional and not bit-
+        reproducible (GPU training). Every  .dta  file ships with a CSV twin (see Dataset list). 
+        Capital IQ (confidential) 
+        Figure 1 Panel C compares IPO counts from S&P Global's Capital IQ platform with 
+        PitchBook-based counts. Three author-built tabulation workbooks 
+        (figure1c_IPO_CapitalIQ_to_PB_{EM,US,nonEM_nonUS}*.xlsx ) contain the Capital IQ 
+        screens and the mapping to the paper's country groups. The non-EM/non-US workbook 
+        additionally embeds the authors' manual, research-based corrections of the Capital IQ 
+        output (the case-by-case adjustments described in the paper's appendix); these hand 
+        edits are part of the shipped workbook and are not mechanically reproducible. Capital IQ          is proprietary (https://www.capitaliq.spglobal.com; institutional subscription); the 
+         workbooks are provided to the Data Editor only. 
+         State Street (confidential) 
+         Table 1 Panel C reports pooled internal rates of return and Kaplan–Schoar (2005) public-
+         market-equivalents for venture-capital funds by regional focus, over 2007Q3–2019Q4. 
+         State Street Corporation, one of the world's largest custodians (roughly $49 trillion in 
+         assets under custody and/or administration as of June 30, 2025), computes these returns 
+         in its custodial role, maintaining a comprehensive record of all investor–GP cash flows (net 
+         of management fees and carried interest) across VC, private equity, real estate, hedge 
+         funds, securitizations, and other alternative assets. The underlying universe spans 142 
+         large asset owners with VC and PE exposure, collectively over 120,000 investments, and 
+         4,008 private-capital funds (vintages 1988–2024) covering VC (early-stage, balanced, and 
+         late-stage), buyout, and private-debt strategies (distressed, mezzanine, and special 
+         lending); State Street classifies funds by type from documents provided by the fund 
+         managers and asset owners. Panel C tabulates only the venture-capital funds, broken out 
+         by the region each specialized in; funds without a clear geographic focus, or spanning 
+         multiple regions, are excluded from the tabulation. The data were provided by Nan Zhang 
+         (Head of Product Development and Managing Director, State Street Data Intelligence) and 
+         pulled from the database on June 24, 2025; see Lerner, Mao, Schoar and Zhang (2022) for a 
+         detailed discussion and validation of these data. The provider summary workbook 
+         (table1_panelC_...xlsx ) is not redistributable and has no public distribution channel; 
+         access is negotiated with State Street's Data Intelligence group. Provided to the Data 
+         Editor only. 
+         Hurun China Rich List (confidential) 
+         Table 1 Panel D's founder counts are hand-tabulated from the Hurun China Rich List 2020 
+         (Hurun Research Institute, https://www.hurun.net), matched by the authors to PitchBook 
+         company records to establish VC backing. The tabulation workbook 
+         (table1_panelD_Chinese VC.xlsx ) is provided to the Data Editor only. 
+         Zero2IPO (confidential) 
+
+         Figure A4 cross-validates PitchBook's China venture series against Zero2IPO (清科) data 
+         obtained through the Harvard Business School China Research Center. Zero2IPO data are 
+         licensed (https://www.pedata.cn); the two comparison workbooks are provided to the 
+         Data Editor only. RMB values are converted to USD in code. 
+         World Bank World Development Indicators (public; provided) 
+         The appropriateness/suitability measure is built from the World Development Indicators. 
+         data/raw/suitability_resource/WDI_full.xlsx  is the pinned bulk extract used by the 
+         paper (all countries × indicators × 1960–2021, with WDI series codes). WDI data are CC-BY 
+         4.0 and can be re-downloaded at https://databank.worldbank.org/source/world-
+         development-indicators (choose "All countries", "All series", "All years", Excel) — note that          the World Bank revises the database continuously (including retroactive revisions and 
+         indicator retirements), so an exact re-download of this vintage is not possible; the pinned 
+         extract ships instead. The four author-built indicator→sector assignment maps ship in the 
+         same folder ( indicators_WDI_MtV_*.xlsx ; the  corrected  map is the one used by the 
+         paper, the other three feed the Table A4 assignment-robustness comparison). The 
+         assignment of WDI indicators to the fifteen market-map sectors is likewise the authors' 
+         own manual classification (the gpt_assigned variant, which enters only the Table A4 
+         comparison, was instead produced with a large language model). 
+         USPTO PatentsView (public; provided) 
+         The entire patent layer is rebuilt from seven raw PatentsView bulk TSVs ( g_patent , 
+         g_us_patent_citation ,  g_cpc_current ,  g_application ,  g_assignee_disambiguated , 
+         g_location_disambiguated ,  g_inventor_disambiguated ; 21 GB total). PatentsView 
+         (https://patentsview.org, downloads at https://patentsview.org/download/data-download-
+         tables) is free, CC-BY 4.0, no registration required. PatentsView publishes quarterly 
+         releases and does not archive superseded vintages, so the package ships the authors' 
+         pinned copies (the CPC table is the February 2023 release; the citation table is the 
+         November 2023 release; the remaining tables were downloaded in 2023–24). A newer 
+         release would shift disambiguation and therefore downstream counts; the shipped vintage 
+         reproduces the paper. 
+         Natural Earth; SimpleMaps; OpenDataSoft/GeoNames (public; provided) 
+         Company and patent geolocation uses: Natural Earth 1:10m Admin-0 country boundaries 
+         and Populated Places (public domain, https://www.naturalearthdata.com); the 
+         SimpleMaps World Cities Database, Basic edition (CC-BY 4.0, 
+         https://simplemaps.com/data/world-cities); and the "All cities with a population > 1000" 
+         GeoNames extract republished by OpenDataSoft (CC-BY 4.0, 
+         https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-
+         1000/). All are shipped in  data/raw/geocoding_resource/ , along with the authors' 
+         country/state name crosswalk ( crosswalk.xlsx ). 
+         UN General Assembly ideal points and Polity5 (public; provided) 
+         The political-proximity control uses dynamic UN-voting ideal points from Bailey, Strezhnev 
+         and Voeten (2017), obtained from the paper's public replication data 
+         (https://doi.org/10.7910/DVN/LEJUQZ), and regime scores from the Polity5 Annual Time-
+         Series 1946–2018 (Center for Systemic Peace, free download at 
+         https://www.systemicpeace.org/inscrdata.html). The two are shipped combined in one 
+         country–year panel assembled for the authors' earlier work 
+         (data/raw/other_data_resource/un_polity_china.dta , with CSV twin), carrying each 
+         country's values alongside China's. The distance-to-China controls are computed in code 
+         (code/generate/03b_generate_controls.py ):  un_distance = |un_ideal_point − 
+         china_un_ideal_point|  and  polity_distance = |polity_score −           china_polity_score| . Coverage note: Polity reaches back before the UN series (China's 
+          ideal points begin 1971), so early years have missing UN values. 
+
+          UN Comtrade (public; provided) 
+
+          The China trade-share control uses a UN Comtrade extract 
+          (Trade_Volume_Export_Import.csv : annual total-trade flows with China, in the standard 
+          Comtrade bulk column layout). Comtrade data are free at https://comtradeplus.un.org 
+          (registration optional for small queries). The extract ships in the package. 
+
+          Government vs. private Chinese VC (public; provided) 
+
+          Table 1 Panel B's classification of Chinese VC funding by government/private source is 
+          tabulated from the data of Beraja, Peng, Yang and Yuchtman (2024). The tabulation 
+          (table1_panelB_funding_sources.csv , 3 columns) ships in the package; the underlying 
+          data are available with that paper. 
+
+          Global Innovation Measures country dataset (author-compiled; supplemented; 
+          confidential) 
+
+          Table A1 and Figure A1 draw on an author-compiled country–year workbook 
+          (CountryDataset.2024019.supplemented.xlsx; confidential folder) combining VC activity, 
+          GDP per capita, R&D spending, scientific publications, and U.S. patents by country, 1969–
+          2021. The workbook is the authors' own compilation, assembled by hand rather than by 
+          any program in the package: the underlying series were collected from the sources 
+          described next and cleaned and harmonized directly in the workbook. The VC columns are 
+          consolidated from the authors' PitchBook Platform pulls (deal counts and amounts by 
+          country and year, from the same platform extracts as the core data). The publications 
+          series (1996 onward) is taken directly from NSF Science and Engineering Indicators 
+          country counts; the only change is renaming entries to a standard country-naming 
+          convention used across the measures (the 1973–1995 counts are the Web of Science 
+          supplement described below). The R&D series splices three sources — OECD (1981–1995), 
+          World Bank (1996–2014), and UNESCO (2015–2021) — with judgmental choices between 
+          overlapping vintages; short interior gaps are linearly interpolated and series ends are 
+          carried forward, but values are never back-filled before a country's first observation. 
+          Because of the judgment involved, the package ships the compiled workbook (all cleaning 
+          sheets included, documenting every source series and imputation) plus the exhibit code, 
+          rather than a from-scratch reconstruction. CountryDataset.2024019.supplemented.xlsx is 
+          the authors’ compiled Global Innovation Measures workbook (CountryDataset.2024019) 
+          with three documented supplements added for replication: (1) pre-1996 publication 
+          counts inserted from a Science Citation Index (Web of Science) country-count extract, 
+          1973–1995 (compiled by Kathleen Ryan, Baker Research & Data Services, accessed 
+          6/5/2023) — the reason the workbook is confidential; (2) explicit zeros for three pre-
+          coverage VC cells used by Table A1 (Israel 1969, Singapore 1979, Chile 1993; no recorded 
+          deals); (3) two imputed R&D levels carried from the authors’ original hand tabulation, 
+          South Korea 1988 (2.0% of GDP) and Chile 1993 (0.78% of GDP) — assumptions, not          source data. With these supplements, Table A1 is derived entirely from this workbook plus 
+         tableA1_VCpc.xlsx, and the per-cell source of every Table A1 entry is recorded in 
+         output/intermediate/tableA1_source_audit.csv. tableA1_published_values.csv is an 
+         author transcription of Table A1 as printed in the manuscript; it no longer 
+         supplies any table value — table_A1.py takes from it only the country list, 
+         the emergence years, and the print-N/A gating for the VC-per-capita column, 
+         and recomputes every entry from the workbook ;  tableA1_VCpc.xlsx  (VC per capita, 
+         PitchBook-derived) is in the confidential folder. 
+         Curated global venture-investment series (author-compiled; confidential) 
+         Global VC_0525.xlsx (confidential folder) is the authors' curated compilation of published 
+         venture-investment tabulations: annual VC invested, in current US$ billions, for the US, 
+         China, Western Europe, Canada, Japan, Australia, a developing-country residual, and the 
+         world, 2001–2022. The 2001–2018 base is the National Science Board's Science and 
+         Engineering Indicators 2020, Table S8-62 (itself PitchBook-sourced); the 2019–22 values 
+         are extended region by region from the NVCA Yearbook 2023 (US and world), the authors' 
+         PitchBook analysis and PitchBook-sourced press reporting (China), and Invest Europe, 
+         CVCA, Initial Enterprise, and Cut Through Venture (other regions), converted at IRS yearly-
+         average exchange rates; every source and adjustment is noted in the workbook itself. No 
+         exhibit or program reads this file: it is the quoted source for the manuscript's 2021 world 
+         venture-investment total (opening Background paragraph); all other in-text numbers are 
+         cells of the exhibits or immediate arithmetic on them. Provided to the Data Editor only. 
+         Hand-collected classification files (author-compiled; provided) 
+
+         data/raw/other_data_resource/hand_collected/  contains nine author files — four 
+         classification .dta files with CSV twins plus one .xlsx (full variable lists in the Data 
+         Appendix): OECD membership and join years ( OECD_list.dta ; the paper's EM definition is 
+         non-OECD as of 1980); sector policy-constraint codings hand-linked from public policy 
+         documents ( EM_policy_constraints.dta ,  policy_constrained_sectors.dta ); 
+         critical/state-supported technology flags mapping "Made in China 2025", critical-supply-
+         chain, and U.S. DoD critical-technology lists to PitchBook subsegments 
+         (critical_subseg.dta); and the tradable-sector classification behind Table 6/A16 and Figure 
+         A16 (table6_A16_Tradable or not 2nd.xlsx). The Table A1 published-values CSV, the Panel 
+         B funding-shares tabulation documented above, and the country panel of bilateral 
+         gravity/distance measures relative to China (country_panel.dta + CSV twin, assembled 
+         from standard gravity sources; see the paper's Data Appendix) sit at the 
+         other_data_resource/ folder root; the supplemented Global Innovation Measures 
+         workbook is in the confidential folder (see above). The deal-type → category classification 
+         for the non-VC analyses is hardcoded in 
+         code/generate/05c_generate_regression_alltype_by_cat.do (formerly a spreadsheet).          EPO PATSTAT (upstream; not shipped) 
+         Table A5's jointly-filed patent-family counts derive from the EPO Worldwide Patent 
+         Statistical Database (PATSTAT Global; licensed product of the European Patent Office, 
+         https://www.epo.org/en/searching-for-patents/business/patstat — annual subscription, 
+         on the order of €1,250/year for the Global edition). PATSTAT itself is not shipped; only the 
+         derived country-pair × sector family counts 
+         (worldwide_pairs_filtered_no_EPO_countries.dta , confidential folder, with CSV twin) 
+         enter the pipeline. The complete producing code is 
+         code/BERT_generation/3_patent_ml/patent_family_exercise.ipynb . 
+
+         Dataset list 
+
+         All raw inputs, by folder. "Twin" = a non-proprietary  .csv  copy of the same data ships 
+         alongside the  .dta  (exported with pandas; identical row/column counts verified). 
+         Shapefiles,  .tsv ,  .csv , and  .xlsx  are open/standard formats readable by free software. 
+         Public — data/raw/  (~21.3 GB): 
+
+                                                                      Provi
+         Data file                               Source         Notes      ded 
+         suitability_resource/WDI_full.xlsx         World Bank WDI  pinned bulk  Yes 
+                                                            extract; 
+                                                            input to 
+                                                            step 02 
+         suitability_resource/indicators_WDI_MtV_c  authors        indicator→s  Yes 
+         orrected.xlsx                                         ector map 
+                                                            used by the 
+                                                            paper 
+         suitability_resource/indicators_WDI_MtV_{  authors        alternative   Yes 
+         from_existing_no_trade2,                              maps; Table  from_scratch_allassigned,                             A4  gpt_assigned}.xlsx                                     robustness 
+         suitability_resource/country_crosswalk.dt  authors        ISO-2 ↔     Yes 
+         a  (+ twin)                                            country-
+                                                            name 
+                                                            crosswalk 
+         patent_resource/g_patent.tsv  (6.1 GB)       PatentsView     patent      Yes 
+                                                            universe, 
+                                                            grant dates, 
+                                                            abstracts 
+         patent_resource/g_us_patent_citation.tsv    PatentsView     citation     Yes 
+         (8.9 GB)                                             pairs (Nov-
+                                                            2023                                                                       Provi
+         Data file                               Source         Notes      ded 
+                                                            release) 
+         patent_resource/g_cpc_current.tsv  (2.7 GB)   PatentsView     CPC       Yes 
+                                                            classes 
+                                                            (Feb-2023 
+                                                            release) 
+         patent_resource/g_application.tsv  (379 MB)   PatentsView     filing dates   Yes 
+         patent_resource/g_assignee_disambiguated.  PatentsView     assignees   Yes 
+         tsv  (946 MB) 
+         patent_resource/g_location_disambiguated.  PatentsView     assignee    Yes 
+         tsv  (8 MB)                                           locations 
+         patent_resource/g_inventor_disambiguated.  PatentsView     inventors    Yes 
+         tsv  (1.9 GB) 
+         geocoding_resource/ne_10m_admin_0_countri  Natural Earth    country     Yes 
+         es/  (shapefile set)                                      polygons 
+         geocoding_resource/ne_10m_populated_place  Natural Earth    populated   Yes 
+         s.{shp,dbf,shx,prj,cpg}                                places; 
+                                                            converted 
+                                                            by step 03a 
+         geocoding_resource/simplemaps.csv          SimpleMaps     world cities  Yes 
+                                              Basic          gazetteer 
+         geocoding_resource/opendatasoft.csv         GeoNames/Ope  cities >1000  Yes 
+                                              nDataSoft       population 
+         geocoding_resource/crosswalk.xlsx          authors        country/US- Yes 
+                                                            state name 
+                                                            harmonizati
+                                                            on 
+         other_data_resource/un_polity_china.dta  (+  Bailey et al.      combined   Yes 
+         twin)                                 (2017); CSP      country–
+                                              Polity5         year panel 
+         other_data_resource/Trade_Volume_Export_I  UN Comtrade    China trade  Yes 
+         mport.csv                                            flows 
+         other_data_resource/hand_collected/OECD_l  authors        OECD      Yes 
+         ist.dta  (+ twin)                                       membershi
+                                                            p; EM 
+                                                            definition 
+         other_data_resource/country_panel.dta  (+    authors (gravity   bilateral     Yes 
+         twin)                                 sources)        controls rel. 
+                                                            to China                                                                       Provi
+         Data file                               Source         Notes      ded 
+         other_data_resource/hand_collected/critic  authors        MIC2025/C  Yes 
+         al_subseg.dta  (+ twin)                                  ST/DoD × 
+                                                            subsegmen
+                                                            t flags 
+         other_data_resource/hand_collected/EM_pol  authors        policy ×     Yes 
+         icy_constraints.dta  (+ twin)                             country 
+                                                            constraint 
+                                                            panel 
+         other_data_resource/hand_collected/policy  authors        policy ×     Yes 
+         _constrained_sectors.dta  (+ twin)                         subsegmen
+                                                            t map 
+         other_data_resource/tableA1_published_val  authors        Table A1    Yes 
+         ues.csv                                              row list, 
+                                                            emergence 
+                                                            years, and 
+                                                            print-N/A 
+                                                            gating 
+                                                            (transcribed 
+                                                            from the 
+                                                            manuscript; 
+                                                            supplies no 
+                                                            values) 
+         other_data_resource/table1_panelB_funding  Beraja et al.     Panel B     Yes 
+         _sources.csv                            (2024)         tabulation 
+         other_data_resource/hand_collected/table6  authors        tradable-   Yes 
+         _A16_Tradable or not 2nd.xlsx                           sector 
+                                                            classificatio
+                                                            n 
+
+         Confidential — confidential-data-not-for-publication/Raw/  (~24 GB; Data Editor 
+         only): 
+
+                                                     Sourc             Provi
+         Data file                                      e     Notes        ded 
+         pitchbook/pbdeals.dta  (9.1 GB, 95 vars) (+ twin)        Pitch  all deals      Edito
+                                                     Book              r 
+                                                                       only 
+         pitchbook/pbcompanies.dta  (4.8 GB, 94 vars) (+ twin)     Pitch  all companies  Edito
+                                                     Book  incl.         r 
+                                                           descriptions   only                                                      Sourc             Provi
+         Data file                                      e     Notes        ded 
+         pitchbook/pbinvestors.dta  (2.3 GB, 94 vars) (+ twin)     Pitch  all investors   Edito
+                                                     Book              r 
+                                                                       only 
+         pitchbook/pbdealinvestor.dta  (0.9 GB, 11 vars) (+ twin)   Pitch  deal–investor  Edito
+                                                     Book  links         r 
+                                                                       only 
+         pitchbook/pbmarketmap_v2.csv  (13 MB)              Pitch  analyst       Edito
+                                                     Book  market map +  r 
+                                                           descriptions   only 
+         pitchbook/later_years_extension/All_VC_Comp_Deal_I Pitch  2022–24      Edito
+         nvestor_2022-2024.csv  (4.9 GB)                    Book  refresh       r 
+                                                                       only 
+         pitchbook/later_years_extension/pbmarketmap_22_24. Pitch  2022–24      Edito
+         csv  (77 MB)                                   Book  market map   r 
+                                                                       only 
+         other_data_resource/LP.dta  (+ twin)                Pitch  fund × LP-    Edito
+                                                     Book  country       r 
+                                                           extract (Table  only 
+                                                           A9 input) 
+         BERT_prediction_resource/company_level_predictions deriv  company     Edito
+         _v2.dta  (1.1 GB) (+ twin)                          ed    sector       r 
+                                                     (BERT  predictions;   only 
+                                                     on    producing 
+                                                     Pitch  code in 
+                                                     Book  code/BERT_ge
+                                                     text)   neration/  
+         BERT_prediction_resource/similarity_compiled.csv ,   deriv  company-    Edito
+         similarity_compiled_western.csv                   ed    level similarity  r 
+                                                     (SBE  to CN/US     only 
+                                                     RT)    firms 
+         BERT_prediction_resource/similarity_at_sector_x_co deriv  sector×countr Edito
+         untry_x_year.dta  (+ twin)                         ed    y×year       r 
+                                                     (SBE  collapse      only 
+                                                     RT) 
+         BERT_prediction_resource/patent_sector_labels_{gra deriv  patent→sector  Edito
+         ntyear,new_grantyear,new100k}.dta  (+ twins)          ed    labels, two    r 
+                                                     (BERT  prediction     only 
+                                                     on    runs 
+                                                     paten                                                     Sourc             Provi
+         Data file                                      e     Notes        ded 
+                                                     t text) 
+         BERT_prediction_resource/patent_countrysector_simi deriv  patent-text    Edito
+         larity_2000_2013_100k_new_china.dta  (+ twin)         ed    similarity     r 
+                                                     (SBE  (Table A5)     only 
+                                                     RT) 
+         BERT_prediction_resource/worldwide_pairs_filtered_ deriv  family        Edito
+         no_EPO_countries.dta  (+ twin)                     ed    country-pair   r 
+                                                     (BERT  counts (Table  only 
+                                                     +     A5) 
+                                                     PATS
+                                                     TAT) 
+         other_data_resource/  — 7 vendor workbooks + 3 author- Pitch  descriptive-   Edito
+         corrected/classified files + the supplemented Global      Book  exhibit       r 
+         Innovation Measures workbook                     /     sources      only 
+         (CountryDataset.2024019.supplemented.xlsx) + the      Capit (Table 1, Figs. 
+         curated global VC series (Global VC_0525.xlsx), all at the   al IQ /  1, A4, Table 
+         folder root                                    State  A1 VC p.c.; 
+                                                     Stree  Table 
+                                                     t /     A1/Figure A1 
+                                                     Huru  innovation 
+                                                     n /    measures) 
+                                                     Zero2
+                                                     IPO / 
+                                                     autho
+                                                     rs 
+
+         Every  .dta  raw input ships with a CSV twin (same basename,  .csv  extension, in the 
+         same folder), so no data in the package is available only in a proprietary format. The twins 
+         were exported with pandas and verified to have identical row and column counts; Stata 
+         dates appear in ISO format, and text fields are standard-quoted. The pipeline itself reads 
+         the  .dta  files (which additionally carry the original variable labels). 
+
+         confidential-data-not-for-publication/Analysis/  is empty at delivery and is 
+         populated by Stage A (two core files at its root — analysis_v2.dta , 
+         regression_corrected_120623.dta  — and everything else under 
+         intermediate_and_other_data/ ).        Computational requirements 
+       Software Requirements 
+         ☒ The replication package contains programs to install all dependencies: 
+           code/auxiliary/install.do  (Stata) and  requirements.txt  (Python). 
+         • Stata: Stata 19 SE or later (the generators set  version 19 ; the code was last run 
+           under StataNow 19.5 SE). Tested on macOS/Apple Silicon and Windows 11/x64 with 
+           identical output values. Community packages (installed once by 
+           code/auxiliary/install.do ):  ftools ,  reghdfe ,  require ,  estout ,  ivreghdfe , 
+           ivreg2 ,  ranktest ,  geonear ,  shp2dta ,  nrow  (from SSC),  binscatter2  (from GitHub). 
+           The graph scheme  scheme-eop.scheme  ships in  code/auxiliary/  and is found via 
+           the adopath set by  paths.do . 
+         • Python ≥ 3.11 (last run with 3.11) with the pinned packages in  requirements.txt : 
+           pandas==2.2.3 ,  numpy>=1.26,<3 ,  matplotlib==3.10.0 ,  seaborn==0.13.2 , 
+           geopandas==0.14.4 ,  scipy>=1.11 ,  openpyxl>=3.1 ,  pycountry>=23.12 , 
+           Unidecode>=1.3 . Install with  pip install -r requirements.txt . 
+         • Shell: the two drivers ( run_all.sh ,  generate_all.sh ) are  bash  scripts 
+           (macOS/Linux native; on Windows use Git Bash or WSL, or run the individual 
+           programs in the documented order). 
+         • The optional ML-layer rerun ( code/BERT_generation/ ) has its own 
+           requirements.txt  (PyTorch, transformers, sentence-transformers) and GPU 
+           requirements; it is not part of the standard reproduction. 
+       Controlled Randomness 
+         ☒ Random seed is set at lines 97 and 162 of 
+           code/generate/09_generate_simulated_deals.do  (the Table A8 Monte-Carlo: the 
+           seed for each simulation draw is the draw index, set immediately before each 
+           sample  call, so the 500 draws are reproducible individually and in parallel). 
+         ☒ Random seed is set at lines 111 and 147 of  code/figures/figure_3.do  (the 500-
+           draw placebo loops behind Figure 3, Panels B and C; seed = draw index). 
+         ☒ Random seed is set at line 241 of  code/generate/02_generate_suitability.py  
+           (the appropriateness-score placebo component; seeded per iteration). 
+         ☒ Sort order is pinned wherever ties could otherwise be machine-dependent:  set 
+           sortseed  at lines 62, 84, and 171 of 
+           code/generate/03c_generate_regression_auxiliary.do , plus unique-key sorts 
+           throughout the generators. 
+         • No other program uses random number generation. Outputs are reproducible 
+           across reruns and across operating systems; the authors verified macOS/arm64 vs. 
+           Windows/x64 agreement to at most 1.2e-07 in any regression statistic, with all 
+           displayed values identical.         Memory, Runtime, Storage Requirements 
+        Summary time to reproduce 
+        Approximate time needed to reproduce the analyses on a standard (2026) desktop 
+        machine: 
+          •  ☐ <10 minutes 
+          •  ☐ 10-60 minutes 
+          •  ☒ 1-2 hours — the main analysis: Stage-A steps 01–04 plus Tables 2–8 and Figures 
+            2–4 
+          •  ☐ 2-8 hours 
+          •  ☒ 8-24 hours — the complete package including all appendix exhibits, with step 09 
+            run on 7 parallel workers (roughly 2 days if everything is run sequentially on a single 
+            worker) 
+          •  ☐ 1-3 days 
+          •  ☐ 3-14 days 
+          •  ☐ 
+             14 days 
+        Summary of required storage space 
+        Approximate storage space needed: 
+          •  ☐ < 25 MBytes 
+          •  ☐ 25 MB - 250 MB 
+          •  ☐ 250 MB - 2 GB 
+          •  ☐ 2 GB - 25 GB 
+          •  ☒ 25 GB - 250 GB — the package is ~45 GB as delivered; Stage A writes roughly 
+            another 70–80 GB of generated data (largest single generated file ≈9 GB); plan for 
+            ~120 GB free disk in addition to the delivered package. 
+          •  ☐ 
+             250 GB 
+        Computational Details 
+        The package was last run in full on an Apple MacBook Pro (M3 Max, 14 cores, 64 GB RAM), 
+        macOS 26, with StataNow 19.5 SE and Python 3.11; values were cross-checked on a 
+        Windows 11 x64 workstation. 64 GB RAM is recommended: the keystone build sets  set 
+        maxvar 30000  and the largest single input is a 9.1 GB PitchBook extract (loaded whole by 
+        Stata). 32 GB machines can complete steps 01–07 but should not run more than 3–4 
+        parallel workers in step 09. 
+        Measured wall-clock times (machine above):          Stage A step  Content                               Time 
+         01         deal/company base ( analysis_v2 )            ≈ 4 min 
+         02         appropriateness-score family                ≈ 4.5 min 
+         03a–03c    populated places; controls; regression auxiliaries  ≈ 2.5 min 
+         04         keystone regression panel                  ≈ 8.5 min 
+         05a–05i     robustness/extension inputs                ≈ 9 min 
+         06a–06c    patent layer (streams the 8.9 GB citation table)    ≈ 13 min 
+         07a–07d    geolocation + city panel                    ≈ 10 min 
+         08a        Table A13 variant regressions                ≈ 35 min 
+         08b        figure-A11 placebo stacks                  ≈ 50 min 
+         09         Table A8 Monte-Carlo (500 draws × 2 designs)    ≈ 5–6 h on 7 workers 
+
+         Stage B: seconds to ~1 minute per exhibit, except  figure_3.do  (~55 minutes: two 500-
+         draw placebo loops run inside the exhibit program). 
+
+         Description of programs/code 
+            •  code/auxiliary/paths.do  /  paths.py  define every path relative to the package root; 
+               no machine-specific path exists anywhere in the code. Every program locates 
+               the root itself by walking up the directory tree to  code/auxiliary/paths.do , so 
+               programs can be run from the package root or any folder inside it (or set the 
+               environment variable  REPLICATION_ROOT  /  JPE_GENERATE_ROOT  explicitly). Public 
+               raw data are read from  data/raw/ ; confidential raw data from  confidential-data-
+               not-for-publication/Raw/ ; generated data are written under  confidential-data-
+               not-for-publication/Analysis/  (they are PitchBook-derived and therefore 
+               confidential). The path setup recreates  Analysis/  and the  output/  tree if absent. 
+            •  code/auxiliary/install.do  installs the required Stata community packages (run 
+               once).  code/auxiliary/scheme-eop.scheme  is the graph scheme. 
+            •  code/generate/  — Stage A: 25 programs in nine dependency-ordered steps (driver: 
+               generate_all.sh , which accepts  --from NN --to NN  step ranges and  --skip-
+               heavy ): 
+                 o  01 builds the deal/company base  analysis_v2.dta  from the PitchBook 
+                    extracts + BERT sector predictions + SBERT similarity + OECD list. 
+                 o  02 builds the appropriateness (suitability) score family from the WDI extract 
+                    and the indicator→sector maps (paper measure plus all-country, alternative-
+                    assignment, and placebo variants). 
+                 o  03a converts the Natural Earth populated-places shapefile to  .dta ; 03b 
+                    builds the country-year controls (internet penetration, China trade/FDI 
+                    shares, UN/Polity distances); 03c builds regression auxiliaries (investor-
+                    origin flags, LP shares from  LP.dta , the shock-year file, serial-founder 
+                    inputs).                  o  04 assembles the keystone regression panel 
+                    regression_corrected_120623.dta  (sector×country×year). After 01–04, 
+                    Tables 2–8 and Figures 2–4 reproduce. The keystone file is never modified 
+                    by any later step. 
+                 o  05a–05i build robustness/extension inputs: post-regression inputs (05a), the 
+                    GDP-suitability component (05b), deal-type-by-category and cluster panels 
+                    (05c, 05d), pre-period deals (05e), western-split similarity (05f), the 
+                    patent/PATSTAT validation panel for Table A5 (05g), and the 2022–24 
+                    extension (05h, 05i). 
+                 o  06a streams the raw PatentsView citation table into located-citation files; 
+                    06b builds the patent sector layers; 06c builds a patent-augmented copy of 
+                    the keystone ( regression_corrected_120623_patents.dta , read only by 
+                    Table A6). 
+                 o  07a–07d build CPC percentile flags, patent geolocation, company 
+                    geolocation, and the city-level panel ( analysis_city ). 
+                 o  08a re-estimates the Table A13 specification variants; 08b builds the figure-
+                    A11 dropped-indicator placebo stacks. 
+                 o  09 runs the Table A8 Monte-Carlo simulation (500 draws × 2 designs; parallel 
+                    driver  09_generate_simulated_deals.sh <workers> ). 
+            •  code/tables/ ,  code/figures/  — Stage B: one self-contained program per exhibit 
+               (table_1.py  …  table_A30.do ,  figure_1.py  …  figure_A17.do ;  .py  for the 
+               workbook-based descriptive exhibits,  .do  otherwise). Each program reads only 
+               Stage-A datasets and/or raw workbooks and writes its exhibit to  output/ . 
+            •  code/BERT_generation/  — the original author code for the frozen ML layer, with a 
+               file-by-file provenance map ( PROVENANCE.md ): the BERT company classifier, the 
+               SBERT similarity pipeline, the patent classifiers (including the SLURM setup used for 
+               full-corpus inference), and a verified reconstruction program for the three 
+               patent_sector_labels_*  files. Rerunning is optional and not bit-reproducible (GPU 
+               training); the frozen outputs are the paper's numbers. 
+            •  code/run_all.sh  — master driver: Stage A, then every Stage-B exhibit in order (flags: 
+               --skip-heavy ,  --stage-a-only ,  --stage-b-only ). 
+         One dataset-level note: the patent layer is rebuilt entirely from the raw PatentsView TSVs 
+         — located citations, citation counts, CPC percentile flags, geolocation — with zero frozen 
+         patent inputs except the BERT/SBERT text measures. The shipped citation table is the only 
+         surviving vintage; it postdates the one used for the paper's  num_citations  variable, which 
+         shifts ~80k cells of  analysis_city  in columns no regression uses — Tables A29/A30 and 
+         Figure A17 are unaffected (verified byte-identical from either vintage). 
+
+         License for Code 
+
+         The code is licensed under a BSD-3-Clause license. See  LICENSE.txt  for details.        Instructions to Replicators 
+         1. Unzip the package (and the confidential archive provided separately) so that  data/ , 
+           confidential-data-not-for-publication/ ,  code/ , and  output/  sit side by side 
+           under one root.  confidential-data-not-for-publication/Analysis/  is empty by 
+           design. 
+         2. Install the Python environment:  pip install -r requirements.txt  (Python ≥ 3.11; 
+           a fresh virtual environment is recommended). 
+         3. Install the Stata community packages once:  /path/to/stata-se -b do 
+           code/auxiliary/install.do . 
+         4. One command for everything: 
+            bash code/run_all.sh                # full reproduction (~8–10 h; see r
+           untimes)  
+           bash code/run_all.sh --skip-heavy   # skips steps 08b + 09 (Figure A11 
+           and  
+                                               # Table A8 are then not produced)  
+            Stata is auto-detected ( stata-se /stata-mp  on PATH or the standard 
+           macOS/Windows install locations); override with the environment variable 
+           STATA_CMD . Python is auto-detected; override with  PYTHON_CMD . 
+         5. Or run the stages separately: 
+            bash code/generate/generate_all.sh                    # Stage A, all st
+           eps  
+           bash code/generate/generate_all.sh --from 01 --to 04  # any contiguous 
+           range  
+           bash code/generate/generate_all.sh --skip-heavy       # all except 08b 
+           + 09  
+           bash code/generate/09_generate_simulated_deals.sh 7   # step 09 on 7 wo
+           rkers  
+            After steps 01–04 (~20 minutes) the keystone panel exists and Tables 2–8 / Figures 
+           2–4 can be reproduced; each later step unlocks the exhibits listed in the table below. 
+           Do not exceed ~7 parallel workers for step 09 on a 64 GB machine (each worker 
+           loads the full deal panel). 
+         6. Stage B, one program per exhibit, in any order (or  bash code/run_all.sh --stage-
+           b-only ): 
+            /path/to/stata-se -b do code/tables/table_2.do  
+           python3 code/figures/figure_1.py  
+            (Windows:  StataSE-64.exe -e do code\tables\table_2.do .) 
+         7. Outputs land in  output/tables/  (.csv , one file per table, plus per-panel files where 
+           the exhibit has panels) and  output/figures/  (.pdf ); Stata logs in  output/logs/ . 
+           Some exhibit programs also write small by-products to  output/intermediate/ : the 
+           exact numeric series plotted in the figures (e.g.,  figure1ab_real_vc_2011usd.csv ) 
+           and per-panel audit files for the workbook-based tables (e.g., 
+           tableA1_source_audit.csv ). These exist only so every plotted or tabulated value                can be inspected as plain text — no program reads them back, and the pipeline 
+               does not depend on this folder. 
+
+         Details on various programs 
+         Stage-A step → exhibits it unlocks (all steps are driven by  generate_all.sh ; every step 
+         assumes the previous ones have run): 
+
+         After step     These exhibits can be reproduced 
+         01–04       Tables 2, 3, 4, 5, 6, 7, 8; Figures 2, 3, 4, A2, A3, A5, A6, A7, A8, A9, A12, A13, 
+                     A16; Tables A2, A4, A7, A9, A14, A15, A16, A17, A18, A20, A22, A24, A25 
+         05          Tables A5, A10, A11, A12, A21, A23, A26, A27, A28; Figures A10, A14, A15 
+         06          Table A6 
+         07          Tables A29, A30; Figure A17 
+         08          Table A13; Figure A11 
+         09          Table A8 
+         (raw         Table 1, Table A1, Figure 1, Figure A1, Figure A4 (Table 1 also needs step 
+         workbooks)   01) 
+
+         No exhibit is reproducible from the public folder alone: Table A1 and Figure A1 read the 
+         supplemented Global Innovation Measures workbook (confidential; it embeds Web of 
+         Science–derived publication counts), and every other exhibit requires the confidential 
+         PitchBook layer upstream. 
+
+         List of tables and programs 
+
+         The provided code reproduces: 
+            ☐ All numbers provided in text in the paper 
+            ☒ All tables and figures in the paper 
+            ☐ Selected tables and figures in the paper, as explained and justified below. 
+         (The numbers quoted in the text are cells of the exhibits or immediate arithmetic on them, 
+         with one documented exception: the 2021 world venture-investment total in the opening 
+         Background paragraph, which is quoted from the authors' curated compilation Global 
+         VC_0525.xlsx in the confidential folder (see Details on each Data Source). There is no 
+         separate in-text-numbers program.) 
+         Every exhibit is produced by the identically-numbered program; outputs carry the same 
+         number ( code/tables/table_A12.do  →  output/tables/tableA12.csv ). Tables A3 and A19 
+         are textual/illustrative lists (example indicators; policy lists) with no computed content and 
+         are not part of the code package. 
+
+         Figure/Table 
+         #          Program                 Output file(s)       Note          Figure/Table 
+         #          Program                 Output file(s)       Note 
+         Table 1      code/tables/table_1.py      table1.csv  (+ per-   panels from source 
+                                           panel audit files)     workbooks + step-
+                                                            01 aggregates 
+         Table 2      code/tables/table_2.do      table2.csv          
+         Table 3      code/tables/table_3.do      table3.csv  (+        
+                                           panels A/B) 
+         Table 4      code/tables/table_4.do      table4.csv          
+         Table 5      code/tables/table_5.do      table5.csv          
+         Table 6      code/tables/table_6.do      table6.csv         uses tradable 
+                                                            classification 
+         Table 7      code/tables/table_7.do      table7.csv  (+        
+                                           panels A/B) 
+         Table 8      code/tables/table_8.do      table8.csv  (+        
+                                           panels A/B) 
+         Table A1     code/tables/table_A1.py     tableA1.csv  (+       
+                                           source audit) 
+         Table A2     code/tables/table_A2.do     tableA2.csv          
+         Table A4     code/tables/table_A4.do     tableA4.csv          
+         Table A5     code/tables/table_A5.do     tableA5.csv          
+         Table A6     code/tables/table_A6.do     tableA6.csv         needs step 06 
+         Table A7     code/tables/table_A7.do     tableA7.csv          
+         Table A8     code/tables/table_A8.do     tableA8.csv         needs step 09 
+         Table A9     code/tables/table_A9.do     tableA9.csv          
+         Table A10    code/tables/table_A10.do    tableA10.csv         
+         Table A11    code/tables/table_A11.do    tableA11.csv        2022–24 extension 
+                                                            (Panels C/D) 
+         Table A12    code/tables/table_A12.do    tableA12.csv         
+         Table A13    code/tables/table_A13.do    tableA13.csv        needs step 08a 
+         Table A14    code/tables/table_A14.do    tableA14.csv  (+      
+                                           panels) 
+         Table A15    code/tables/table_A15.do    tableA15.csv         
+         Table A16    code/tables/table_A16.do    tableA16.csv         
+         Table A17    code/tables/table_A17.do    tableA17.csv         
+         Table A18    code/tables/table_A18.do    tableA18.csv         
+         Table A20    code/tables/table_A20.do    tableA20.csv                  Figure/Table 
+         #          Program                 Output file(s)       Note 
+         Table A21    code/tables/table_A21.do    tableA21.csv         
+         Table A22    code/tables/table_A22.do    tableA22.csv         
+         Table A23    code/tables/table_A23.do    tableA23.csv         
+         Table A24    code/tables/table_A24.do    tableA24.csv         
+         Table A25    code/tables/table_A25.do    tableA25.csv         
+         Table A26    code/tables/table_A26.do    tableA26.csv         
+         Table A27    code/tables/table_A27.do    tableA27.csv         
+         Table A28    code/tables/table_A28.do    tableA28.csv         
+         Table A29    code/tables/table_A29.do    tableA29.csv        needs step 07 
+         Table A30    code/tables/table_A30.do    tableA30.csv        needs step 07 
+         Figure 1     code/figures/figure_1.py    figure1a.pdf ,       
+                                           figure1b.pdf , 
+                                           figure1c.pdf  
+         Figure 2     code/figures/figure_2.do    figure2a.pdf ,       
+                                           figure2b.pdf  
+         Figure 3     code/figures/figure_3.do    figure3a.pdf ,      ~55 min 
+                                           figure3b.pdf , 
+                                           figure3c.pdf  
+         Figure 4     code/figures/figure_4.do    figure4a.pdf ,       
+                                           figure4b.pdf  
+         Figure A1    code/figures/figure_A1.py   figureA1a.pdf ,     input is the 
+                                           figureA1b.pdf       supplemented 
+                                                            workbook 
+                                                            (confidential) 
+         Figure A2    code/figures/figure_A2.do   figureA2.pdf         
+         Figure A3    code/figures/figure_A3.do   figureA3.pdf         
+         Figure A4    code/figures/figure_A4.py   figureA4.pdf         
+         Figure A5    code/figures/figure_A5.py   figureA5.pdf         
+         Figure A6    code/figures/figure_A6.do   figureA6a.pdf ,      
+                                           figureA6b.pdf  
+         Figure A7    code/figures/figure_A7.py   figureA7a.pdf ,      
+                                           figureA7b.pdf  
+         Figure A8    code/figures/figure_A8.py   figureA8.pdf         
+         Figure A9    code/figures/figure_A9.py   figureA9a.pdf ,      
+                                           figureA9b.pdf  
+         Figure A10   code/figures/figure_A10.py   figureA10.pdf                 Figure/Table 
+         #          Program                 Output file(s)       Note 
+         Figure A11   code/figures/figure_A11.do   figureA11a–d.pdf    needs step 08b 
+         Figure A12   code/figures/figure_A12.do   figureA12.pdf        
+         Figure A13   code/figures/figure_A13.do   figureA13.pdf        
+         Figure A14   code/figures/figure_A14.do   figureA14a–d.pdf     
+         Figure A15   code/figures/figure_A15.do   figureA15a.pdf ,      
+                                           figureA15b.pdf  
+         Figure A16   code/figures/figure_A16.do   figureA16a–d.pdf     
+         Figure A17   code/figures/figure_A17.do   figureA17a–d.pdf    needs step 07 
+
+         Expected agreement 
+
+         Each exhibit replicates the manuscript exactly, and all outputs are deterministic across 
+         reruns and machines (see "Controlled Randomness" above). 
+
+         Data Appendix: variable-level documentation 
+
+         Complete variable lists, extracted directly from the shipped files. PitchBook variable 
+         names follow PitchBook's own data dictionary (the platform's field names, lowercased; 
+         the  .dta  files carry the original names as Stata variable labels); PatentsView columns are 
+         documented in the PatentsView data dictionary (https://patentsview.org/download/data-
+         download-dictionary). 
+
+         Public author-compiled files 
+
+         un_polity_china.dta  (8 variables) — country–year panel 
+
+         Variable              Description 
+         year                  year 
+         country               ISO 3166 alpha-3 code 
+         polity_score           Polity2 combined score (Polity5) 
+         china_polity_score      China's Polity2 in the same year 
+         un_ideal_point         country's ideal point on the unidimensional scale of UN 
+                              preferences (Bailey et al. 2017) 
+         china_un_ideal_point    China's ideal point in the same year 
+         un_distance_to_chn      absolute ideal-point distance to China (recomputed in code) 
+         polity_distance_to_chn   absolute Polity2 distance to China (recomputed in code) 
+
+         OECD_list.dta  (4 variables) — one row per OECD member:  hqcountry  (country name, 
+         PitchBook spelling),  joinyear  (year joined),  OECD  (=1),  OECD_b80s  (=1 if member before 
+         1980 — the paper's non-EM definition).           country_panel.dta  (12 variables) — one row per country; bilateral measures relative to 
+          China ( _cp  suffix), assembled from standard gravity sources (see the paper's Data 
+          Appendix for construction): 
+
+          Variable                 Description 
+          hqcountry                country name 
+          fst_distance_dominant_cp   genetic (FST) distance to China, dominant populations 
+          nei_distance_dominant_cp   genetic (Nei) distance to China, dominant populations 
+          lingprox_dominant_cp      linguistic proximity to China 
+          comlang_off_cp            common official language with China (0/1) 
+          freight_cost_air_cp       air-freight cost proxy to China 
+          freight_cost_surface_cp    surface-freight cost proxy to China 
+          distcap_cp                capital-to-capital distance to China 
+          distw_cp                 population-weighted distance to China 
+          exports_fob_usd_cp        exports to China (FOB USD) 
+          imports_cif_usd_cp        imports from China (CIF USD) 
+          agree_cp                 trade agreement with China (0/1) 
+
+          EM_policy_constraints.dta  (5 variables) — policy × country panel of hand-coded 
+          regulatory constraints:  policyname ,  hqcountry ,  loose_same_policy_constraints  (0/1), 
+          same_policy_constraints  (0/1),  policy_constraint_EM_countries  (count of EM 
+          countries sharing the constraint). 
+
+          policy_constrained_sectors.dta  (3 variables) — policy → PitchBook subsegment map: 
+          policyname ,  policy_obstacle  (0/1),  subsegment  (the  marketmap|segment|subsegment  
+          fullname). 
+
+          critical_subseg.dta  (65 variables) — one row per PitchBook subsegment ( fullname_raw ), 
+          with 0/1 flags mapping the subsegment to 35 Chinese critical-supply-chain technology 
+          items ( CST_* ), 10 "Made in China 2025" priority areas ( MIC2025_* ), and 19 U.S. DoD critical-
+          technology areas ( DoD_* ). Flag names are the (truncated) technology names; the full lists 
+          are printed in the paper's appendix. 
+
+          country_crosswalk.dta  (2 variables):  hqcountry  (PitchBook country name) ↔ 
+          country_2digit  (ISO-2 code). 
+
+          table6_A16_Tradable or not 2nd.xlsx  — sheet  Sheet1 :  subsegment ,  tradable (Y/N/O 
+          tradable-sector classification).  
+
+          indicators_WDI_MtV_corrected.xlsx  (and the three alternative maps) — sheet 
+          Map_to_Variables_no_panel :  Series Code ,  Series Name , then one 0/1 column per 
+          market-map sector (AgTech, AI ML, Blockchain, …) assigning WDI indicators to sectors; 
+          sheet  Sheet1 : the indicator-name ↔ series-code list.           CountryDataset.2024019.supplemented.xlsx (confidential folder) — 13 sheets : 
+          CountryTable  (the compiled country panel used by the exhibits),  VC Chart ,  ScatterPlot , 
+          and the cleaning sheets ( VC Clean 1969-2000 ,  VC Clean 2001-2021 ,  R&D Clean 1981-
+          2015 ,  R&DClean 1996-2014 ,  R&D Clean 2015-2021 ,  publicationscleaning , 
+          patentsto2015cleaning ,  patents2016to2019cleaning ) that document every source 
+          series and imputation behind the panel.  tableA1_published_values.csv  columns: 
+          country ,  emergence_year ,  gdp_pc_2011usd ,  vc_pc_2011usd ,  pct_world_vc , 
+          pct_world_pubs ,  pct_world_rd ,  pct_us_patents . 
+
+          table1_panelB_funding_sources.csv  columns:  source ,  received_any_pct , 
+          share_of_funding_pct  (tabulated from Beraja et al. 2024). 
+
+          Trade_Volume_Export_Import.csv  — standard UN Comtrade bulk layout (47 columns: 
+          ReporterISO ,  PartnerISO ,  FlowCode ,  RefYear ,  Fobvalue ,  Cifvalue ,  PrimaryValue , …); the 
+          code uses reporter/partner/flow/year and the value columns. 
+
+          geocoding_resource/  — simplemaps.csv :  city ,  city_ascii ,  lat ,  lng ,  country ,  iso2 , 
+          iso3 ,  admin_name ,  capital ,  population ,  id .  opendatasoft.csv : the GeoNames "cities 
+          with population > 1000" export (semicolon-separated; name / ASCII name / alternate 
+          names / coordinates / country / population fields).  crosswalk.xlsx : sheet  country  
+          (country_2digit ,  country_fullname ), sheet  US  (state ,  state_2digit ). The Natural Earth 
+          shapefile sets ship with their original  README.html  and  VERSION.txt . 
+
+          Confidential files (variable lists) 
+
+          pbdeals.dta  (95 variables) — one row per deal. Key variables used by the pipeline: 
+          companyid ,  companyname ,  dealid ,  dealno ,  dealdate ,  dealsize  (USD m),  dealstatus , 
+          dealtype /dealtype2 /dealtype3 ,  dealclass ,  premoneyvaluation ,  postvaluation , 
+          raisedtodate ,  vcround ,  totalinvestedcapital ,  investors ,  newinvestors , 
+          followoninvestors ,  nativecurrencyofdeal ,  businessstatus ,  financingstatus , plus IPO 
+          fields ( tickersymbol ,  exchange ,  marketcapendoffirsttradingday , …), deal-term fields 
+          (typeofstock ,  liquidationpreferences ,  boardvotingrights , …), and company financials 
+          at deal time ( revenue ,  ebitda ,  netincome , valuation multiples). All 95 names follow 
+          PitchBook's deal-report field names, lowercased, with the original PitchBook names 
+          preserved as Stata variable labels inside the file. 
+
+          pbcompanies.dta  (94 variables) — one row per company: identifiers and names 
+          (companyid ,  companyname ,  companylegalname , …), the free-text  description  and  keywords  
+          used by the ML layers,  yearfounded , the HQ location block ( hqlocation ,  hqcity , 
+          hqstate_province ,  hqcountry ,  hqglobalregion , …), financing summary 
+          (firstfinancingdate /size /dealtype  …,  lastfinancing* ,  lastknownvaluation* , 
+          totalraised ), investor lists ( activeinvestors ,  formerinvestors ), and PitchBook's 
+          growth/web/social metrics. 
+
+          pbinvestors.dta  (94 variables) — one row per investor:  investorid ,  investorname , 
+          description_inv ,  primaryinvestortype_inv ,  otherinvestortypes_inv ,  aum_inv ,           yearfounded_inv , the HQ block ( hqcountry_inv , …), activity counts 
+          (totalinvestments_inv ,  totalexits_inv , …), fund counts, and stated investment 
+          preferences ( preferred*_inv ). 
+
+          pbdealinvestor.dta  (11 variables) — deal–investor links:  dealid ,  investorid , 
+          investorname ,  investorstatus ,  isleadinvestor ,  investorfundid ,  investorfundname , 
+          investorwebsite ,  leadpartnerid ,  leadpartnername ,  lastupdated . 
+
+          LP.dta  (51 variables) — one row per fund (4,147 funds):  FundID ,  FundName ,  Investor , 
+          Vintage ,  CloseDate ,  FundLocation ,  FundCity ,  FundStatus ,  FundSize , 
+          TotalFundInvestments ,  TotalLPs , then one column per LP country ( UnitedStates ,  China , 
+          HongKong , …; 37 countries +  Unknown ) counting the fund's limited partners from that 
+          country, and  Foreign . Input to the Table A9 western-LP analysis (used by step 03c). 
+
+          company_level_predictions_v2.dta  (50 variables) — one row per company (402,695 
+          companies):  companyid ,  hqcountry , then 12 ordered prediction slots  fullname1 –
+          fullname12  (each a  marketmap|segment|subsegment  string) with the corresponding 
+          marketmap# /segment# /subsegment#  splits. 
+
+          similarity_at_sector_x_country_x_year.dta  (25 variables) — sector×country×year: 
+          deal counts ( first_deal , early ,  late ) and the mean company-level SBERT similarity to 
+          Chinese/U.S. firms ( china_similarity_mean ,  _10 ,  _25 ,  us_similarity_* ), each also in 
+          _afteronly  (only pairs where the focal firm is founded after the reference firm) and 
+          _placebo  variants.  similarity_compiled.csv  /  similarity_compiled_western.csv  are 
+          the company-level versions ( companyid1  × sector with the same measure set; the western 
+          file splits Chinese reference firms by western-investor backing). 
+
+          patent_sector_labels_*.dta  — patent→sector label pairs:  grantyear  (512,162 rows; 
+          patent_id ,  sector ,  disambig_country ,  patent_date ),  new_grantyear  (530,765 rows; adds 
+          patent_year ),  new100k  (451,328 rows;  patent_id ,  sector  only). 
+          patent_countrysector_similarity_2000_2013_100k_new_china.dta  (9 variables): 
+          country1 ,  country2 ,  sector , and the pairwise patent-text similarity aggregates  mean , 
+          median ,  top25 ,  top10 ,  top5 ,  top1 .  worldwide_pairs_filtered_no_EPO_countries.dta  (7 
+          variables):  sector ,  country_1 ,  country_2 ,  count  (jointly-filed family count), the two 
+          country-level totals, and  fullname_raw . 
+
+          Descriptive-exhibit workbooks (confidential,  Raw/other_data_resource/ ): 
+          figure1ab_Figures 1a and 1b.xlsx (the authors' direct PitchBook Platform pull 
+          of global VC totals by year and region) ; the three 
+          figure1c_IPO_CapitalIQ_to_PB_*  workbooks (Capital IQ IPO screens mapped to the 
+          paper's EM/US/other-DM groups);  figureA4_Comparisons of PB and Other 
+          Sources.xlsx  and  figureA4_Data from Zero2IPO...xlsx  (China VC series comparison); 
+          table1_panelA_vc_groups.csv  (PitchBook VC-group counts);  table1_panelC_...xlsx  
+          (State Street fund-return summary);  table1_panelD_Chinese VC.xlsx  (Hurun founder 
+          tabulation);  tableA1_VCpc.xlsx  (PitchBook VC-per-capita tabulation). The hand-
+          corrected/classified items among these — the nonEM_nonUS IPO workbook,           table1_panelA_vc_groups.csv , and  tableA1_VCpc.xlsx  — sit alongside the rest at the 
+          folder root. 
+
+          References 
+
+          Data and data-adjacent sources (all datasets are also listed in the manuscript's 
+          references): 
+
+             •  Bailey, Michael A., Anton Strezhnev, and Erik Voeten. 2017. "Estimating Dynamic 
+                State Preferences from United Nations Voting Data." Journal of Conflict Resolution 
+                61 (2): 430–456. Replication data: https://doi.org/10.7910/DVN/LEJUQZ. 
+             •  Beraja, Martin, Wenwei Peng, David Y. Yang, and Noam Yuchtman. 2024. 
+                "Government as Venture Capitalists in AI." Entrepreneurship and Innovation Policy 
+                and the Economy, Vol. 4, edited by Benjamin Jones and Josh Lerner. Chicago: 
+                University of Chicago Press. 
+             •  Center for Systemic Peace. 2020. "Polity5 Project: Political Regime Characteristics 
+                and Transitions, 1800–2018 — Annual Time-Series 1946–2018" [dataset]. 
+                https://www.systemicpeace.org/inscrdata.html. 
+             •  European Patent Office. 2023. "PATSTAT Global — EPO Worldwide Patent Statistical 
+                Database" [dataset]. https://www.epo.org/en/searching-for-
+                patents/business/patstat. 
+             •  Hurun Research Institute. 2020. "Hurun China Rich List 2020" [dataset]. 
+                https://www.hurun.net. 
+             •  Kaplan, Steven N., and Antoinette Schoar. 2005. "Private Equity Performance: 
+                Returns, Persistence, and Capital Flows." Journal of Finance 60 (4): 1791–1823. 
+             •  Lerner, Josh, Jason Mao, Antoinette Schoar, and Nan R. Zhang. 2022. "Investing 
+                Outside the Box: Evidence from Alternative Vehicles in Private Equity." Journal of 
+                Financial Economics 143 (1): 359–380. 
+             •  Natural Earth. 2023. "Admin 0 – Countries; Populated Places. 1:10m Cultural 
+                Vectors" [dataset]. https://www.naturalearthdata.com (public domain). 
+             •  OpenDataSoft / GeoNames. 2023. "All Cities with a Population > 1000" [dataset]. 
+                https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-
+                population-1000/ (CC-BY 4.0). 
+             •  PitchBook Data, Inc. 2024. "PitchBook Platform" [dataset]. Seattle, WA: PitchBook 
+                Data, Inc. (proprietary; accessed via institutional subscription, 2023–2025). 
+             •  S&P Global Market Intelligence. 2024. "Capital IQ" [dataset]. New York: S&P Global 
+                (proprietary). 
+             •  SimpleMaps. 2023. "World Cities Database, Basic edition" [dataset]. 
+                https://simplemaps.com/data/world-cities (CC-BY 4.0). 
+             •  State Street Corporation, Data Intelligence. 2024. "Private-capital fund cash-flow 
+                and returns tabulations" [dataset]. Boston, MA: State Street Corporation 
+                (proprietary; not redistributable).             •  United Nations. 2023. "UN Comtrade Database" [dataset]. 
+               https://comtradeplus.un.org. 
+            •  USPTO / PatentsView. 2023–2024. "PatentsView Bulk Data Downloads" [dataset]. 
+               https://patentsview.org/download/data-download-tables (CC-BY 4.0; the CPC 
+               table from the February 2023 release, the citation table from the November 2023 
+               release). 
+            •  World Bank. 2023. "World Development Indicators" [dataset]. 
+               https://databank.worldbank.org/source/world-development-indicators (CC-BY 4.0). 
+            •  Zero2IPO Research (清科研究中⼼). 2020. "China VC/PE statistics" [dataset]. 
+               Beijing: Zero2IPO Group, obtained through the Harvard Business School China 
+               Research Center (licensed). 
+                                                                           
+
+         Acknowledgements 
+
+         This README follows the Social Science Data Editors template (Vilhuber et al., version 1.2, 
+         https://social-science-data-editors.github.io/template_README/). 

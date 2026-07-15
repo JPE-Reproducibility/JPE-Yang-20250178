@@ -1,0 +1,10 @@
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/README.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/draft_202607.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/__MACOSX/JPE_replication_for_submission/._README.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/__MACOSX/JPE_replication_for_submission/._draft_202607.pdf
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/PROVENANCE.md
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/README.md
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/README.md
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/__MACOSX/JPE_replication_for_submission/code/BERT_generation/._PROVENANCE.md
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/__MACOSX/JPE_replication_for_submission/code/BERT_generation/._README.md
+/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/__MACOSX/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/._README.md

@@ -1,0 +1,49 @@
+* LEAP STATA GRAPHING SCHEME
+
+#include s2color
+
+* anglestyle vertical_tick	horizontal
+color background			white
+linestyle  legend			none
+
+
+color p1					"8 81 156"
+color p2					"158 202 225"
+color p3					"66 146 198"
+color p4					"8 48 107"
+color p5					teal
+color p6					cranberry
+color p7					lavender
+color p8					khaki
+color p9					sienna
+color p10					emidblue
+color p11					emerald
+color p12					brown
+color p13					erose
+color p14					gold
+color p15					bluishgray
+
+gsize plabel medsmall
+
+
+color axis_title gs6
+gsize axis_title medium
+symbolsize  p small
+
+numstyle legend_cols      1
+clockdir      legend_position 6
+
+color  tick 				gs6
+color  axisline		        gs6
+color  tick_label            gs6
+anglestyle  vertical_tick 0
+gsize  ticklabel			small
+
+
+
+color         key_label gs6
+
+
+gsize axis_title_gap		tiny
+margin legend				zero
+margin graph				"2 3 3 3"

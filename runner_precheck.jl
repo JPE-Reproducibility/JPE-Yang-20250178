@@ -19,12 +19,18 @@ vars = YAML.load_file(joinpath(ENV["GITHUB_WORKSPACE"], "_variables.yml"))
 
 dest_path = joinpath(ENV["GITHUB_WORKSPACE"], "replication-package")
 
+# ── Skip fetch entirely if package is already present locally ─────────
+already_have_package = isdir(dest_path) && !isempty(readdir(dest_path))
+
 # ── Remote path: download via public Dropbox link ─────────────────────
 url = let u = get(ENV, "DROPBOX_DOWNLOAD_URL", nothing)
     (isnothing(u) || isempty(u)) ? nothing : u
 end
 
-downloaded_ok = if !isnothing(url)
+downloaded_ok = if already_have_package
+    @info "Package already present at $dest_path — skipping download/copy"
+    true
+elseif !isnothing(url)
     @info "Downloading package from secret Dropbox link..."
     t0 = time()
     try
@@ -68,23 +74,31 @@ if downloaded_ok && isfile("package.zip")
         isfile(f) && endswith(lowercase(f), ".zip")
     end
 
-    if isempty(candidates)
-        error("No ZIP file found inside Dropbox folder archive")
-    end
-
-    @info "Found $(length(candidates)) ZIP(s) to extract" candidates
     isdir(dest_path) && rm(dest_path; recursive=true, force=true)
     mkpath(dest_path)
 
-    for pkg_zip in candidates
-        @info "Unzipping $pkg_zip..."
-        try
-            run(`unzip -oq $pkg_zip -d $dest_path`)
-            if isdir(dest_path)
-                rm_git(dest_path)
+    if isempty(candidates)
+        # No nested ZIP — the author's Dropbox folder contained the
+        # replication package's files/subfolders directly (not a .zip),
+        # so the extracted tmp_dir already *is* the package.
+        @info "No nested ZIP found — using extracted folder contents directly as the package"
+        for f in readdir(tmp_dir; join=true)
+            cp(f, joinpath(dest_path, basename(f)); force=true)
+        end
+        rm_git(dest_path)
+    else
+        @info "Found $(length(candidates)) ZIP(s) to extract" candidates
+
+        for pkg_zip in candidates
+            @info "Unzipping $pkg_zip..."
+            try
+                run(`unzip -oq $pkg_zip -d $dest_path`)
+                if isdir(dest_path)
+                    rm_git(dest_path)
+                end
+            catch e
+                @warn "unzip of $pkg_zip exited non-zero" exception=e
             end
-        catch e
-            @warn "unzip of $pkg_zip exited non-zero" exception=e
         end
     end
 

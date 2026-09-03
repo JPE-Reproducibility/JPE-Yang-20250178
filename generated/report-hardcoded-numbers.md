@@ -3,7 +3,7 @@
 
 We found the following set of hard coded numbers. This may be completely legitimate (parameter input, thresholds for computations, etc), and is hence only for information.
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_win.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_win.ipynb**
 
 - Line 528, : "  0   6864593  The invention is directed to a device for the ... -4.278506   \n",
 - Line 529, : "  1   8506297  A dental modal for making a dental prosthesis ... -3.727026   \n",
@@ -106,42 +106,7 @@ We found the following set of hard coded numbers. This may be completely legitim
 - Line 664, : "  3  2.026137         0  SupplyChainTechWarehousingtechSustainablepacka...  \n",
 - Line 665, : "  4  2.178461         0  SupplyChainTechWarehousingtechSustainablepacka...  )]"
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A7.do**
-
-- Line 34, : gen just_below_china_50 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>1608.274
-- Line 35, : gen just_below_china_75 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>2626.119
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/08a_generate_regression_a13_variants.py**
-
-- Line 31, : do = do.replace('replace suitability_score_wdi = 2.921 - suitability_score_wdi',
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A14.do**
-
-- Line 50, : replace suitability_score_gpt = 4.141 - suitability_score_gpt
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_3.do**
-
-- Line 150, : replace shock_year_p = 2008 if index<0.007
-- Line 151, : replace shock_year_p = 2009 if index>=0.007 & index<0.031  & index!=.
-- Line 152, : replace shock_year_p = 2011 if index>=0.031 & index<0.038  & index!=.
-- Line 153, : replace shock_year_p = 2012 if index>=0.038 & index<0.0775  & index!=.
-- Line 154, : replace shock_year_p = 2013 if index>=0.0775 & index<0.7442  & index!=.
-- Line 155, : replace shock_year_p = 2014 if index>=0.7442 & index<0.9147  & index!=.
-- Line 156, : replace shock_year_p = 2015 if index>=0.9147 & index<0.9457  & index!=.
-- Line 157, : replace shock_year_p = 2016 if index>=0.9457 & index!=.
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/04_generate_regression_corrected_120623.do**
-
-- Line 148, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
-- Line 171, : replace suitability_score_wdi_us = 3.180 - suitability_score_wdi_us
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/02_generate_suitability.py**
-
-- Line 206, : g["gdp_pp_preperiod_above_china"]  = above(mpre,  4269.235)
-- Line 207, : g["gdp_pp_postperiod_above_china"] = above(mpost, 8815.618)
-- Line 209, : g["gdp_pp_in_2013_above_china"]    = above(m2013, 7056.423)
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_patent_full.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_patent_full.ipynb**
 
 - Line 526, : "{'loss': 0.1899, 'grad_norm': 1.492010235786438, 'learning_rate': 4.0654205607476636e-05, 'epoch': 0.93}\n"
 - Line 547, : "{'eval_loss': 0.11047104001045227, 'eval_accuracy': 0.9578454332552693, 'eval_recall': 0.6216216216216216, 'eval_precision': 0.8518518518518519, 'eval_f1': 0.71875, 'eval_runtime': 7.4033, 'eval_samples_per_second': 57.677, 'eval_steps_per_second': 7.294, 'epoch': 1.0}\n",
@@ -340,80 +305,13 @@ We found the following set of hard coded numbers. This may be completely legitim
 - Line 7537, : "{'eval_loss': 0.213716521859169, 'eval_accuracy': 0.9195402298850575, 'eval_recall': 0.32, 'eval_precision': 0.6666666666666666, 'eval_f1': 0.43243243243243246, 'eval_runtime': 10.9929, 'eval_samples_per_second': 47.485, 'eval_steps_per_second': 6.004, 'epoch': 1.0}\n",
 - Line 7538, : "{'loss': 0.1621, 'grad_norm': 3.669128894805908, 'learning_rate': 3.473282442748092e-05, 'epoch': 1.53}\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05i_generate_regression_00_24_integrated.do**
-
-- Line 126, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A21.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A21.do**
 
 - Line 35, : if abs(`t') > 1.645 local star "*"
 - Line 36, : if abs(`t') > 1.960 local star "**"
 - Line 37, : if abs(`t') > 2.576 local star "***"
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_mac.ipynb**
-
-- Line 76, : "      <td>[-7.123363e-05, -0.033342585, 0.05527848, -0.0...</td>\n",
-- Line 82, : "      <td>[-0.016678385, -0.034818947, -0.008875517, 0.0...</td>\n",
-- Line 88, : "      <td>[-0.0065959916, -0.050884463, -0.006652736, -0...</td>\n",
-- Line 94, : "      <td>[-0.04566997, -0.043910053, 0.0076927086, -0.0...</td>\n",
-- Line 100, : "      <td>[-0.025326159, -0.036783617, 0.014422003, -0.0...</td>\n",
-- Line 112, : "      <td>[-0.025744675, -0.06513593, -0.009325135, -0.0...</td>\n",
-- Line 118, : "      <td>[-0.002767625, -0.027123047, 0.02105413, 0.005...</td>\n",
-- Line 124, : "      <td>[-0.034871046, -0.021072688, -1.1106268e-05, -...</td>\n",
-- Line 130, : "      <td>[-0.03193334, 0.002922773, 0.04413781, -0.0466...</td>\n",
-- Line 136, : "      <td>[-0.008885957, -0.0047575976, 0.06398351, -0.0...</td>\n",
-- Line 158, : "254864  [-7.123363e-05, -0.033342585, 0.05527848, -0.0...  \n",
-- Line 159, : "328339  [-0.016678385, -0.034818947, -0.008875517, 0.0...  \n",
-- Line 160, : "39636   [-0.0065959916, -0.050884463, -0.006652736, -0...  \n",
-- Line 161, : "254653  [-0.04566997, -0.043910053, 0.0076927086, -0.0...  \n",
-- Line 162, : "206602  [-0.025326159, -0.036783617, 0.014422003, -0.0...  \n",
-- Line 164, : "327977  [-0.025744675, -0.06513593, -0.009325135, -0.0...  \n",
-- Line 165, : "37862   [-0.002767625, -0.027123047, 0.02105413, 0.005...  \n",
-- Line 166, : "210634  [-0.034871046, -0.021072688, -1.1106268e-05, -...  \n",
-- Line 167, : "155898  [-0.03193334, 0.002922773, 0.04413781, -0.0466...  \n",
-- Line 168, : "183635  [-0.008885957, -0.0047575976, 0.06398351, -0.0...  \n",
-- Line 231, : "      <td>[-0.021155236, -0.002549114, -0.0106962565, -0...</td>\n",
-- Line 237, : "      <td>[0.0025053257, 0.013508373, -0.0143952, -0.030...</td>\n",
-- Line 243, : "      <td>[-0.00012465817, 0.0038097452, 0.016205737, -0...</td>\n",
-- Line 249, : "      <td>[0.01175531, 0.034781028, -0.023994312, -0.052...</td>\n",
-- Line 255, : "      <td>[-0.017856784, -0.002753013, -0.009651142, -0....</td>\n",
-- Line 267, : "      <td>[-0.020348571, -0.007767355, -0.023641346, 0.0...</td>\n",
-- Line 273, : "      <td>[-0.011821735, -0.028306404, -0.0102774585, 0....</td>\n",
-- Line 279, : "      <td>[-0.029778404, -0.020195313, 0.020117922, 0.01...</td>\n",
-- Line 285, : "      <td>[-0.048782956, -0.042804226, 0.01670886, 0.026...</td>\n",
-- Line 291, : "      <td>[-0.01718627, -0.013831111, -0.0014301647, -0....</td>\n",
-- Line 313, : "13679   [-0.021155236, -0.002549114, -0.0106962565, -0...  \n",
-- Line 314, : "271785  [0.0025053257, 0.013508373, -0.0143952, -0.030...  \n",
-- Line 315, : "224232  [-0.00012465817, 0.0038097452, 0.016205737, -0...  \n",
-- Line 316, : "238794  [0.01175531, 0.034781028, -0.023994312, -0.052...  \n",
-- Line 317, : "119779  [-0.017856784, -0.002753013, -0.009651142, -0....  \n",
-- Line 319, : "284241  [-0.020348571, -0.007767355, -0.023641346, 0.0...  \n",
-- Line 320, : "39323   [-0.011821735, -0.028306404, -0.0102774585, 0....  \n",
-- Line 321, : "88496   [-0.029778404, -0.020195313, 0.020117922, 0.01...  \n",
-- Line 322, : "59489   [-0.048782956, -0.042804226, 0.01670886, 0.026...  \n",
-- Line 323, : "138858  [-0.01718627, -0.013831111, -0.0014301647, -0....  \n",
-- Line 719, : "      <td>0.749403</td>\n",
-- Line 727, : "      <td>0.727068</td>\n",
-- Line 735, : "      <td>0.680855</td>\n",
-- Line 743, : "      <td>0.860592</td>\n",
-- Line 751, : "      <td>0.770729</td>\n",
-- Line 767, : "      <td>0.530019</td>\n",
-- Line 775, : "      <td>0.587416</td>\n",
-- Line 783, : "      <td>0.738416</td>\n",
-- Line 791, : "      <td>0.500635</td>\n",
-- Line 799, : "      <td>0.689659</td>\n",
-- Line 834, : "0        0.749403  \n",
-- Line 835, : "1        0.727068  \n",
-- Line 836, : "2        0.680855  \n",
-- Line 837, : "3        0.860592  \n",
-- Line 838, : "4        0.770729  \n",
-- Line 840, : "11170    0.530019  \n",
-- Line 841, : "11171    0.587416  \n",
-- Line 842, : "11172    0.738416  \n",
-- Line 843, : "11173    0.500635  \n",
-- Line 844, : "11174    0.689659  \n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.ipynb**
 
 - Line 233, : "0.1267668753862381",
 - Line 234, : "0.1267668753862381",
@@ -571,4 +469,106 @@ We found the following set of hard coded numbers. This may be completely legitim
 - Line 1731, : "2  0.218160  0.250402  0.275279  0.341928  0.376786  \n",
 - Line 1732, : "3  0.210774  0.252793  0.286736  0.329688  0.409846  \n",
 - Line 1733, : "4  0.148852  0.206238  0.243832  0.353874  0.409846  "
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_mac.ipynb**
+
+- Line 76, : "      <td>[-7.123363e-05, -0.033342585, 0.05527848, -0.0...</td>\n",
+- Line 82, : "      <td>[-0.016678385, -0.034818947, -0.008875517, 0.0...</td>\n",
+- Line 88, : "      <td>[-0.0065959916, -0.050884463, -0.006652736, -0...</td>\n",
+- Line 94, : "      <td>[-0.04566997, -0.043910053, 0.0076927086, -0.0...</td>\n",
+- Line 100, : "      <td>[-0.025326159, -0.036783617, 0.014422003, -0.0...</td>\n",
+- Line 112, : "      <td>[-0.025744675, -0.06513593, -0.009325135, -0.0...</td>\n",
+- Line 118, : "      <td>[-0.002767625, -0.027123047, 0.02105413, 0.005...</td>\n",
+- Line 124, : "      <td>[-0.034871046, -0.021072688, -1.1106268e-05, -...</td>\n",
+- Line 130, : "      <td>[-0.03193334, 0.002922773, 0.04413781, -0.0466...</td>\n",
+- Line 136, : "      <td>[-0.008885957, -0.0047575976, 0.06398351, -0.0...</td>\n",
+- Line 158, : "254864  [-7.123363e-05, -0.033342585, 0.05527848, -0.0...  \n",
+- Line 159, : "328339  [-0.016678385, -0.034818947, -0.008875517, 0.0...  \n",
+- Line 160, : "39636   [-0.0065959916, -0.050884463, -0.006652736, -0...  \n",
+- Line 161, : "254653  [-0.04566997, -0.043910053, 0.0076927086, -0.0...  \n",
+- Line 162, : "206602  [-0.025326159, -0.036783617, 0.014422003, -0.0...  \n",
+- Line 164, : "327977  [-0.025744675, -0.06513593, -0.009325135, -0.0...  \n",
+- Line 165, : "37862   [-0.002767625, -0.027123047, 0.02105413, 0.005...  \n",
+- Line 166, : "210634  [-0.034871046, -0.021072688, -1.1106268e-05, -...  \n",
+- Line 167, : "155898  [-0.03193334, 0.002922773, 0.04413781, -0.0466...  \n",
+- Line 168, : "183635  [-0.008885957, -0.0047575976, 0.06398351, -0.0...  \n",
+- Line 231, : "      <td>[-0.021155236, -0.002549114, -0.0106962565, -0...</td>\n",
+- Line 237, : "      <td>[0.0025053257, 0.013508373, -0.0143952, -0.030...</td>\n",
+- Line 243, : "      <td>[-0.00012465817, 0.0038097452, 0.016205737, -0...</td>\n",
+- Line 249, : "      <td>[0.01175531, 0.034781028, -0.023994312, -0.052...</td>\n",
+- Line 255, : "      <td>[-0.017856784, -0.002753013, -0.009651142, -0....</td>\n",
+- Line 267, : "      <td>[-0.020348571, -0.007767355, -0.023641346, 0.0...</td>\n",
+- Line 273, : "      <td>[-0.011821735, -0.028306404, -0.0102774585, 0....</td>\n",
+- Line 279, : "      <td>[-0.029778404, -0.020195313, 0.020117922, 0.01...</td>\n",
+- Line 285, : "      <td>[-0.048782956, -0.042804226, 0.01670886, 0.026...</td>\n",
+- Line 291, : "      <td>[-0.01718627, -0.013831111, -0.0014301647, -0....</td>\n",
+- Line 313, : "13679   [-0.021155236, -0.002549114, -0.0106962565, -0...  \n",
+- Line 314, : "271785  [0.0025053257, 0.013508373, -0.0143952, -0.030...  \n",
+- Line 315, : "224232  [-0.00012465817, 0.0038097452, 0.016205737, -0...  \n",
+- Line 316, : "238794  [0.01175531, 0.034781028, -0.023994312, -0.052...  \n",
+- Line 317, : "119779  [-0.017856784, -0.002753013, -0.009651142, -0....  \n",
+- Line 319, : "284241  [-0.020348571, -0.007767355, -0.023641346, 0.0...  \n",
+- Line 320, : "39323   [-0.011821735, -0.028306404, -0.0102774585, 0....  \n",
+- Line 321, : "88496   [-0.029778404, -0.020195313, 0.020117922, 0.01...  \n",
+- Line 322, : "59489   [-0.048782956, -0.042804226, 0.01670886, 0.026...  \n",
+- Line 323, : "138858  [-0.01718627, -0.013831111, -0.0014301647, -0....  \n",
+- Line 719, : "      <td>0.749403</td>\n",
+- Line 727, : "      <td>0.727068</td>\n",
+- Line 735, : "      <td>0.680855</td>\n",
+- Line 743, : "      <td>0.860592</td>\n",
+- Line 751, : "      <td>0.770729</td>\n",
+- Line 767, : "      <td>0.530019</td>\n",
+- Line 775, : "      <td>0.587416</td>\n",
+- Line 783, : "      <td>0.738416</td>\n",
+- Line 791, : "      <td>0.500635</td>\n",
+- Line 799, : "      <td>0.689659</td>\n",
+- Line 834, : "0        0.749403  \n",
+- Line 835, : "1        0.727068  \n",
+- Line 836, : "2        0.680855  \n",
+- Line 837, : "3        0.860592  \n",
+- Line 838, : "4        0.770729  \n",
+- Line 840, : "11170    0.530019  \n",
+- Line 841, : "11171    0.587416  \n",
+- Line 842, : "11172    0.738416  \n",
+- Line 843, : "11173    0.500635  \n",
+- Line 844, : "11174    0.689659  \n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A14.do**
+
+- Line 50, : replace suitability_score_gpt = 4.141 - suitability_score_gpt
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/02_generate_suitability.py**
+
+- Line 206, : g["gdp_pp_preperiod_above_china"]  = above(mpre,  4269.235)
+- Line 207, : g["gdp_pp_postperiod_above_china"] = above(mpost, 8815.618)
+- Line 209, : g["gdp_pp_in_2013_above_china"]    = above(m2013, 7056.423)
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_3.do**
+
+- Line 150, : replace shock_year_p = 2008 if index<0.007
+- Line 151, : replace shock_year_p = 2009 if index>=0.007 & index<0.031  & index!=.
+- Line 152, : replace shock_year_p = 2011 if index>=0.031 & index<0.038  & index!=.
+- Line 153, : replace shock_year_p = 2012 if index>=0.038 & index<0.0775  & index!=.
+- Line 154, : replace shock_year_p = 2013 if index>=0.0775 & index<0.7442  & index!=.
+- Line 155, : replace shock_year_p = 2014 if index>=0.7442 & index<0.9147  & index!=.
+- Line 156, : replace shock_year_p = 2015 if index>=0.9147 & index<0.9457  & index!=.
+- Line 157, : replace shock_year_p = 2016 if index>=0.9457 & index!=.
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/04_generate_regression_corrected_120623.do**
+
+- Line 148, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
+- Line 171, : replace suitability_score_wdi_us = 3.180 - suitability_score_wdi_us
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A7.do**
+
+- Line 34, : gen just_below_china_50 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>1608.274
+- Line 35, : gen just_below_china_75 = gdp_pp_preperiod_above_china==0 & gdp_pp_2015usd_mean_preperiod>2626.119
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/08a_generate_regression_a13_variants.py**
+
+- Line 31, : do = do.replace('replace suitability_score_wdi = 2.921 - suitability_score_wdi',
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05i_generate_regression_00_24_integrated.do**
+
+- Line 126, : replace suitability_score_wdi = 2.921 - suitability_score_wdi
 

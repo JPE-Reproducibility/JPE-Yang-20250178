@@ -1,14 +1,176 @@
 ## Filepaths Analysis Details
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_2.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_2.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A4.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/01_generate_analysis_v2.do**
+
+- Line 16, unix : forvalues _i = 1/6 {
+- Line 60, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
+- Line 86, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
+- Line 127, windows : gen dealyear = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
+- Line 343, unix : gen share_china = dealcount_china/ChinaPlusUS
+- Line 352, unix : keep in 1/129
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_compile_2025.ipynb**
+
+- Line 297, windows : "import os\n",
+- Line 298, windows : "import pandas as pd\n",
+- Line 300, windows : "# directory path\n",
+- Line 303, windows : "# create an empty list to collect dataframes\n",
+- Line 305, windows : "counter = 0\n",
+- Line 307, windows : "for filename in os.listdir(dir_path):\n",
+- Line 308, windows : "    if filename.endswith('.csv'):\n",
+- Line 309, windows : "        counter += 1\n",
+- Line 310, windows : "        # parse fullname from the filename\n",
+- Line 313, windows : "        # create the complete filepath\n",
+- Line 316, windows : "        # read the csv file and add it to the list\n",
+- Line 320, windows : "        df['fullname'] = fullname\n",
+- Line 324, windows : "# concatenate all the dataframes in the list\n",
+- Line 611, windows : "import os\n",
+- Line 612, windows : "import pandas as pd\n",
+- Line 614, windows : "# directory path\n",
+- Line 617, windows : "# create an empty list to collect dataframes\n",
+- Line 619, windows : "counter = 0\n",
+- Line 621, windows : "for filename in os.listdir(dir_path):\n",
+- Line 622, windows : "    if filename.endswith('.csv'):\n",
+- Line 623, windows : "        counter += 1\n",
+- Line 624, windows : "        # parse fullname from the filename\n",
+- Line 627, windows : "        # create the complete filepath\n",
+- Line 630, windows : "        # read the csv file and add it to the list\n",
+- Line 634, windows : "        df['fullname'] = fullname\n",
+- Line 638, windows : "# concatenate all the dataframes in the list\n",
+- Line 1184, windows : "import os\n",
+- Line 1185, windows : "import pandas as pd\n",
+- Line 1187, windows : "# directory path\n",
+- Line 1190, windows : "# create an empty list to collect dataframes\n",
+- Line 1192, windows : "counter = 0\n",
+- Line 1194, windows : "for filename in os.listdir(dir_path):\n",
+- Line 1195, windows : "    if filename.endswith('.csv'):\n",
+- Line 1196, windows : "        counter += 1\n",
+- Line 1197, windows : "        # parse fullname from the filename\n",
+- Line 1200, windows : "        # create the complete filepath\n",
+- Line 1203, windows : "        # read the csv file and add it to the list\n",
+- Line 1207, windows : "        df['fullname'] = fullname\n",
+- Line 1211, windows : "# concatenate all the dataframes in the list\n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A23.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_win.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05f_generate_similarity_western.do**
+
+- Line 13, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/06a_generate_patent_citations_from_raw.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_mac.ipynb**
+
+- Line 22, windows : "import time\n",
+- Line 23, windows : "from sentence_transformers import SentenceTransformer\n",
+- Line 24, windows : "from sklearn.metrics.pairwise import cosine_similarity\n",
+- Line 25, windows : "import pandas as pd\n",
+- Line 26, windows : "import itertools\n",
+- Line 31, windows : "# Load pre-trained SentenceTransformer\n",
+- Line 34, windows : "# Load data\n",
+- Line 640, windows : "# Initialize list to store results\n",
+- Line 643, windows : "# Initialize counter and timer\n",
+- Line 644, windows : "counter = 0\n",
+- Line 647, windows : "# Group by 'fullname' and iterate over each group\n",
+- Line 648, windows : "for name, group in df.groupby('fullname'):\n",
+- Line 649, windows : "    # Get all company pairs within this group\n",
+- Line 651, windows : "    for (idx1, row1), (idx2, row2) in itertools.combinations(group.iterrows(), 2):\n",
+- Line 652, windows : "        # Start timer for this calculation\n",
+- Line 654, windows : "        # Calculate similarity between the two companies' descriptions\n",
+- Line 657, windows : "        # Store the result\n",
+- Line 663, windows : "            'similarity': similarity\n",
+- Line 666, windows : "        # Increment counter and check if it's a multiple of 1000\n",
+- Line 667, windows : "        counter += 1\n",
+- Line 668, windows : "        if counter % 1000000 == 0:\n",
+- Line 669, windows : "            # Calculate time consumed\n",
+- Line 670, windows : "            total_time = time.time() - start_time\n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/auxiliary/paths.do**
+
+- Line 15, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A14.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A27.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/04_generate_regression_corrected_120623.do**
+
+- Line 16, unix : forvalues _i = 1/6 {
+- Line 176, unix : forvalues i = 1/20 {
+- Line 187, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 188, unix : gen dealcount_norm_mean_us_i_00_12 = dealcount_y_us_inv/mean_deal_hq_00_12
+- Line 189, unix : gen dealcount_norm_mean_loc_i_00_12 = dealcount_y_local_inv/mean_deal_hq_00_12
+- Line 190, unix : gen dealcount_norm_mean_cn_i_00_12 = dealcount_y_china_inv/mean_deal_hq_00_12
+- Line 191, unix : gen dealcount_norm_mean_oth_i_00_12 = dealcount_y_other_inv/mean_deal_hq_00_12
+- Line 196, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
+- Line 201, unix : gen dealcount_norm_mean_00_06 = dealcount_y/mean_deal_hq_00_06
+- Line 206, unix : gen dealsize_norm_mean_00_06 = dealsize_y/mean_deal_hq_00_06_ds
+- Line 257, unix : gen size_per_deal = dealsize_y/dealcount_y
+- Line 266, unix : forvalues i = 1/4 {
+- Line 271, unix : forvalues i = 1/4 {
+- Line 281, unix : forvalues i = 1/10 {
+- Line 292, unix : forvalues i = 1/5 {
+- Line 304, unix : forvalues i = 1/10 {
+- Line 331, unix : forvalues i = 2000/2019 {
+- Line 335, unix : forvalues i = 2000/2019 {
+- Line 343, unix : forvalues i = 2000/2019 {
+- Line 350, unix : forvalues i = 2000/2019 {
+- Line 404, unix : gen first_deal_norm = first_deal/mean_deal_hq_00_12
+- Line 405, unix : gen not_first_deal_norm = not_first_deal/mean_deal_hq_00_12
+- Line 406, unix : gen early_norm = early/mean_deal_hq_00_12
+- Line 407, unix : gen late_norm = late/mean_deal_hq_00_12
+- Line 410, unix : gen IPO_norm_tot = IPO/mean_deal_hq_00_12
+- Line 411, unix : gen acquired_norm_tot = acquired/mean_deal_hq_00_12
+- Line 412, unix : gen failure_norm_tot = failure/mean_deal_hq_00_12
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A13.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A29.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 53, unix : gen city_patents_count_inventors_n = city_patents_count_inventors/mean_pre_2013_patents
+- Line 58, unix : gen city_patents_count_assignees_n = city_patents_count_assignees/mean_pre_2013_patents_assignees
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A8.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 47, unix : forvalues i = 1/10 {
+- Line 61, unix : forvalues i = 1/10 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05i_generate_regression_00_24_integrated.do**
+
+- Line 14, unix : forvalues _i = 1/6 {
+- Line 135, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 140, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
+- Line 156, unix : gen size_per_deal = dealsize_y/dealcount_y
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/make_patent_sector_labels.py**
+
+- Line 3, unix : These files (shipped in the package under `Raw/BERT_prediction_resource/`) are NOT written by any
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_6.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A2.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_win.ipynb**
 
 - Line 10, windows : "import pandas as pd\n",
 - Line 11, windows : "from pathlib import Path\n",
@@ -249,48 +411,87 @@
 - Line 711, windows : "    logits = predictions.predictions\n",
 - Line 728, windows : "# results_collection now holds (subsegment, preview_df) tuples for quick inspection\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A7.py**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/09_generate_simulated_deals.sh**
 
-- Line 13, unix : # (light lat/lon gridlines, Arial-first font stack)
-- Line 115, windows : "Natural Earth admin-0 countries shapefile not found at\n"
+- Line 1, unix : #!/usr/bin/env bash
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A30.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 53, unix : gen city_patents_count_inventors_n = city_patents_count_inventors/mean_pre_2013_patents
-- Line 58, unix : gen city_patents_count_assignees_n = city_patents_count_assignees/mean_pre_2013_patents_assignees
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_7.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_2.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/03c_generate_regression_auxiliary.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05a_generate_postregression_inputs.do**
 
 - Line 13, unix : forvalues _i = 1/6 {
-- Line 98, unix : forvalues i = 1/12 {
-- Line 133, unix : forvalues i = 1/12{
-- Line 176, unix : forval i=1/12 {
-- Line 186, unix : save progress/serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
-- Line 192, unix : forval i=1/12 {
-- Line 206, unix : save progress/company_serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
-- Line 212, unix : forval i=1/12 {
-- Line 226, unix : save progress/founder_serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
-- Line 231, unix : use progress/serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
-- Line 232, unix : forvalues i=2/12 {
-- Line 233, unix : merge 1:1 second_company_first_deal_year first_company_subsegment serial_company_hqcountry using progress/serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta
-- Line 251, unix : use progress/company_serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
-- Line 252, unix : forvalues i=2/12 {
-- Line 274, unix : use progress/founder_serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
-- Line 275, unix : forvalues i=2/12 {
-- Line 295, unix : save progress/founder_serial_founders_by_second_deal_year.dta, replace
-- Line 444, unix : gen share_china = dealcount_westernonlyforCN_china/ChinaPlusUS
-- Line 446, unix : keep in 1/132
+- Line 173, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 177, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/train_predict_v2-1.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/07b_generate_patent_geolocation_from_raw.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A9.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/07c_generate_company_geolocation.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A28.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05d_generate_dealcount_alltype_cluster.do**
+
+- Line 14, unix : forvalues _i = 1/6 {
+- Line 52, unix : gen share_china = dealcount_china/ChinaPlusUSPlusOther
+- Line 55, unix : keep in 1/129
+- Line 64, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A20.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/train_predict_crossvalidate_mac.py**
+
+- Line 40, unix : # path parameterized: BERT model/scratch root (original: external SSD PATH_TO_BERT_MODEL_STORE).
+- Line 198, windows : logging.error("Sub-segment %s failed\n%s", i, traceback.format_exc())
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A17.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 51, unix : gen city_patents_count_inventors_n = city_patents_count_inventors/mean_pre_2013_patents
+- Line 56, unix : gen city_patents_count_assignees_n = city_patents_count_assignees/mean_pre_2013_patents_assignees
+- Line 82, unix : forvalues i = 1/22 {
+- Line 86, unix : forvalues i = 2000/2021 {
+- Line 105, unix : forvalues i = 2001/2021 {
+- Line 122, unix : forvalues i = 2001/2021 {
+- Line 139, unix : forvalues i = 2001/2021 {
+- Line 156, unix : forvalues i = 2001/2021 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A14.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A11.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 94, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 106, unix : gen size_per_deal = dealsize_y/dealcount_y
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/02_generate_suitability.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/06b_generate_patent_layers.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A4.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A6.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/train_predict_v2-1.ipynb**
 
 - Line 13, windows : "import os\n",
 - Line 14, windows : "import re\n",
@@ -342,173 +543,57 @@
 - Line 184, windows : "    try:\n",
 - Line 187, windows : "    except:\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A15.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/08a_generate_regression_a13_variants.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/06c_supplement_regression_patents.do**
+
+- Line 15, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A3.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A29.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A30.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 - Line 53, unix : gen city_patents_count_inventors_n = city_patents_count_inventors/mean_pre_2013_patents
 - Line 58, unix : gen city_patents_count_assignees_n = city_patents_count_assignees/mean_pre_2013_patents_assignees
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A23.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_3.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A13.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A5.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/run_all.sh**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/predict_only.py**
 
-- Line 1, unix : #!/usr/bin/env bash
-- Line 27, unix : mkdir -p output/logs
-- Line 59, unix : run_py code/tables/table_1.py
-- Line 60, unix : run_do code/tables/table_2.do
-- Line 61, unix : run_do code/tables/table_3.do
-- Line 62, unix : run_do code/tables/table_4.do
-- Line 63, unix : run_do code/tables/table_5.do
-- Line 64, unix : run_do code/tables/table_6.do
-- Line 65, unix : run_do code/tables/table_7.do
-- Line 66, unix : run_do code/tables/table_8.do
-- Line 67, unix : run_py code/tables/table_A1.py
-- Line 68, unix : run_do code/tables/table_A2.do
-- Line 69, unix : run_do code/tables/table_A4.do
-- Line 70, unix : run_do code/tables/table_A5.do
-- Line 71, unix : run_do code/tables/table_A6.do
-- Line 72, unix : run_do code/tables/table_A7.do
-- Line 74, unix : run_do code/tables/table_A9.do
-- Line 75, unix : run_do code/tables/table_A10.do
-- Line 76, unix : run_do code/tables/table_A11.do
-- Line 77, unix : run_do code/tables/table_A12.do
-- Line 78, unix : run_do code/tables/table_A13.do
-- Line 79, unix : run_do code/tables/table_A14.do
-- Line 80, unix : run_do code/tables/table_A15.do
-- Line 81, unix : run_do code/tables/table_A16.do
-- Line 82, unix : run_do code/tables/table_A17.do
-- Line 83, unix : run_do code/tables/table_A18.do
-- Line 84, unix : run_do code/tables/table_A20.do
-- Line 85, unix : run_do code/tables/table_A21.do
-- Line 86, unix : run_do code/tables/table_A22.do
-- Line 87, unix : run_do code/tables/table_A23.do
-- Line 88, unix : run_do code/tables/table_A24.do
-- Line 89, unix : run_do code/tables/table_A25.do
-- Line 90, unix : run_do code/tables/table_A26.do
-- Line 91, unix : run_do code/tables/table_A27.do
-- Line 92, unix : run_do code/tables/table_A28.do
-- Line 93, unix : run_do code/tables/table_A29.do
-- Line 94, unix : run_do code/tables/table_A30.do
-- Line 95, unix : run_py code/figures/figure_1.py
-- Line 96, unix : run_do code/figures/figure_2.do
-- Line 97, unix : run_do code/figures/figure_4.do
-- Line 98, unix : run_py code/figures/figure_A1.py
-- Line 99, unix : run_do code/figures/figure_A2.do
-- Line 100, unix : run_do code/figures/figure_A3.do
-- Line 101, unix : run_py code/figures/figure_A4.py
-- Line 102, unix : run_py code/figures/figure_A5.py
-- Line 103, unix : run_do code/figures/figure_A6.do
-- Line 104, unix : run_py code/figures/figure_A7.py
-- Line 105, unix : run_py code/figures/figure_A8.py
-- Line 106, unix : run_py code/figures/figure_A9.py
-- Line 107, unix : run_py code/figures/figure_A10.py
-- Line 109, unix : run_do code/figures/figure_A12.do
-- Line 110, unix : run_do code/figures/figure_A13.do
-- Line 111, unix : run_do code/figures/figure_A14.do
-- Line 112, unix : run_do code/figures/figure_A15.do
-- Line 113, unix : run_do code/figures/figure_A16.do
-- Line 114, unix : run_do code/figures/figure_A17.do
-- Line 115, unix : run_do code/figures/figure_3.do
+- Line 24, unix : # path parameterized: set env var BERT_WORK_ROOT to the BERT model/scratch store
+- Line 170, windows : logging.error("Sub-segment %s failed\n%s", i, traceback.format_exc())
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/auxiliary/install.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/slurm_predict_patents_batch_01.sh**
 
-- Line 7, unix : forvalues _i = 1/6 {
+- Line 1, unix : #!/bin/bash
+- Line 10, unix : #SBATCH --chdir=PATH_TO_HPC_PROJECT/code
+- Line 24, unix : module load CUDA/12.4.0
+- Line 25, unix : module load Python/3.11.5-GCCcore-13.2.0
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A10.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/07a_generate_patent_cpc_flags.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_mac.ipynb**
-
-- Line 22, windows : "import time\n",
-- Line 23, windows : "from sentence_transformers import SentenceTransformer\n",
-- Line 24, windows : "from sklearn.metrics.pairwise import cosine_similarity\n",
-- Line 25, windows : "import pandas as pd\n",
-- Line 26, windows : "import itertools\n",
-- Line 31, windows : "# Load pre-trained SentenceTransformer\n",
-- Line 34, windows : "# Load data\n",
-- Line 640, windows : "# Initialize list to store results\n",
-- Line 643, windows : "# Initialize counter and timer\n",
-- Line 644, windows : "counter = 0\n",
-- Line 647, windows : "# Group by 'fullname' and iterate over each group\n",
-- Line 648, windows : "for name, group in df.groupby('fullname'):\n",
-- Line 649, windows : "    # Get all company pairs within this group\n",
-- Line 651, windows : "    for (idx1, row1), (idx2, row2) in itertools.combinations(group.iterrows(), 2):\n",
-- Line 652, windows : "        # Start timer for this calculation\n",
-- Line 654, windows : "        # Calculate similarity between the two companies' descriptions\n",
-- Line 657, windows : "        # Store the result\n",
-- Line 663, windows : "            'similarity': similarity\n",
-- Line 666, windows : "        # Increment counter and check if it's a multiple of 1000\n",
-- Line 667, windows : "        counter += 1\n",
-- Line 668, windows : "        if counter % 1000000 == 0:\n",
-- Line 669, windows : "            # Calculate time consumed\n",
-- Line 670, windows : "            total_time = time.time() - start_time\n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/predict_patent_sectors.py**
-
-- Line 12, unix : - OUTPUT_DIR: where predictions and intermediate filtered data are written. Default: ../../output/patent_predictions_full
-- Line 19, unix : - SECTORS_PER_TASK: how many sectors each SLURM task/GPU processes (default 4)
-- Line 92, unix : # Models are nested one level deeper on HPC: data/PatentSubsegmentFolders/PatentSubsegmentFolders
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/07c_generate_company_geolocation.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_8.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A25.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A20.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/08a_generate_regression_a13_variants.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05h_generate_deal_22_24.do**
-
-- Line 14, unix : forvalues _i = 1/6 {
-- Line 70, windows : gen year = ustrregexs(1) if ustrregexm(dealdate, "(\d\d\d\d)\-\d\d-\d\d")
-- Line 106, unix : forvalues i=1/13{
-- Line 148, windows : gen year = ustrregexs(1) if ustrregexm(dealdate, "(\d\d\d\d)\-\d\d-\d\d")
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05g_generate_regression_validation_countrypair.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05e_generate_pre_period_deals.do**
 
 - Line 13, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_4.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 41, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 46, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
-- Line 52, unix : forvalues i = 1/10 {
-- Line 61, unix : forvalues i = 2/10 {
-- Line 79, unix : forvalues i = 2/10 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A14.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A6.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_patent_full.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_8.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_patent_full.ipynb**
 
 - Line 13, windows : "import re\n",
 - Line 15, windows : "import pandas as pd\n",
@@ -736,58 +821,7 @@
 - Line 7764, windows : "        # generate a new observation and save to the finished_subseg_df\n",
 - Line 7766, windows : "    except:\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A8.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 47, unix : forvalues i = 1/10 {
-- Line 61, unix : forvalues i = 1/10 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A11.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 94, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 106, unix : gen size_per_deal = dealsize_y/dealcount_y
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A26.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/train_predict_crossvalidate_mac.py**
-
-- Line 40, unix : # path parameterized: BERT model/scratch root (original: external SSD PATH_TO_BERT_MODEL_STORE).
-- Line 198, windows : logging.error("Sub-segment %s failed\n%s", i, traceback.format_exc())
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.py**
-
-- Line 72, unix : #df_predictions = pd.read_csv(ENT_ROOT / 'Analysis/python_BERT/data_patent/positive_results_100k_.csv', dtype=str)
-- Line 73, unix : df_predictions = pd.read_stata(ENT_ROOT / 'Analysis/python_BERT/data_patent/positive_results_500k_new.dta')
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/06b_generate_patent_layers.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/06c_supplement_regression_patents.do**
-
-- Line 15, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A2.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 38, unix : forvalues s=1/4 {
-- Line 53, unix : forvalues s=1/4 {
-- Line 68, unix : forvalues s=1/4 {
-- Line 85, unix : forvalues s=1/4 {
-- Line 103, unix : forvalues s=1/4 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_6.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_4.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/09_generate_simulated_deals.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/09_generate_simulated_deals.do**
 
 - Line 19, unix : forvalues _i = 1/6 {
 - Line 113, unix : gen GDP_2019_USD_B = GDP_2019_USD/1000000000
@@ -797,101 +831,7 @@
 - Line 326, unix : forvalues batch_num = 1/5 {
 - Line 484, unix : forvalues i=2/5 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05e_generate_pre_period_deals.do**
-
-- Line 13, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_pat01.ipynb**
-
-- Line 9, windows : "import re\n",
-- Line 10, windows : "import pandas as pd\n",
-- Line 11, windows : "import numpy as np\n",
-- Line 12, windows : "from pathlib import Path\n",
-- Line 13, windows : "from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForSequenceClassification\n",
-- Line 14, windows : "import torch.nn as nn\n",
-- Line 15, windows : "from torch.utils.data import Dataset, DataLoader\n",
-- Line 16, windows : "from sklearn.metrics import accuracy_score, precision_recall_fscore_support\n",
-- Line 17, windows : "from sklearn.model_selection import train_test_split\n",
-- Line 18, windows : "from sklearn.utils import resample\n",
-- Line 19, windows : "from sklearn.metrics import confusion_matrix\n",
-- Line 20, windows : "from tqdm import tqdm\n",
-- Line 21, windows : "from datasets import Dataset, load_dataset, DatasetDict, Features, ClassLabel, Value\n",
-- Line 22, windows : "import evaluate\n",
-- Line 23, windows : "import torch\n",
-- Line 24, windows : "import os\n",
-- Line 25, windows : "import json\n",
-- Line 41, windows : "def preprocess_data():\n",
-- Line 42, windows : "    # read in patent data\n",
-- Line 50, windows : "    del g_assignee\n",
-- Line 80, windows : "    return df_training, df_predicting, ls_subsegment\n",
-- Line 82, windows : "def subsegment_name_processing(nameStr):\n",
-- Line 86, windows : "def prepare_data_for_subsegment(df_training, SELECTED_SUBSEGMENT):\n",
-- Line 88, windows : "    df_training.loc[:, 'label'] = 0\n",
-- Line 89, windows : "    df_training.loc[df_training['fullname'] == SELECTED_SUBSEGMENT, 'label'] = 1\n",
-- Line 97, windows : "        return None, None\n",
-- Line 101, windows : "        len_positives = 1000\n",
-- Line 113, windows : "    return train_data, test_data\n",
-- Line 115, windows : "def tokenize_function(examples, tokenizer):\n",
-- Line 118, windows : "def compute_metrics(eval_pred):\n",
-- Line 120, windows : "    logits, labels = eval_pred\n",
-- Line 124, windows : "def train_model(subsegment, train_data, test_data, output_dir):\n",
-- Line 154, windows : "    # Evaluate on test set\n",
-- Line 158, windows : "    return trainer\n",
-- Line 160, windows : "def predict_all_models(df_predicting, ls_subsegment, output_dir):\n",
-- Line 163, windows : "    # Preprocess the prediction data\n",
-- Line 164, windows : "    df_predicting['patent_abstract'] = df_predicting['patent_abstract'].fillna('')  # Replace NaN with empty string\n",
-- Line 165, windows : "    df_predicting['patent_abstract'] = df_predicting['patent_abstract'].astype(str)  # Ensure all entries are strings\n",
-- Line 166, windows : "    df_predicting = df_predicting[df_predicting['patent_abstract'].str.strip() != '']  # Remove empty strings\n",
-- Line 170, windows : "    def safe_tokenize_function(examples):\n",
-- Line 175, windows : "    for subsegment in ls_subsegment:\n",
-- Line 177, windows : "        if not model_path.exists():\n",
-- Line 179, windows : "            continue\n",
-- Line 184, windows : "        try:\n",
-- Line 186, windows : "            y_pred = predictions.predictions\n",
-- Line 196, windows : "                'positive': y_pred_dummy\n",
-- Line 200, windows : "        except Exception as e:\n",
-- Line 202, windows : "            continue\n",
-- Line 204, windows : "def update_progress(progress, subsegment, status, output_dir, slice_id):\n",
-- Line 206, windows : "    if subsegment not in progress:\n",
-- Line 208, windows : "    else:\n",
-- Line 209, windows : "        progress[subsegment][\"status\"] = status\n",
-- Line 210, windows : "        progress[subsegment][\"last_update\"] = now\n",
-- Line 213, windows : "    with open(progress_file, 'w') as f:\n",
-- Line 216, windows : "def main(start_index=0, end_index=None, slice_id=\"full\"):\n",
-- Line 224, windows : "    # Slice the ls_subsegment if end_index is provided\n",
-- Line 225, windows : "    if end_index is not None:\n",
-- Line 227, windows : "    else:\n",
-- Line 232, windows : "    if progress_file.exists():\n",
-- Line 233, windows : "        with open(progress_file, 'r') as f:\n",
-- Line 236, windows : "    for subsegment in ls_subsegment:\n",
-- Line 237, windows : "        if subsegment in progress and progress[subsegment][\"status\"] == \"completed\":\n",
-- Line 239, windows : "            continue\n",
-- Line 244, windows : "        try:\n",
-- Line 246, windows : "            if train_data is not None and test_data is not None:\n",
-- Line 249, windows : "            else:\n",
-- Line 251, windows : "        except Exception as e:\n",
-- Line 257, windows : "    try:\n",
-- Line 260, windows : "    except Exception as e:\n",
-- Line 266, windows : "if __name__ == \"__main__\":\n",
-- Line 267, windows : "    # Example usage:\n",
-- Line 268, windows : "    # To process the first 60 items:\n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/08b_generate_regression_figureA11_dropped.do**
-
-- Line 13, unix : forvalues _i = 1/6 {
-- Line 41, unix : forvalues N = 1/4 {
-- Line 99, unix : forvalues i = 0/499 {
-- Line 104, unix : forvalues i = 0/499 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A16.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A6.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_100k_china_win.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_additional_prediction_100k_china_win.ipynb**
 
 - Line 10, windows : "import pandas as pd\n",
 - Line 11, windows : "from pathlib import Path\n",
@@ -1144,255 +1084,7 @@
 - Line 390, windows : "    model_path = model_root / \"best_model\"  # weights live here\n",
 - Line 396, windows : "    logits = predictions.predictions\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/generate_all.sh**
-
-- Line 1, unix : #!/usr/bin/env bash
-- Line 30, unix : mkdir -p output/logs/generate
-- Line 49, unix : run_do code/generate/01_generate_analysis_v2.do
-- Line 53, unix : run_py code/generate/02_generate_suitability.py
-- Line 57, unix : run_do code/generate/03a_generate_populated_places.do
-- Line 58, unix : run_py code/generate/03b_generate_controls.py
-- Line 59, unix : run_do code/generate/03c_generate_regression_auxiliary.do
-- Line 63, unix : run_do code/generate/04_generate_regression_corrected_120623.do
-- Line 67, unix : run_do code/generate/05a_generate_postregression_inputs.do
-- Line 68, unix : run_do code/generate/05b_generate_suitability_gdp_component.do
-- Line 69, unix : run_do code/generate/05c_generate_regression_alltype_by_cat.do
-- Line 70, unix : run_do code/generate/05d_generate_dealcount_alltype_cluster.do
-- Line 71, unix : run_do code/generate/05e_generate_pre_period_deals.do
-- Line 72, unix : run_do code/generate/05f_generate_similarity_western.do
-- Line 73, unix : run_do code/generate/05g_generate_regression_validation_countrypair.do
-- Line 74, unix : run_do code/generate/05h_generate_deal_22_24.do
-- Line 75, unix : run_do code/generate/05i_generate_regression_00_24_integrated.do
-- Line 79, unix : run_py code/generate/06a_generate_patent_citations_from_raw.py
-- Line 80, unix : run_py code/generate/06b_generate_patent_layers.py
-- Line 81, unix : run_do code/generate/06c_supplement_regression_patents.do
-- Line 85, unix : run_py code/generate/07a_generate_patent_cpc_flags.py
-- Line 86, unix : run_py code/generate/07b_generate_patent_geolocation_from_raw.py
-- Line 87, unix : run_py code/generate/07c_generate_company_geolocation.py
-- Line 88, unix : run_do code/generate/07d_generate_analysis_city.do
-- Line 92, unix : run_py code/generate/08a_generate_regression_a13_variants.py
-- Line 94, unix : run_do code/generate/08b_generate_regression_figureA11_dropped.do
-- Line 102, unix : run_do code/generate/09_generate_simulated_deals.do
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05d_generate_dealcount_alltype_cluster.do**
-
-- Line 14, unix : forvalues _i = 1/6 {
-- Line 52, unix : gen share_china = dealcount_china/ChinaPlusUSPlusOther
-- Line 55, unix : keep in 1/129
-- Line 64, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A18.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A12.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A17.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05a_generate_postregression_inputs.do**
-
-- Line 13, unix : forvalues _i = 1/6 {
-- Line 173, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 177, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A14.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/07d_generate_analysis_city.do**
-
-- Line 15, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/04_generate_regression_corrected_120623.do**
-
-- Line 16, unix : forvalues _i = 1/6 {
-- Line 176, unix : forvalues i = 1/20 {
-- Line 187, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 188, unix : gen dealcount_norm_mean_us_i_00_12 = dealcount_y_us_inv/mean_deal_hq_00_12
-- Line 189, unix : gen dealcount_norm_mean_loc_i_00_12 = dealcount_y_local_inv/mean_deal_hq_00_12
-- Line 190, unix : gen dealcount_norm_mean_cn_i_00_12 = dealcount_y_china_inv/mean_deal_hq_00_12
-- Line 191, unix : gen dealcount_norm_mean_oth_i_00_12 = dealcount_y_other_inv/mean_deal_hq_00_12
-- Line 196, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
-- Line 201, unix : gen dealcount_norm_mean_00_06 = dealcount_y/mean_deal_hq_00_06
-- Line 206, unix : gen dealsize_norm_mean_00_06 = dealsize_y/mean_deal_hq_00_06_ds
-- Line 257, unix : gen size_per_deal = dealsize_y/dealcount_y
-- Line 266, unix : forvalues i = 1/4 {
-- Line 271, unix : forvalues i = 1/4 {
-- Line 281, unix : forvalues i = 1/10 {
-- Line 292, unix : forvalues i = 1/5 {
-- Line 304, unix : forvalues i = 1/10 {
-- Line 331, unix : forvalues i = 2000/2019 {
-- Line 335, unix : forvalues i = 2000/2019 {
-- Line 343, unix : forvalues i = 2000/2019 {
-- Line 350, unix : forvalues i = 2000/2019 {
-- Line 404, unix : gen first_deal_norm = first_deal/mean_deal_hq_00_12
-- Line 405, unix : gen not_first_deal_norm = not_first_deal/mean_deal_hq_00_12
-- Line 406, unix : gen early_norm = early/mean_deal_hq_00_12
-- Line 407, unix : gen late_norm = late/mean_deal_hq_00_12
-- Line 410, unix : gen IPO_norm_tot = IPO/mean_deal_hq_00_12
-- Line 411, unix : gen acquired_norm_tot = acquired/mean_deal_hq_00_12
-- Line 412, unix : gen failure_norm_tot = failure/mean_deal_hq_00_12
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/02_generate_suitability.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_clean.ipynb**
-
-- Line 22, windows : "import pandas as pd\n",
-- Line 23, windows : "import os\n",
-- Line 24, windows : "import numpy as np\n",
-- Line 29, windows : "# Prepare percentiles\n",
-- Line 69, windows : "# Make a copy of the original dataframe\n",
-- Line 72, windows : "# Define the target countries\n",
-- Line 75, windows : "# Drop rows where both countries are either China or the United States\n",
-- Line 79, windows : "# Drop rows where neither 'hqcountry1' nor 'hqcountry2' is China or the United States\n",
-- Line 83, windows : "# Swap values if 'hqcountry1' is US or China and 'hqcountry2' is not US or China\n",
-- Line 86, windows : "df.loc[mask_swap, ['companyid1', 'companyid2']] = df.loc[mask_swap, ['companyid2', 'companyid1']].values\n",
-- Line 87, windows : "df.loc[mask_swap, ['fullname1', 'fullname2']] = df.loc[mask_swap, ['fullname2', 'fullname1']].values\n",
-- Line 88, windows : "df.loc[mask_swap, ['hqcountry1', 'hqcountry2']] = df.loc[mask_swap, ['hqcountry2', 'hqcountry1']].values\n",
-- Line 89, windows : "df.loc[mask_swap, ['yearfounded1', 'yearfounded2']] = df.loc[mask_swap, ['yearfounded2', 'yearfounded1']].values\n",
-- Line 90, windows : "df.loc[mask_swap, ['firstfinancingdate1', 'firstfinancingdate2']] = df.loc[mask_swap, ['firstfinancingdate2', 'firstfinancingdate1']].values\n",
-- Line 101, windows : "# Task 1: Calculate average, 10%, 25% similarity for each 'companyid1' with all Chinese and US companies\n",
-- Line 103, windows : "# Filter for Chinese and US companies\n",
-- Line 107, windows : "# Define function for 10% and 25% percentile\n",
-- Line 108, windows : "def percentile_10(x):\n",
-- Line 110, windows : "def percentile_25(x):\n",
-- Line 113, windows : "# Calculate metrics for Chinese companies\n",
-- Line 117, windows : "# Calculate metrics for US companies\n",
-- Line 121, windows : "# Merge the Chinese and US metrics together\n",
-- Line 126, windows : "# Filter DataFrame\n",
-- Line 129, windows : "# Calculate metrics for Chinese companies\n",
-- Line 133, windows : "# Calculate metrics for US companies\n",
-- Line 137, windows : "# Merge the Chinese and US metrics together\n",
-- Line 140, windows : "# Finally merge both dataframes (task 1 and task 2) together\n",
-- Line 159, windows : "# Iterate over files\n",
-- Line 160, windows : "for filename in os.listdir(folder_path):\n",
-- Line 161, windows : "    if filename.endswith(\".csv\"):  # check file extension, adjust if needed\n",
-- Line 164, windows : "        # Merge data with pbcompanies\n",
-- Line 170, windows : "        for companyid_column, country_column in [('companyid1', 'hqcountry2'), ('companyid2', 'hqcountry1')]:\n",
-- Line 171, windows : "            # Group by company id and country, and calculate the mean and percentiles of similarity\n",
-- Line 173, windows : "            for p in percentiles:\n",
-- Line 176, windows : "            # Pivot table for desired format\n",
-- Line 185, windows : "            # Filter out rows where no Chinese or US companies\n",
-- Line 189, windows : "        # Concatenate results and group by companyid, calculate mean\n",
-- Line 192, windows : "        # Save to CSV\n",
-- Line 224, windows : "import os\n",
-- Line 225, windows : "import pandas as pd\n",
-- Line 227, windows : "# directory path\n",
-- Line 230, windows : "# create an empty list to collect dataframes\n",
-- Line 232, windows : "counter = 0\n",
-- Line 234, windows : "for filename in os.listdir(dir_path):\n",
-- Line 235, windows : "    if filename.endswith('.csv'):\n",
-- Line 236, windows : "        counter += 1\n",
-- Line 237, windows : "        # parse fullname from the filename\n",
-- Line 240, windows : "        # create the complete filepath\n",
-- Line 243, windows : "        # read the csv file and add it to the list\n",
-- Line 247, windows : "        df['fullname'] = fullname\n",
-- Line 251, windows : "# concatenate all the dataframes in the list\n",
-- Line 254, windows : "# check the resulting dataframe\n",
-- Line 264, windows : "import os\n",
-- Line 265, windows : "import pandas as pd\n",
-- Line 267, windows : "# directory path\n",
-- Line 270, windows : "# create an empty list to collect dataframes\n",
-- Line 272, windows : "counter = 0\n",
-- Line 274, windows : "for filename in os.listdir(dir_path):\n",
-- Line 275, windows : "    if filename.endswith('.csv'):\n",
-- Line 276, windows : "        counter += 1\n",
-- Line 277, windows : "        # parse fullname from the filename\n",
-- Line 280, windows : "        # create the complete filepath\n",
-- Line 283, windows : "        # read the csv file and add it to the list\n",
-- Line 287, windows : "        df['fullname'] = fullname\n",
-- Line 291, windows : "# concatenate all the dataframes in the list\n",
-- Line 294, windows : "# check the resulting dataframe\n",
-- Line 304, windows : "import os\n",
-- Line 305, windows : "import pandas as pd\n",
-- Line 307, windows : "# directory path\n",
-- Line 310, windows : "# create an empty list to collect dataframes\n",
-- Line 312, windows : "counter = 0\n",
-- Line 314, windows : "for filename in os.listdir(dir_path):\n",
-- Line 315, windows : "    if filename.endswith('.csv'):\n",
-- Line 316, windows : "        counter += 1\n",
-- Line 317, windows : "        # parse fullname from the filename\n",
-- Line 320, windows : "        # create the complete filepath\n",
-- Line 323, windows : "        # read the csv file and add it to the list\n",
-- Line 327, windows : "        df['fullname'] = fullname\n",
-- Line 331, windows : "# concatenate all the dataframes in the list\n",
-- Line 334, windows : "# check the resulting dataframe\n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A27.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A15.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05i_generate_regression_00_24_integrated.do**
-
-- Line 14, unix : forvalues _i = 1/6 {
-- Line 135, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 140, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
-- Line 156, unix : gen size_per_deal = dealsize_y/dealcount_y
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A21.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/slurm_predict_patents_batch_01.sh**
-
-- Line 1, unix : #!/bin/bash
-- Line 10, unix : #SBATCH --chdir=PATH_TO_HPC_PROJECT/code
-- Line 24, unix : module load CUDA/12.4.0
-- Line 25, unix : module load Python/3.11.5-GCCcore-13.2.0
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_compile_2025.ipynb**
-
-- Line 297, windows : "import os\n",
-- Line 298, windows : "import pandas as pd\n",
-- Line 300, windows : "# directory path\n",
-- Line 303, windows : "# create an empty list to collect dataframes\n",
-- Line 305, windows : "counter = 0\n",
-- Line 307, windows : "for filename in os.listdir(dir_path):\n",
-- Line 308, windows : "    if filename.endswith('.csv'):\n",
-- Line 309, windows : "        counter += 1\n",
-- Line 310, windows : "        # parse fullname from the filename\n",
-- Line 313, windows : "        # create the complete filepath\n",
-- Line 316, windows : "        # read the csv file and add it to the list\n",
-- Line 320, windows : "        df['fullname'] = fullname\n",
-- Line 324, windows : "# concatenate all the dataframes in the list\n",
-- Line 611, windows : "import os\n",
-- Line 612, windows : "import pandas as pd\n",
-- Line 614, windows : "# directory path\n",
-- Line 617, windows : "# create an empty list to collect dataframes\n",
-- Line 619, windows : "counter = 0\n",
-- Line 621, windows : "for filename in os.listdir(dir_path):\n",
-- Line 622, windows : "    if filename.endswith('.csv'):\n",
-- Line 623, windows : "        counter += 1\n",
-- Line 624, windows : "        # parse fullname from the filename\n",
-- Line 627, windows : "        # create the complete filepath\n",
-- Line 630, windows : "        # read the csv file and add it to the list\n",
-- Line 634, windows : "        df['fullname'] = fullname\n",
-- Line 638, windows : "# concatenate all the dataframes in the list\n",
-- Line 1184, windows : "import os\n",
-- Line 1185, windows : "import pandas as pd\n",
-- Line 1187, windows : "# directory path\n",
-- Line 1190, windows : "# create an empty list to collect dataframes\n",
-- Line 1192, windows : "counter = 0\n",
-- Line 1194, windows : "for filename in os.listdir(dir_path):\n",
-- Line 1195, windows : "    if filename.endswith('.csv'):\n",
-- Line 1196, windows : "        counter += 1\n",
-- Line 1197, windows : "        # parse fullname from the filename\n",
-- Line 1200, windows : "        # create the complete filepath\n",
-- Line 1203, windows : "        # read the csv file and add it to the list\n",
-- Line 1207, windows : "        df['fullname'] = fullname\n",
-- Line 1211, windows : "# concatenate all the dataframes in the list\n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.ipynb**
 
 - Line 10, windows : "import pandas as pd\n",
 - Line 11, windows : "from pathlib import Path\n",
@@ -1630,36 +1322,311 @@
 - Line 1436, windows : "has been incorrectly encoded by Stata or some other software. You should verify\n",
 - Line 1444, windows : "# rename disambig_country to country_2digit\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A24.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A16.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A17.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/run_all.sh**
+
+- Line 1, unix : #!/usr/bin/env bash
+- Line 27, unix : mkdir -p output/logs
+- Line 59, unix : run_py code/tables/table_1.py
+- Line 60, unix : run_do code/tables/table_2.do
+- Line 61, unix : run_do code/tables/table_3.do
+- Line 62, unix : run_do code/tables/table_4.do
+- Line 63, unix : run_do code/tables/table_5.do
+- Line 64, unix : run_do code/tables/table_6.do
+- Line 65, unix : run_do code/tables/table_7.do
+- Line 66, unix : run_do code/tables/table_8.do
+- Line 67, unix : run_py code/tables/table_A1.py
+- Line 68, unix : run_do code/tables/table_A2.do
+- Line 69, unix : run_do code/tables/table_A4.do
+- Line 70, unix : run_do code/tables/table_A5.do
+- Line 71, unix : run_do code/tables/table_A6.do
+- Line 72, unix : run_do code/tables/table_A7.do
+- Line 74, unix : run_do code/tables/table_A9.do
+- Line 75, unix : run_do code/tables/table_A10.do
+- Line 76, unix : run_do code/tables/table_A11.do
+- Line 77, unix : run_do code/tables/table_A12.do
+- Line 78, unix : run_do code/tables/table_A13.do
+- Line 79, unix : run_do code/tables/table_A14.do
+- Line 80, unix : run_do code/tables/table_A15.do
+- Line 81, unix : run_do code/tables/table_A16.do
+- Line 82, unix : run_do code/tables/table_A17.do
+- Line 83, unix : run_do code/tables/table_A18.do
+- Line 84, unix : run_do code/tables/table_A20.do
+- Line 85, unix : run_do code/tables/table_A21.do
+- Line 86, unix : run_do code/tables/table_A22.do
+- Line 87, unix : run_do code/tables/table_A23.do
+- Line 88, unix : run_do code/tables/table_A24.do
+- Line 89, unix : run_do code/tables/table_A25.do
+- Line 90, unix : run_do code/tables/table_A26.do
+- Line 91, unix : run_do code/tables/table_A27.do
+- Line 92, unix : run_do code/tables/table_A28.do
+- Line 93, unix : run_do code/tables/table_A29.do
+- Line 94, unix : run_do code/tables/table_A30.do
+- Line 95, unix : run_py code/figures/figure_1.py
+- Line 96, unix : run_do code/figures/figure_2.do
+- Line 97, unix : run_do code/figures/figure_4.do
+- Line 98, unix : run_py code/figures/figure_A1.py
+- Line 99, unix : run_do code/figures/figure_A2.do
+- Line 100, unix : run_do code/figures/figure_A3.do
+- Line 101, unix : run_py code/figures/figure_A4.py
+- Line 102, unix : run_py code/figures/figure_A5.py
+- Line 103, unix : run_do code/figures/figure_A6.do
+- Line 104, unix : run_py code/figures/figure_A7.py
+- Line 105, unix : run_py code/figures/figure_A8.py
+- Line 106, unix : run_py code/figures/figure_A9.py
+- Line 107, unix : run_py code/figures/figure_A10.py
+- Line 109, unix : run_do code/figures/figure_A12.do
+- Line 110, unix : run_do code/figures/figure_A13.do
+- Line 111, unix : run_do code/figures/figure_A14.do
+- Line 112, unix : run_do code/figures/figure_A15.do
+- Line 113, unix : run_do code/figures/figure_A16.do
+- Line 114, unix : run_do code/figures/figure_A17.do
+- Line 115, unix : run_do code/figures/figure_3.do
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A24.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
-- Line 51, unix : gen city_patents_count_inventors_n = city_patents_count_inventors/mean_pre_2013_patents
-- Line 56, unix : gen city_patents_count_assignees_n = city_patents_count_assignees/mean_pre_2013_patents_assignees
-- Line 82, unix : forvalues i = 1/22 {
-- Line 86, unix : forvalues i = 2000/2021 {
-- Line 105, unix : forvalues i = 2001/2021 {
-- Line 122, unix : forvalues i = 2001/2021 {
-- Line 139, unix : forvalues i = 2001/2021 {
-- Line 156, unix : forvalues i = 2001/2021 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A11.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/03c_generate_regression_auxiliary.do**
+
+- Line 13, unix : forvalues _i = 1/6 {
+- Line 98, unix : forvalues i = 1/12 {
+- Line 133, unix : forvalues i = 1/12{
+- Line 176, unix : forval i=1/12 {
+- Line 186, unix : save progress/serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
+- Line 192, unix : forval i=1/12 {
+- Line 206, unix : save progress/company_serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
+- Line 212, unix : forval i=1/12 {
+- Line 226, unix : save progress/founder_serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta, replace
+- Line 231, unix : use progress/serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
+- Line 232, unix : forvalues i=2/12 {
+- Line 233, unix : merge 1:1 second_company_first_deal_year first_company_subsegment serial_company_hqcountry using progress/serial_founder_china_led_by_second_year_first_company_subsegment`i'.dta
+- Line 251, unix : use progress/company_serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
+- Line 252, unix : forvalues i=2/12 {
+- Line 274, unix : use progress/founder_serial_founder_china_led_by_second_year_first_company_subsegment1.dta, clear
+- Line 275, unix : forvalues i=2/12 {
+- Line 295, unix : save progress/founder_serial_founders_by_second_deal_year.dta, replace
+- Line 444, unix : gen share_china = dealcount_westernonlyforCN_china/ChinaPlusUS
+- Line 446, unix : keep in 1/132
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A22.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_3.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A12.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/1_company_bert/predict_only.py**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A17.do**
 
-- Line 24, unix : # path parameterized: set env var BERT_WORK_ROOT to the BERT model/scratch store
-- Line 170, windows : logging.error("Sub-segment %s failed\n%s", i, traceback.format_exc())
+- Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_prediction_analysis_new100k.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_7.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/train_predict_pat01.ipynb**
+
+- Line 9, windows : "import re\n",
+- Line 10, windows : "import pandas as pd\n",
+- Line 11, windows : "import numpy as np\n",
+- Line 12, windows : "from pathlib import Path\n",
+- Line 13, windows : "from transformers import Trainer, TrainingArguments, AutoTokenizer, AutoModelForSequenceClassification\n",
+- Line 14, windows : "import torch.nn as nn\n",
+- Line 15, windows : "from torch.utils.data import Dataset, DataLoader\n",
+- Line 16, windows : "from sklearn.metrics import accuracy_score, precision_recall_fscore_support\n",
+- Line 17, windows : "from sklearn.model_selection import train_test_split\n",
+- Line 18, windows : "from sklearn.utils import resample\n",
+- Line 19, windows : "from sklearn.metrics import confusion_matrix\n",
+- Line 20, windows : "from tqdm import tqdm\n",
+- Line 21, windows : "from datasets import Dataset, load_dataset, DatasetDict, Features, ClassLabel, Value\n",
+- Line 22, windows : "import evaluate\n",
+- Line 23, windows : "import torch\n",
+- Line 24, windows : "import os\n",
+- Line 25, windows : "import json\n",
+- Line 41, windows : "def preprocess_data():\n",
+- Line 42, windows : "    # read in patent data\n",
+- Line 50, windows : "    del g_assignee\n",
+- Line 80, windows : "    return df_training, df_predicting, ls_subsegment\n",
+- Line 82, windows : "def subsegment_name_processing(nameStr):\n",
+- Line 86, windows : "def prepare_data_for_subsegment(df_training, SELECTED_SUBSEGMENT):\n",
+- Line 88, windows : "    df_training.loc[:, 'label'] = 0\n",
+- Line 89, windows : "    df_training.loc[df_training['fullname'] == SELECTED_SUBSEGMENT, 'label'] = 1\n",
+- Line 97, windows : "        return None, None\n",
+- Line 101, windows : "        len_positives = 1000\n",
+- Line 113, windows : "    return train_data, test_data\n",
+- Line 115, windows : "def tokenize_function(examples, tokenizer):\n",
+- Line 118, windows : "def compute_metrics(eval_pred):\n",
+- Line 120, windows : "    logits, labels = eval_pred\n",
+- Line 124, windows : "def train_model(subsegment, train_data, test_data, output_dir):\n",
+- Line 154, windows : "    # Evaluate on test set\n",
+- Line 158, windows : "    return trainer\n",
+- Line 160, windows : "def predict_all_models(df_predicting, ls_subsegment, output_dir):\n",
+- Line 163, windows : "    # Preprocess the prediction data\n",
+- Line 164, windows : "    df_predicting['patent_abstract'] = df_predicting['patent_abstract'].fillna('')  # Replace NaN with empty string\n",
+- Line 165, windows : "    df_predicting['patent_abstract'] = df_predicting['patent_abstract'].astype(str)  # Ensure all entries are strings\n",
+- Line 166, windows : "    df_predicting = df_predicting[df_predicting['patent_abstract'].str.strip() != '']  # Remove empty strings\n",
+- Line 170, windows : "    def safe_tokenize_function(examples):\n",
+- Line 175, windows : "    for subsegment in ls_subsegment:\n",
+- Line 177, windows : "        if not model_path.exists():\n",
+- Line 179, windows : "            continue\n",
+- Line 184, windows : "        try:\n",
+- Line 186, windows : "            y_pred = predictions.predictions\n",
+- Line 196, windows : "                'positive': y_pred_dummy\n",
+- Line 200, windows : "        except Exception as e:\n",
+- Line 202, windows : "            continue\n",
+- Line 204, windows : "def update_progress(progress, subsegment, status, output_dir, slice_id):\n",
+- Line 206, windows : "    if subsegment not in progress:\n",
+- Line 208, windows : "    else:\n",
+- Line 209, windows : "        progress[subsegment][\"status\"] = status\n",
+- Line 210, windows : "        progress[subsegment][\"last_update\"] = now\n",
+- Line 213, windows : "    with open(progress_file, 'w') as f:\n",
+- Line 216, windows : "def main(start_index=0, end_index=None, slice_id=\"full\"):\n",
+- Line 224, windows : "    # Slice the ls_subsegment if end_index is provided\n",
+- Line 225, windows : "    if end_index is not None:\n",
+- Line 227, windows : "    else:\n",
+- Line 232, windows : "    if progress_file.exists():\n",
+- Line 233, windows : "        with open(progress_file, 'r') as f:\n",
+- Line 236, windows : "    for subsegment in ls_subsegment:\n",
+- Line 237, windows : "        if subsegment in progress and progress[subsegment][\"status\"] == \"completed\":\n",
+- Line 239, windows : "            continue\n",
+- Line 244, windows : "        try:\n",
+- Line 246, windows : "            if train_data is not None and test_data is not None:\n",
+- Line 249, windows : "            else:\n",
+- Line 251, windows : "        except Exception as e:\n",
+- Line 257, windows : "    try:\n",
+- Line 260, windows : "    except Exception as e:\n",
+- Line 266, windows : "if __name__ == \"__main__\":\n",
+- Line 267, windows : "    # Example usage:\n",
+- Line 268, windows : "    # To process the first 60 items:\n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/07d_generate_analysis_city.do**
+
+- Line 15, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A7.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_4.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 41, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 46, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
+- Line 52, unix : forvalues i = 1/10 {
+- Line 61, unix : forvalues i = 2/10 {
+- Line 79, unix : forvalues i = 2/10 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_4.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A2.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 38, unix : forvalues s=1/4 {
+- Line 53, unix : forvalues s=1/4 {
+- Line 68, unix : forvalues s=1/4 {
+- Line 85, unix : forvalues s=1/4 {
+- Line 103, unix : forvalues s=1/4 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/07a_generate_patent_cpc_flags.py**
+
+- Line 1, unix : #!/usr/bin/env python3
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A10.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05b_generate_suitability_gdp_component.do**
+
+- Line 13, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_prediction_analysis.ipynb**
+
+- Line 9, windows : "import re\n",
+- Line 10, windows : "import os\n",
+- Line 11, windows : "import pandas as pd\n",
+- Line 12, windows : "import numpy as np\n",
+- Line 13, windows : "import matplotlib.pyplot as plt\n",
+- Line 14, windows : "from pathlib import Path\n",
+- Line 15, windows : "import json\n",
+- Line 18, windows : "# set directories\n",
+- Line 22, windows : "WD = WD_junxi\n",
+- Line 44, windows : "# Function to read and concatenate JSON files\n",
+- Line 45, windows : "def concat_test_results(root_dir=output_dir/'model'):\n",
+- Line 47, windows : "    for subdir, _, files in os.walk(root_dir):\n",
+- Line 48, windows : "        for file in files:\n",
+- Line 49, windows : "            if file == 'test_results.json':\n",
+- Line 50, windows : "                with open(os.path.join(subdir, file), 'r') as f:\n",
+- Line 51, windows : "                    try:\n",
+- Line 53, windows : "                        results[subdir.split('-')[-1]] = data\n",
+- Line 54, windows : "                    except json.JSONDecodeError:\n",
+- Line 56, windows : "    return results\n",
+- Line 58, windows : "# Execute the function\n",
+- Line 60, windows : "df_eval = pd.DataFrame(test_results).T\n",
+- Line 77, windows : "def concat_positive_files(root_dir=output_dir/'positive'):\n",
+- Line 79, windows : "    for subdir, _, files in os.walk(root_dir):\n",
+- Line 80, windows : "        for file in files:\n",
+- Line 81, windows : "            if file.endswith('positive_bert.csv'):\n",
+- Line 90, windows : "### Assignee\n",
+- Line 92, windows : "# keep if assignee_sequence is 0\n",
+- Line 94, windows : "# drop if disambig_assignee_organization is empty\n",
+- Line 99, windows : "### Patent\n",
+- Line 105, windows : "# get patent year from patent dat\n",
+- Line 107, windows : "# make int\n",
+- Line 109, windows : "# keep if patent_year is 2000 onwards\n",
+- Line 112, windows : "### Location\n",
+- Line 115, windows : "### generate patent_assignee_location\n",
+- Line 117, windows : "# Merge in location\n",
+- Line 120, windows : "# make patent_id string\n",
+- Line 124, windows : "# drop Unnamed: 5\n",
+- Line 140, windows : "34\n"
+- Line 145, windows : "### GET TRAINING DATA\n",
+- Line 147, windows : "# read in patent data\n",
+- Line 155, windows : "del g_assignee\n",
+- Line 176, windows : "def subsegment_name_processing(nameStr):\n",
+- Line 186, windows : "# filter out poor sectors in df_results_final\n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A26.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_similarity.py**
+
+- Line 72, unix : #df_predictions = pd.read_csv(ENT_ROOT / 'Analysis/python_BERT/data_patent/positive_results_100k_.csv', dtype=str)
+- Line 73, unix : df_predictions = pd.read_stata(ENT_ROOT / 'Analysis/python_BERT/data_patent/positive_results_500k_new.dta')
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A15.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/auxiliary/install.do**
+
+- Line 7, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/hpc_inference/predict_patent_sectors.py**
+
+- Line 12, unix : - OUTPUT_DIR: where predictions and intermediate filtered data are written. Default: ../../output/patent_predictions_full
+- Line 19, unix : - SECTORS_PER_TASK: how many sectors each SLURM task/GPU processes (default 4)
+- Line 92, unix : # Models are nested one level deeper on HPC: data/PatentSubsegmentFolders/PatentSubsegmentFolders
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05g_generate_regression_validation_countrypair.do**
+
+- Line 13, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_5.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A15.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_prediction_analysis_new100k.ipynb**
 
 - Line 9, windows : "import re\n",
 - Line 10, windows : "import os\n",
@@ -1694,11 +1661,197 @@
 - Line 170, windows : "# filter out poor sectors in df_results_final\n",
 - Line 172, windows : "# keep patent_id, file, patent_type, patent_date, wipo_kind, filename, patent_year, filing_date, filing_year, disambig_country\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A7.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05c_generate_regression_alltype_by_cat.do**
+
+- Line 14, unix : forvalues _i = 1/6 {
+- Line 117, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
+- Line 199, unix : gen share_china_angel = dealcount_angel_china/ChinaPlusUS_angel
+- Line 201, unix : gen share_china_ipoacq = dealcount_ipoacq_china/ChinaPlusUS_ipoacq
+- Line 203, unix : gen share_china_pegrowth = dealcount_pegrowth_china/ChinaPlusUS_pegrowth
+- Line 205, unix : gen share_china_debt = dealcount_debt_china/ChinaPlusUS_debt
+- Line 207, unix : gen share_china_corpother = dealcount_corpother_china/ChinaPlusUS_corpother
+- Line 209, unix : gen share_china_nonvc = dealcount_non_vc_china/ChinaPlusUS_nonvc
+- Line 214, unix : replace chinaled_countavg_angel_loose = 1 in 1/132
+- Line 220, unix : replace chinaled_countavg_ipoacq_loose = 1 in 1/130
+- Line 226, unix : replace chinaled_countavg_pe_loose = 1 in 1/123
+- Line 234, unix : replace chinaled_countavg_debt_loose = 1 in 1/126
+- Line 240, unix : replace chinaled_countavg_corp_loose = 1 in 1/117
+- Line 248, unix : replace chinaled_countavg_nonvc_loose = 1 in 1/133
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A21.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_family_exercise.ipynb**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/05h_generate_deal_22_24.do**
+
+- Line 14, unix : forvalues _i = 1/6 {
+- Line 70, windows : gen year = ustrregexs(1) if ustrregexm(dealdate, "(\d\d\d\d)\-\d\d-\d\d")
+- Line 106, unix : forvalues i=1/13{
+- Line 148, windows : gen year = ustrregexs(1) if ustrregexm(dealdate, "(\d\d\d\d)\-\d\d-\d\d")
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A18.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A7.py**
+
+- Line 13, unix : # (light lat/lon gridlines, Arial-first font stack)
+- Line 115, windows : "Natural Earth admin-0 countries shapefile not found at\n"
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A16.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/2_company_similarity/similarity_clean.ipynb**
+
+- Line 22, windows : "import pandas as pd\n",
+- Line 23, windows : "import os\n",
+- Line 24, windows : "import numpy as np\n",
+- Line 29, windows : "# Prepare percentiles\n",
+- Line 69, windows : "# Make a copy of the original dataframe\n",
+- Line 72, windows : "# Define the target countries\n",
+- Line 75, windows : "# Drop rows where both countries are either China or the United States\n",
+- Line 79, windows : "# Drop rows where neither 'hqcountry1' nor 'hqcountry2' is China or the United States\n",
+- Line 83, windows : "# Swap values if 'hqcountry1' is US or China and 'hqcountry2' is not US or China\n",
+- Line 86, windows : "df.loc[mask_swap, ['companyid1', 'companyid2']] = df.loc[mask_swap, ['companyid2', 'companyid1']].values\n",
+- Line 87, windows : "df.loc[mask_swap, ['fullname1', 'fullname2']] = df.loc[mask_swap, ['fullname2', 'fullname1']].values\n",
+- Line 88, windows : "df.loc[mask_swap, ['hqcountry1', 'hqcountry2']] = df.loc[mask_swap, ['hqcountry2', 'hqcountry1']].values\n",
+- Line 89, windows : "df.loc[mask_swap, ['yearfounded1', 'yearfounded2']] = df.loc[mask_swap, ['yearfounded2', 'yearfounded1']].values\n",
+- Line 90, windows : "df.loc[mask_swap, ['firstfinancingdate1', 'firstfinancingdate2']] = df.loc[mask_swap, ['firstfinancingdate2', 'firstfinancingdate1']].values\n",
+- Line 101, windows : "# Task 1: Calculate average, 10%, 25% similarity for each 'companyid1' with all Chinese and US companies\n",
+- Line 103, windows : "# Filter for Chinese and US companies\n",
+- Line 107, windows : "# Define function for 10% and 25% percentile\n",
+- Line 108, windows : "def percentile_10(x):\n",
+- Line 110, windows : "def percentile_25(x):\n",
+- Line 113, windows : "# Calculate metrics for Chinese companies\n",
+- Line 117, windows : "# Calculate metrics for US companies\n",
+- Line 121, windows : "# Merge the Chinese and US metrics together\n",
+- Line 126, windows : "# Filter DataFrame\n",
+- Line 129, windows : "# Calculate metrics for Chinese companies\n",
+- Line 133, windows : "# Calculate metrics for US companies\n",
+- Line 137, windows : "# Merge the Chinese and US metrics together\n",
+- Line 140, windows : "# Finally merge both dataframes (task 1 and task 2) together\n",
+- Line 159, windows : "# Iterate over files\n",
+- Line 160, windows : "for filename in os.listdir(folder_path):\n",
+- Line 161, windows : "    if filename.endswith(\".csv\"):  # check file extension, adjust if needed\n",
+- Line 164, windows : "        # Merge data with pbcompanies\n",
+- Line 170, windows : "        for companyid_column, country_column in [('companyid1', 'hqcountry2'), ('companyid2', 'hqcountry1')]:\n",
+- Line 171, windows : "            # Group by company id and country, and calculate the mean and percentiles of similarity\n",
+- Line 173, windows : "            for p in percentiles:\n",
+- Line 176, windows : "            # Pivot table for desired format\n",
+- Line 185, windows : "            # Filter out rows where no Chinese or US companies\n",
+- Line 189, windows : "        # Concatenate results and group by companyid, calculate mean\n",
+- Line 192, windows : "        # Save to CSV\n",
+- Line 224, windows : "import os\n",
+- Line 225, windows : "import pandas as pd\n",
+- Line 227, windows : "# directory path\n",
+- Line 230, windows : "# create an empty list to collect dataframes\n",
+- Line 232, windows : "counter = 0\n",
+- Line 234, windows : "for filename in os.listdir(dir_path):\n",
+- Line 235, windows : "    if filename.endswith('.csv'):\n",
+- Line 236, windows : "        counter += 1\n",
+- Line 237, windows : "        # parse fullname from the filename\n",
+- Line 240, windows : "        # create the complete filepath\n",
+- Line 243, windows : "        # read the csv file and add it to the list\n",
+- Line 247, windows : "        df['fullname'] = fullname\n",
+- Line 251, windows : "# concatenate all the dataframes in the list\n",
+- Line 254, windows : "# check the resulting dataframe\n",
+- Line 264, windows : "import os\n",
+- Line 265, windows : "import pandas as pd\n",
+- Line 267, windows : "# directory path\n",
+- Line 270, windows : "# create an empty list to collect dataframes\n",
+- Line 272, windows : "counter = 0\n",
+- Line 274, windows : "for filename in os.listdir(dir_path):\n",
+- Line 275, windows : "    if filename.endswith('.csv'):\n",
+- Line 276, windows : "        counter += 1\n",
+- Line 277, windows : "        # parse fullname from the filename\n",
+- Line 280, windows : "        # create the complete filepath\n",
+- Line 283, windows : "        # read the csv file and add it to the list\n",
+- Line 287, windows : "        df['fullname'] = fullname\n",
+- Line 291, windows : "# concatenate all the dataframes in the list\n",
+- Line 294, windows : "# check the resulting dataframe\n",
+- Line 304, windows : "import os\n",
+- Line 305, windows : "import pandas as pd\n",
+- Line 307, windows : "# directory path\n",
+- Line 310, windows : "# create an empty list to collect dataframes\n",
+- Line 312, windows : "counter = 0\n",
+- Line 314, windows : "for filename in os.listdir(dir_path):\n",
+- Line 315, windows : "    if filename.endswith('.csv'):\n",
+- Line 316, windows : "        counter += 1\n",
+- Line 317, windows : "        # parse fullname from the filename\n",
+- Line 320, windows : "        # create the complete filepath\n",
+- Line 323, windows : "        # read the csv file and add it to the list\n",
+- Line 327, windows : "        df['fullname'] = fullname\n",
+- Line 331, windows : "# concatenate all the dataframes in the list\n",
+- Line 334, windows : "# check the resulting dataframe\n",
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/generate_all.sh**
+
+- Line 1, unix : #!/usr/bin/env bash
+- Line 30, unix : mkdir -p output/logs/generate
+- Line 49, unix : run_do code/generate/01_generate_analysis_v2.do
+- Line 53, unix : run_py code/generate/02_generate_suitability.py
+- Line 57, unix : run_do code/generate/03a_generate_populated_places.do
+- Line 58, unix : run_py code/generate/03b_generate_controls.py
+- Line 59, unix : run_do code/generate/03c_generate_regression_auxiliary.do
+- Line 63, unix : run_do code/generate/04_generate_regression_corrected_120623.do
+- Line 67, unix : run_do code/generate/05a_generate_postregression_inputs.do
+- Line 68, unix : run_do code/generate/05b_generate_suitability_gdp_component.do
+- Line 69, unix : run_do code/generate/05c_generate_regression_alltype_by_cat.do
+- Line 70, unix : run_do code/generate/05d_generate_dealcount_alltype_cluster.do
+- Line 71, unix : run_do code/generate/05e_generate_pre_period_deals.do
+- Line 72, unix : run_do code/generate/05f_generate_similarity_western.do
+- Line 73, unix : run_do code/generate/05g_generate_regression_validation_countrypair.do
+- Line 74, unix : run_do code/generate/05h_generate_deal_22_24.do
+- Line 75, unix : run_do code/generate/05i_generate_regression_00_24_integrated.do
+- Line 79, unix : run_py code/generate/06a_generate_patent_citations_from_raw.py
+- Line 80, unix : run_py code/generate/06b_generate_patent_layers.py
+- Line 81, unix : run_do code/generate/06c_supplement_regression_patents.do
+- Line 85, unix : run_py code/generate/07a_generate_patent_cpc_flags.py
+- Line 86, unix : run_py code/generate/07b_generate_patent_geolocation_from_raw.py
+- Line 87, unix : run_py code/generate/07c_generate_company_geolocation.py
+- Line 88, unix : run_do code/generate/07d_generate_analysis_city.do
+- Line 92, unix : run_py code/generate/08a_generate_regression_a13_variants.py
+- Line 94, unix : run_do code/generate/08b_generate_regression_figureA11_dropped.do
+- Line 102, unix : run_do code/generate/09_generate_simulated_deals.do
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_A11.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A12.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 94, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
+- Line 99, unix : gen dealcount_norm_mean_00_12_all = dealcount_alltype/mean_deal_hq_00_12_all
+- Line 104, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
+- Line 109, unix : gen dealsize_norm_mean_00_12_all = dealsize_alltype/mean_deal_hq_00_12_ds_all
+- Line 129, unix : gen size_per_deal = dealsize_y/dealcount_y
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_3.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+- Line 51, unix : forvalues i = 1/162 {
+- Line 109, unix : forvalues i = 1/500 {
+- Line 114, unix : forvalues j = 1/15 {
+- Line 145, unix : forvalues i  = 1/500 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A25.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/figures/figure_2.do**
+
+- Line 5, unix : forvalues _i = 1/6 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/08b_generate_regression_figureA11_dropped.do**
+
+- Line 13, unix : forvalues _i = 1/6 {
+- Line 41, unix : forvalues N = 1/4 {
+- Line 99, unix : forvalues i = 0/499 {
+- Line 104, unix : forvalues i = 0/499 {
+
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_family_exercise.ipynb**
 
 - Line 10, windows : "import pandas as pd\n",
 - Line 11, windows : "from pathlib import Path\n",
@@ -1877,165 +2030,12 @@
 - Line 980, windows : "else:\n",
 - Line 989, windows : "    us_pairs_redistributed\n",
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/09_generate_simulated_deals.sh**
-
-- Line 1, unix : #!/usr/bin/env bash
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05b_generate_suitability_gdp_component.do**
-
-- Line 13, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A3.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/tables/table_A13.do**
 
 - Line 5, unix : forvalues _i = 1/6 {
 
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A6.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05c_generate_regression_alltype_by_cat.do**
-
-- Line 14, unix : forvalues _i = 1/6 {
-- Line 117, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
-- Line 199, unix : gen share_china_angel = dealcount_angel_china/ChinaPlusUS_angel
-- Line 201, unix : gen share_china_ipoacq = dealcount_ipoacq_china/ChinaPlusUS_ipoacq
-- Line 203, unix : gen share_china_pegrowth = dealcount_pegrowth_china/ChinaPlusUS_pegrowth
-- Line 205, unix : gen share_china_debt = dealcount_debt_china/ChinaPlusUS_debt
-- Line 207, unix : gen share_china_corpother = dealcount_corpother_china/ChinaPlusUS_corpother
-- Line 209, unix : gen share_china_nonvc = dealcount_non_vc_china/ChinaPlusUS_nonvc
-- Line 214, unix : replace chinaled_countavg_angel_loose = 1 in 1/132
-- Line 220, unix : replace chinaled_countavg_ipoacq_loose = 1 in 1/130
-- Line 226, unix : replace chinaled_countavg_pe_loose = 1 in 1/123
-- Line 234, unix : replace chinaled_countavg_debt_loose = 1 in 1/126
-- Line 240, unix : replace chinaled_countavg_corp_loose = 1 in 1/117
-- Line 248, unix : replace chinaled_countavg_nonvc_loose = 1 in 1/133
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/03a_generate_populated_places.do**
+**/Users/florianoswald/actions-runner/_work/JPE-Yang-20250178/JPE-Yang-20250178/replication-package/JPE_replication_for_submission/code/generate/03a_generate_populated_places.do**
 
 - Line 15, unix : forvalues _i = 1/6 {
 - Line 40, unix : shp2dta using $RAW/geocoding_resource/ne_10m_populated_places, database(populated_places_data) coordinates(populated_places_coords) replace
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/01_generate_analysis_v2.do**
-
-- Line 16, unix : forvalues _i = 1/6 {
-- Line 60, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
-- Line 86, windows : gen year = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
-- Line 127, windows : gen dealyear = ustrregexrf(dealdate,"\d\d\/\d\d\/","")
-- Line 343, unix : gen share_china = dealcount_china/ChinaPlusUS
-- Line 352, unix : keep in 1/129
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_5.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A22.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/06a_generate_patent_citations_from_raw.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A16.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A2.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_A13.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A5.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/figures/figure_3.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 51, unix : forvalues i = 1/162 {
-- Line 109, unix : forvalues i = 1/500 {
-- Line 114, unix : forvalues j = 1/15 {
-- Line 145, unix : forvalues i  = 1/500 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/07b_generate_patent_geolocation_from_raw.py**
-
-- Line 1, unix : #!/usr/bin/env python3
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/auxiliary/paths.do**
-
-- Line 15, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/generate/05f_generate_similarity_western.do**
-
-- Line 13, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/make_patent_sector_labels.py**
-
-- Line 3, unix : These files (shipped in the package under `Raw/BERT_prediction_resource/`) are NOT written by any
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A9.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/BERT_generation/3_patent_ml/patent_prediction_analysis.ipynb**
-
-- Line 9, windows : "import re\n",
-- Line 10, windows : "import os\n",
-- Line 11, windows : "import pandas as pd\n",
-- Line 12, windows : "import numpy as np\n",
-- Line 13, windows : "import matplotlib.pyplot as plt\n",
-- Line 14, windows : "from pathlib import Path\n",
-- Line 15, windows : "import json\n",
-- Line 18, windows : "# set directories\n",
-- Line 22, windows : "WD = WD_junxi\n",
-- Line 44, windows : "# Function to read and concatenate JSON files\n",
-- Line 45, windows : "def concat_test_results(root_dir=output_dir/'model'):\n",
-- Line 47, windows : "    for subdir, _, files in os.walk(root_dir):\n",
-- Line 48, windows : "        for file in files:\n",
-- Line 49, windows : "            if file == 'test_results.json':\n",
-- Line 50, windows : "                with open(os.path.join(subdir, file), 'r') as f:\n",
-- Line 51, windows : "                    try:\n",
-- Line 53, windows : "                        results[subdir.split('-')[-1]] = data\n",
-- Line 54, windows : "                    except json.JSONDecodeError:\n",
-- Line 56, windows : "    return results\n",
-- Line 58, windows : "# Execute the function\n",
-- Line 60, windows : "df_eval = pd.DataFrame(test_results).T\n",
-- Line 77, windows : "def concat_positive_files(root_dir=output_dir/'positive'):\n",
-- Line 79, windows : "    for subdir, _, files in os.walk(root_dir):\n",
-- Line 80, windows : "        for file in files:\n",
-- Line 81, windows : "            if file.endswith('positive_bert.csv'):\n",
-- Line 90, windows : "### Assignee\n",
-- Line 92, windows : "# keep if assignee_sequence is 0\n",
-- Line 94, windows : "# drop if disambig_assignee_organization is empty\n",
-- Line 99, windows : "### Patent\n",
-- Line 105, windows : "# get patent year from patent dat\n",
-- Line 107, windows : "# make int\n",
-- Line 109, windows : "# keep if patent_year is 2000 onwards\n",
-- Line 112, windows : "### Location\n",
-- Line 115, windows : "### generate patent_assignee_location\n",
-- Line 117, windows : "# Merge in location\n",
-- Line 120, windows : "# make patent_id string\n",
-- Line 124, windows : "# drop Unnamed: 5\n",
-- Line 140, windows : "34\n"
-- Line 145, windows : "### GET TRAINING DATA\n",
-- Line 147, windows : "# read in patent data\n",
-- Line 155, windows : "del g_assignee\n",
-- Line 176, windows : "def subsegment_name_processing(nameStr):\n",
-- Line 186, windows : "# filter out poor sectors in df_results_final\n",
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A28.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-
-**/var/folders/5q/yhcyv3z55wvg6lhgc3h22kk00000gq/T/20250178-1/replication-package/JPE_replication_for_submission/code/tables/table_A12.do**
-
-- Line 5, unix : forvalues _i = 1/6 {
-- Line 94, unix : gen dealcount_norm_mean_00_12 = dealcount_y/mean_deal_hq_00_12
-- Line 99, unix : gen dealcount_norm_mean_00_12_all = dealcount_alltype/mean_deal_hq_00_12_all
-- Line 104, unix : gen dealsize_norm_mean_00_12 = dealsize_y/mean_deal_hq_00_12_ds
-- Line 109, unix : gen dealsize_norm_mean_00_12_all = dealsize_alltype/mean_deal_hq_00_12_ds_all
-- Line 129, unix : gen size_per_deal = dealsize_y/dealcount_y
 

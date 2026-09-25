@@ -176,90 +176,38 @@ For any data that cannot be provided as part of the replication package, please 
 - Commited code to git repo.
 - Used a custom `stata19_5-mp` Docker image to run on the instance.
 - Installed python's `venv` package and activated a new virtual environment at the root of the filesystem in Onyxia service (as per `README` recommendations)
-- Stan ran `code/run_all.sh`
-- Stage A ran without any issues (step 1 through 9)
+- Ran `code/run_all.sh`
+- Stage A produces one error, `9`:
+```bash
+>>> stata:  code/generate/09_generate_simulated_deals.do
+    ERROR: code/generate/09_generate_simulated_deals.do hit a Stata error r(693); - see output/logs/generate/09_generate_simulated_deals.log
+```
+Logs show that this is due to lack of space on device.
+
 - Some steps in Stage B did not succeed:
 
-  - Two Stage B steps were skipped:
+  - One stage B step was skipped:
 
 ```bash
->>> SKIPPED: code/tables/table_A8.do (missing input confidential-data-not-for-publication/Analysis/intermediate_and_other_data/simulated_deals_all_1_500.dta — run the corresponding Stage-A step first)
->>> SKIPPED: code/figures/figure_A11.do (missing input confidential-data-not-for-publication/Analysis/intermediate_and_other_data/regression_china_suitability_score_1_indicator_dropped_corrected.dta — run the corresponding Stage-A step first)
+>>> SKIPPED: code/tables/table_A8.do
+    missing input: confidential-data-not-for-publication/Analysis/intermediate_and_other_data/simulated_deals_all_1_500.dta
+    TABLE A8 requires Stage-A step 09 (the Monte-Carlo simulation, skipped under --skip-heavy): bash code/generate/09_generate_simulated_deals.sh 7
 ```
-However, stage A output (which is in terminal, so perhaps lost error messages?) explicitly reports no errors, and all sub-scripts were run.
+  - Two stage B steps failed:
 
-  - One Stage B step failed due to a `TypeError`:
-
-```py
->>> python: code/figures/figure_A9.py
-/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/text.py:905: FutureWarning: Calling float on a single element Series is deprecated and will raise a TypeError in the future. Use float(ser.iloc[0]) instead
-  x = float(self.convert_xunits(self._x))
-Traceback (most recent call last):
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/artist.py", line 1402, in _get_tightbbox_for_layout_only
-    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 4542, in get_tightbbox
-    bbox = a.get_tightbbox(renderer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/artist.py", line 364, in get_tightbbox
-    bbox = self.get_window_extent(renderer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/text.py", line 970, in get_window_extent
-    x, y = self.get_unitless_position()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/text.py", line 906, in get_unitless_position
-    y = float(self.convert_yunits(self._y))
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: only 0-dimensional arrays can be converted to Python scalars
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/onyxia/work/code/figures/figure_A9.py", line 105, in <module>
-    main()
-  File "/home/onyxia/work/code/figures/figure_A9.py", line 102, in main
-    plot_sector(df, seg, out_name)
-  File "/home/onyxia/work/code/figures/figure_A9.py", line 91, in plot_sector
-    plt.tight_layout()
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/pyplot.py", line 2835, in tight_layout
-    gcf().tight_layout(pad=pad, h_pad=h_pad, w_pad=w_pad, rect=rect)
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/figure.py", line 3640, in tight_layout
-    engine.execute(self)
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/layout_engine.py", line 183, in execute
-    kwargs = get_tight_layout_figure(
-             ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/_tight_layout.py", line 266, in get_tight_layout_figure
-    kwargs = _auto_adjust_subplotpars(fig, renderer,
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/_tight_layout.py", line 82, in _auto_adjust_subplotpars
-    bb += [martist._get_tightbbox_for_layout_only(ax, renderer)]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/artist.py", line 1404, in _get_tightbbox_for_layout_only
-    return obj.get_tightbbox(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/axes/_base.py", line 4542, in get_tightbbox
-    bbox = a.get_tightbbox(renderer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/artist.py", line 364, in get_tightbbox
-    bbox = self.get_window_extent(renderer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/text.py", line 970, in get_window_extent
-    x, y = self.get_unitless_position()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/onyxia/work/venv_yang/lib/python3.12/site-packages/matplotlib/text.py", line 906, in get_unitless_position
-    y = float(self.convert_yunits(self._y))
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: only 0-dimensional arrays can be converted to Python scalars
-    ERROR: code/figures/figure_A9.py failed
+```bash
+>>> stata:  code/figures/figure_A14.do
+    ERROR: code/figures/figure_A14.do hit a Stata error r(601); - see output/logs/figure_A14.log
+>>> stata:  code/figures/figure_A15.do
+    ERROR: code/figures/figure_A15.do hit a Stata error r(601); - see output/logs/figure_A15.log
 ```
+- Due to missing package `gtools` which was supposed to be installed in the package installation script. The package could be installed with `ssc install gtools`.
 
 - All other exhibits were generated.
 
 # Findings {#sec-findings}
 
 ## Data Preparation Code
-
-No errors reported for data preparation code (Stage A), but 2 scripts were skipped (see section `8` 'Replication' above for more details).
 
 ## Tables and Figures
 
@@ -283,7 +231,7 @@ No errors reported for data preparation code (Stage A), but 2 scripts were skipp
 | Table A5                      | code/tables/table_A5.do                            | -           | Yes          |
 | Table A6                      | code/tables/table_A6.do                            | -           | Yes          |
 | Table A7                      | code/tables/table_A7.do                            | -           | Yes          |
-| Table A8                      | code/tables/table_A8.do                            | -           | No           |
+| Table A8                      | code/tables/table_A8.do                            | -           | No (**NEEDS STEP 09**)          |
 | Table A9                      | code/tables/table_A9.do                            | -           | Yes          |
 | Table A10                     | code/tables/table_A10.do                           | -           | Yes          |
 | Table A11                     | code/tables/table_A11.do                           | -           | Yes          |
@@ -317,10 +265,10 @@ No errors reported for data preparation code (Stage A), but 2 scripts were skipp
 | Figure A5                     | code/figures/figure_A5.do                          | -           | Yes          |
 | Figure A6                     | code/figures/figure_A6.do                          | -           | Yes          |
 | Figure A7                     | code/figures/figure_A7.do                          | -           | Yes          |
-| Figure A8                     | code/figures/figure_A8.do                          | -           | No (skipped) |
-| Figure A9                     | code/figures/figure_A9.do                          | -           | No           |
+| Figure A8                     | code/figures/figure_A8.do                          | -           | Yes |
+| Figure A9                     | code/figures/figure_A9.do                          | -           | Yes           |
 | Figure A10                    | code/figures/figure_A10.do                         | -           | Yes          |
-| Figure A11                    | code/figures/figure_A11.do                         | -           | No (skipped) |
+| Figure A11                    | code/figures/figure_A11.do                         | -           | No (skipped **TEMPORARY: NEEDS STEP 08B**, can be run independently now) |
 | Figure A12                    | code/figures/figure_A12.do                         | -           | Yes          |
 | Figure A13                    | code/figures/figure_A13.do                         | -           | Yes          |
 | Figure A14                    | code/figures/figure_A14.do                         | -           | No (skipped) |
